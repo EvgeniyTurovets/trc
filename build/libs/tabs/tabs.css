@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+.tabs{
+	display: inline-flex;
+	justify-content: flex-start;
+	align-items: center;
+	list-style: none;
+	background-color: #bfd3f8;
+	color: #fff;
+	font-weight: 400;
+	border-radius: 7px;
+	width: content-box;
+	position: relative;
+
+}
+.tab{
+	display: block;
+	padding: 11px 20px;
+	position: relative;
+	z-index: 99999;
+
+}
+.tab:hover{
+	cursor: pointer;
+}
+
+.selector{
+	display:inline-block;
+	position: absolute;
+	left:0;
+	top:0;
+	height: 40px;
+	z-index:99999;
+	border-radius:7px;
+	transition: all 500ms cubic-bezier(0.080, -0.195, 0.140, 0.970);
+	background: #92b4f2;
+}
+
+.selector:after{
+	content:'';
+	position: absolute;
+	z-index: -1;
+	left: calc(50% - 10px);
+	bottom: -10px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 10px 10px 0 10px;
+	border-color: #92b4f2 transparent transparent transparent;
+}
+.tab-content .tab-item-content{
+	background: #ffffff;
+	border-radius: 10px;
+	box-sizing: border-box;
+	display: none;
+}
+
+.tab-content .tab-item-content.active{
+	padding: 20px;
+	height: 200px;
+	display: block;
+}
+
+li.tab .hidden-tab-name{
+	font-size: 0;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s, opacity 0.5s linear;
+}
+li.tab.active-item .hidden-tab-name{
+	display: inline;
+	visibility: visible;
+	opacity: 1;
+	font-size: inherit;
+}

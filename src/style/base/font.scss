@@ -120,3 +120,27 @@
   font-weight: 400;
   font-style: normal;
 }
+
+@font-face {
+  font-family: '2MASS';
+  src: url('../fonts/2MASSJ1808-Heavy.eot');
+  src: local('../fonts/2MASS J1808 Heavy'), local('../fonts/2MASSJ1808-Heavy'),
+      url('../fonts/2MASSJ1808-Heavy.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/2MASSJ1808-Heavy.woff2') format('woff2'),
+      url('../fonts/2MASSJ1808-Heavy.woff') format('woff'),
+      url('../fonts/2MASSJ1808-Heavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '2MASS';
+  src: url('../fonts/2MASSJ1808-Normal.eot');
+  src: local('../fonts/2MASS J1808 Normal'), local('../fonts/2MASSJ1808-Normal'),
+      url('../fonts/2MASSJ1808-Normal.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/2MASSJ1808-Normal.woff2') format('woff2'),
+      url('../fonts/2MASSJ1808-Normal.woff') format('woff'),
+      url('../fonts/2MASSJ1808-Normal.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
