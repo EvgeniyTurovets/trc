@@ -170,4 +170,17 @@
 
         }
     }))
+
+    // поиск
+    let headerSearhBtn = document.querySelector('.header__searh__btn')
+    let formSearch = document.getElementById('form-search')
+    let formSearchClose = document.querySelector('.form-search__close')
+
+    headerSearhBtn.addEventListener('click', () => {
+        formSearch.classList.toggle('active')
+    })
+
+    formSearchClose.addEventListener('click', () => {
+        formSearch.classList.remove('active')
+    })
 })();
