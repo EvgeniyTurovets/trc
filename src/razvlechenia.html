@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Тц</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" crossorigin="anonymous">
+    <!-- платгины -->
+    <link rel='stylesheet' type='text/css' media='screen' href='./libs/swiper/swiper.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./libs/graf-modal/graph-modal.min.css'>
+    <!-- основные стили -->
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.min.css'>
+</head>
+
+<body>
+    <div class="app">
+        <nav class="mob-nav" id="mob-nav">
+            
+        </nav>
+        <form class="form-search" id="form-search">
+            <div class="wrap">
+                <input type="text" placeholder="Поиск...">
+                <button class="form-search__sub" type="button">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="#132C39" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.39258 15.6764C8.39258 12.4277 11.0262 9.79407 14.2749 9.79407C17.5237 9.79407 20.1573 12.4277 20.1573 15.6764C20.1573 18.9252 17.5237 21.5588 14.2749 21.5588C11.0262 21.5588 8.39258 18.9252 8.39258 15.6764ZM14.2749 7.79407C9.92163 7.79407 6.39258 11.3231 6.39258 15.6764C6.39258 20.0297 9.92163 23.5588 14.2749 23.5588C15.9552 23.5588 17.5127 23.033 18.7919 22.137L22.5678 25.913C22.9583 26.3035 23.5915 26.3035 23.982 25.913C24.3726 25.5224 24.3726 24.8893 23.982 24.4987L20.2735 20.7902C21.4482 19.4137 22.1573 17.6279 22.1573 15.6764C22.1573 11.3231 18.6283 7.79407 14.2749 7.79407Z" fill="current"></path>
+                    </svg>
+                </button>
+                <button class="form-search__close" type="button">
+                    <svg width="24" height="24" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z" class=""></path></svg>
+                </button>
+            </div>
+        </form>
+
+        <header class="header">
+            <div class="wrap" id="header-wrap">
+                <div class="header__top" id="headerTop">
+                    <div class="header__left">
+                        <div class="header__address">г. Москва, Авиаторов, вл 5</div>
+                        <div class="header__time">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                <path d="M7.9987 15.6663C11.6806 15.6663 14.6654 12.6816 14.6654 8.99967C14.6654 5.31778 11.6806 2.33301 7.9987 2.33301C4.3168 2.33301 1.33203 5.31778 1.33203 8.99967C1.33203 12.6816 4.3168 15.6663 7.9987 15.6663Z" stroke="#132C39" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8 5V9L10.6667 10.3333" stroke="#132C39" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0">
+                                <rect width="16" height="16" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                                
+                                
+                            10:00 - 22:00
+                        </div>
+                    </div>
+                    <div class="header__mid">
+                        <a href="">
+                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 6.81818C13 10.9545 8 14.5 8 14.5C8 14.5 3 10.9545 3 6.81818C3 5.40771 3.52678 4.05501 4.46447 3.05766C5.40215 2.06031 6.67392 1.5 8 1.5C9.32608 1.5 10.5979 2.06031 11.5355 3.05766C12.4732 4.05501 13 5.40771 13 6.81818Z" stroke="#132C39" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8 8.5C9.10457 8.5 10 7.60457 10 6.5C10 5.39543 9.10457 4.5 8 4.5C6.89543 4.5 6 5.39543 6 6.5C6 7.60457 6.89543 8.5 8 8.5Z" stroke="#132C39" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                
+                            КАК ДОБРАТЬСЯ
+                        </a>
+                        <a href="">
+                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.666016 4.50004V15.1667L5.33268 12.5L10.666 15.1667L15.3327 12.5V1.83337L10.666 4.50004L5.33268 1.83337L0.666016 4.50004Z" stroke="#132C39" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.33398 1.83337V12.5" stroke="#132C39" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10.666 4.5V15.1667" stroke="#132C39" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                
+                            СХЕМА ТРЦ
+                        </a>
+                    </div>
+                    <div class="header__right">
+                        <ul class="social">
+                            <li>
+                                <a href=""><i class="fab fa-vk"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fab fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header__bot" id="headerBot">
+                    <a href="" class="header__logo">
+                        <img src="./img/logo-main.svg" class="main-logo">
+                        <img src="./img/logo.svg" class="no-main-logo">
+                    </a>
+                    <div class="header__bot__right">
+
+                        <nav class="header__nav" id="headerNav">
+                            <ul>
+                                <li>
+                                    <a href="">Магазины</a>
+                                </li>
+                                <li>
+                                    <a href="">Еда</a>
+                                </li>
+                                <li>
+                                    <a href="">Услуги</a>
+                                </li>
+                                <li>
+                                    <a href="">Развлечения</a>
+                                </li>
+                                <li>
+                                    <a href="">Акции и новости</a>
+                                </li>
+                                <li>
+                                    <a href="">Афиши</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        
+                        <div class="header__searh">
+                            <button class="header__searh__btn" type="button">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="#132C39" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.39258 15.6764C8.39258 12.4277 11.0262 9.79407 14.2749 9.79407C17.5237 9.79407 20.1573 12.4277 20.1573 15.6764C20.1573 18.9252 17.5237 21.5588 14.2749 21.5588C11.0262 21.5588 8.39258 18.9252 8.39258 15.6764ZM14.2749 7.79407C9.92163 7.79407 6.39258 11.3231 6.39258 15.6764C6.39258 20.0297 9.92163 23.5588 14.2749 23.5588C15.9552 23.5588 17.5127 23.033 18.7919 22.137L22.5678 25.913C22.9583 26.3035 23.5915 26.3035 23.982 25.913C24.3726 25.5224 24.3726 24.8893 23.982 24.4987L20.2735 20.7902C21.4482 19.4137 22.1573 17.6279 22.1573 15.6764C22.1573 11.3231 18.6283 7.79407 14.2749 7.79407Z" fill="current"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <button class="menu-btn" id="menuBtn">
+                            <div class="menu-btn__burger">
+                                <svg class="no-active" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 12H3" stroke="#132C39" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M21 8H3" stroke="#132C39" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M21 16H3" stroke="#132C39" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <svg class="yes-active" width="24" height="24" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-times fa-w-10 fa-2x"><path fill="currentColor" d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z" class=""></path></svg>
+                            </div>
+                            Меню
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="section-name" style="background: #F16136;">
+            <div class="wrap">
+                <ul class="breadcrumb">
+                    <li><a href="">Главная</a></li>
+                    <li>Развлечения</li>
+                </ul>
+                <div class="title">
+                    <svg width="468" height="38" viewBox="0 0 468 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.224 0.864C20.704 0.864 24.256 1.872 26.88 3.888C29.504 5.872 30.816 8.832 30.816 12.768C30.816 16.736 29.504 19.712 26.88 21.696C24.288 23.68 20.752 24.672 16.272 24.672H8.64V36.768H0V0.864H16.224ZM16.224 17.616C18.016 17.616 19.424 17.216 20.448 16.416C21.504 15.616 22.032 14.4 22.032 12.768C22.032 11.168 21.504 9.984 20.448 9.216C19.392 8.416 17.952 8.016 16.128 8.016H8.64V17.616H16.224Z" fill="white"/>
+                        <path d="M67.9301 36.768L64.8101 29.664H44.4581L41.3861 36.768H32.3141L48.2981 0.864H61.1141L77.0981 36.768H67.9301ZM54.6341 5.664L47.3381 22.752H61.9301L54.6341 5.664Z" fill="white"/>
+                        <path d="M105.566 17.52C109.662 19.12 111.71 22.048 111.71 26.304C111.71 33.856 105.95 37.632 94.4295 37.632C92.2535 37.632 89.9175 37.344 87.4215 36.768C84.9255 36.224 83.0375 35.536 81.7575 34.704V26.736C85.6935 29.104 89.8695 30.288 94.2855 30.288C97.3255 30.288 99.5335 30 100.91 29.424C102.317 28.848 103.021 27.808 103.021 26.304C103.021 24.288 102.334 22.944 100.958 22.272C99.6135 21.568 97.4055 21.216 94.3335 21.216H89.1495V14.448H94.0935C95.1495 14.448 96.0615 14.416 96.8295 14.352C97.6295 14.256 98.3975 14.096 99.1335 13.872C99.9015 13.648 100.478 13.312 100.862 12.864C101.278 12.384 101.486 11.792 101.486 11.088C101.486 10.192 101.07 9.44 100.238 8.832C99.4055 8.224 98.4935 7.824 97.5015 7.632C96.5095 7.44 95.4855 7.344 94.4295 7.344C91.8695 7.344 89.6775 7.616 87.8535 8.16C86.0295 8.672 84.1895 9.504 82.3335 10.656V2.976C85.7575 0.992 89.7415 0 94.2855 0C96.2695 0 98.0935 0.16 99.7575 0.48C101.453 0.768 103.102 1.28 104.701 2.016C106.333 2.752 107.614 3.856 108.542 5.328C109.47 6.768 109.934 8.512 109.934 10.56C109.934 13.44 108.478 15.76 105.566 17.52Z" fill="white"/>
+                        <path d="M144.393 16.704C146.153 17.44 147.593 18.592 148.713 20.16C149.865 21.696 150.441 23.424 150.441 25.344C150.441 29.12 149.225 31.968 146.793 33.888C144.361 35.808 141.161 36.768 137.193 36.768H119.625V0.864H134.649C138.521 0.864 141.641 1.648 144.009 3.216C146.377 4.784 147.561 7.296 147.561 10.752C147.561 12.064 147.241 13.248 146.601 14.304C145.993 15.36 145.257 16.16 144.393 16.704ZM127.833 14.544H134.217C137.673 14.544 139.401 13.44 139.401 11.232C139.401 8.864 137.833 7.68 134.697 7.68H127.833V14.544ZM141.849 25.344C141.849 22.464 139.689 21.024 135.369 21.024H127.833V29.904H135.945C137.993 29.904 139.481 29.536 140.409 28.8C141.369 28.064 141.849 26.912 141.849 25.344Z" fill="white"/>
+                        <path d="M161.944 0.864H217.64V36.768H209V8.304H170.584V20.88C170.584 26.576 169.672 30.72 167.848 33.312C166.024 35.872 162.76 37.152 158.056 37.152C156.872 37.152 155.848 37.024 154.984 36.768V29.184C155.688 29.408 156.552 29.52 157.576 29.52C159.304 29.52 160.456 28.88 161.032 27.6C161.64 26.32 161.944 24.08 161.944 20.88V0.864Z" fill="white"/>
+                        <path d="M235.901 29.616H256.253V36.768H227.261V0.864H255.965V8.016H235.901V14.352H255.101V21.264H235.901V29.616Z" fill="white"/>
+                        <path d="M288.091 0.864H296.731V36.768H288.091V23.28C284.475 23.952 280.667 24.288 276.667 24.288C272.923 24.288 269.819 23.328 267.355 21.408C264.923 19.488 263.707 16.72 263.707 13.104V0.864H272.347V12C272.347 15.424 274.107 17.136 277.627 17.136C280.859 17.136 284.347 16.768 288.091 16.032V0.864Z" fill="white"/>
+                        <path d="M314.979 29.616H335.331V36.768H306.339V0.864H335.043V8.016H314.979V14.352H334.179V21.264H314.979V29.616Z" fill="white"/>
+                        <path d="M371.681 0.864H380.321V36.768H371.681V21.36H352.385V36.768H343.745V0.864H352.385V14.16H371.681V0.864Z" fill="white"/>
+                        <path d="M413.965 0.864H428.269V36.768H419.629V5.712L404.365 36.768H389.917V0.864H398.557V31.968L413.965 0.864Z" fill="white"/>
+                        <path d="M444.158 36.768H434.51L443.918 22.32C439.534 20.368 437.342 17.056 437.342 12.384C437.374 8.544 438.718 5.664 441.374 3.744C444.03 1.824 447.598 0.864 452.078 0.864H467.87V36.768H459.23V23.856H452.03L444.158 36.768ZM459.23 16.992V7.92H452.174C450.35 7.92 448.894 8.288 447.806 9.024C446.718 9.76 446.174 10.88 446.174 12.384C446.174 15.456 448.142 16.992 452.078 16.992H459.23Z" fill="white"/>
+                    </svg>    
+                </div>
+            </div>
+        </div>
+
+        <section class="razvlechenia">
+            <div class="wrap">
+                <div class="razvlechenia__top">
+                    <div class="razv__img">
+                        <img src="./img/arenda/top-img.jpg">
+                    </div>
+                    <div class="razv__top__content">
+                        <div class="razv__top1">
+                            <a href="" class="razv__name">Кино-Окко</a>
+                            <div class="razv__floo">2 этаж</div>
+                        </div>
+                        <div class="razv__text">
+                            Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. 
+                        </div>
+                        <a href="" class="razv__link">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="magazin__wrap">
+                <div class="wrap">
+                    
+                    <div class="arenda__wrap">
+                        <div class="arenda__item">
+                            <a href="" class="arenda__item__img" style="background-image: url('./img/razv/1.jpg');"></a>
+                            <div class="arenda__item__wraper">
+                                <div class="magazin__item__name-block">
+                                    <a href="">Pinko</a>
+                                    <span>2 этаж</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arenda__item">
+                            <a href="" class="arenda__item__img" style="background-image: url('./img/razv/2.jpg');"></a>
+                            <div class="arenda__item__wraper">
+                                <div class="magazin__item__name-block">
+                                    <a href="">Тир-Кузьмич</a>
+                                    <span>2 этаж</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arenda__item">
+                            <a href="" class="arenda__item__img" style="background-image: url('./img/razv/3.jpg');"></a>
+                            <div class="arenda__item__wraper">
+                                <div class="magazin__item__name-block">
+                                    <a href="">Formula-Kart</a>
+                                    <span>2 этаж</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arenda__item">
+                            <a href="" class="arenda__item__img" style="background-image: url('./img/razv/4.jpg');"></a>
+                            <div class="arenda__item__wraper">
+                                <div class="magazin__item__name-block">
+                                    <a href="">Боулинг</a>
+                                    <span>2 этаж</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arenda__item">
+                            <a href="" class="arenda__item__img" style="background-image: url('./img/razv/5.jpg');"></a>
+                            <div class="arenda__item__wraper">
+                                <div class="magazin__item__name-block">
+                                    <a href="">Батутный центр</a>
+                                    <span>2 этаж</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arenda__item">
+                            <a href="" class="arenda__item__img" style="background-image: url('./img/razv/6.jpg');"></a>
+                            <div class="arenda__item__wraper">
+                                <div class="magazin__item__name-block">
+                                    <a href="">Караоке</a>
+                                    <span>2 этаж</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arenda__item">
+                            <a href="" class="arenda__item__img" style="background-image: url('./img/razv/7.jpg');"></a>
+                            <div class="arenda__item__wraper">
+                                <div class="magazin__item__name-block">
+                                    <a href="">Детский центр</a>
+                                    <span>2 этаж</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arenda__item">
+                            <a href="" class="arenda__item__img" style="background-image: url('./img/razv/8.jpg');"></a>
+                            <div class="arenda__item__wraper">
+                                <div class="magazin__item__name-block">
+                                    <a href="">Город детей</a>
+                                    <span>2 этаж</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arenda__item">
+                            <a href="" class="arenda__item__img" style="background-image: url('./img/razv/9.jpg');"></a>
+                            <div class="arenda__item__wraper">
+                                <div class="magazin__item__name-block">
+                                    <a href="">Кино</a>
+                                    <span>2 этаж</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="pagination">
+                        <div class="swiper-count swiper-pagination">
+                            <div class="now swiper-pagination-current">1</div>
+                            <span></span>
+                            <div class="max swiper-pagination-total">4</div>
+                        </div>
+
+                        <div class="swiper__btns">
+                            <a href="" class="swiper__button swiper-button-prev2 black">
+                                <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M23 10.9281H1M1 10.9281L11.0774 1M1 10.9281L11.0774 21" stroke="#132C39"/>
+                                </svg>
+                            </a>
+                            <a href="" class="swiper__button swiper-button-next2 black">
+                                <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.79451e-07 11.0719L23 11.0719M23 11.0719L12.4645 21M23 11.0719L12.4645 0.999998" stroke="#132C39"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="wrap">
+                <div class="footer__wraper">
+                    <div class="footer__col">
+                        <a href="" class="footer__logo">
+                            <img src="./img/index/footer/footer-logo.svg">
+                        </a>
+                        <form class="footer__form">
+                            <input placeholder="E-MAIL">
+                            <button type="button">Отправить</button>
+                        </form>
+                    </div>
+                    <div class="footer__col">
+                        <div class="footer__info1">
+                            <div class="footer__adress">г. Москва, Авиаторов, вл 5</div>
+                            <div class="footer__time">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0)">
+                                    <path d="M7.9987 15.6663C11.6806 15.6663 14.6654 12.6816 14.6654 8.99967C14.6654 5.31778 11.6806 2.33301 7.9987 2.33301C4.3168 2.33301 1.33203 5.31778 1.33203 8.99967C1.33203 12.6816 4.3168 15.6663 7.9987 15.6663Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8 5V9L10.6667 10.3333" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0">
+                                    <rect width="16" height="16" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                    
+                                10:00 - 22:00
+                            </div>
+                        </div>
+                        <ul class="footer__social">
+                            <li>
+                                <a href=""><i class="fab fa-vk"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fab fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+<!-- модалки -->
+<div class="modal">
+    <div class="modal__container modal-mini" role="dialog" aria-modal="true" data-graph-target="first">
+		<button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
+		<div class="modal-content-form">
+            <div class="modal-title">Заказать рекламу</div>
+			<input type="text" placeholder="Имя">
+            <input type="text" placeholder="Телефон">
+            <button type="button" class="btn btn-red">Заказать</button>
+            <div class="form-copy">Нажимая на кнопку вы соглашаетесь на обработку ваших персональних данных</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- плагины -->
+<script src="libs/swiper/swiper.js"></script>
+<script src="libs/tabs/tabby.min.js"></script>
+<script src="libs/graf-modal/graph-modal.min.js"></script>
+<!-- основной -->
+<script src="js/main.js"></script>
+</body>
+</html>

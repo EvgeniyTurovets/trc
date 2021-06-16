@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" crossorigin="anonymous">
     <!-- платгины -->
     <link rel='stylesheet' type='text/css' media='screen' href='./libs/swiper/swiper.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./libs/graf-modal/graph-modal.min.css'>
     <!-- основные стили -->
     <link rel='stylesheet' type='text/css' media='screen' href='./css/main.min.css'>
 </head>
@@ -143,27 +144,156 @@
             </div>
         </header>
         
-        <div class="section-name" style="background: #F9991B;">
+        <div class="section-name" style="background: #F16136;">
             <div class="wrap">
                 <ul class="breadcrumb">
                     <li><a href="">Главная</a></li>
-                    <li>О нас</li>
+                    <li>Развлечения</li>
                 </ul>
                 <div class="title">
-                    <svg width="235" height="38" viewBox="0 0 235 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M21.024 0C27.392 0 32.496 1.712 36.336 5.136C40.176 8.56 42.096 13.12 42.096 18.816C42.096 24.48 40.176 29.04 36.336 32.496C32.496 35.92 27.392 37.632 21.024 37.632C14.72 37.632 9.632 35.92 5.76 32.496C1.92 29.04 0 24.48 0 18.816C0 13.152 1.92 8.608 5.76 5.184C9.6 1.728 14.688 0 21.024 0ZM21.024 29.952C24.608 29.952 27.536 28.944 29.808 26.928C32.08 24.912 33.216 22.208 33.216 18.816C33.216 15.424 32.08 12.72 29.808 10.704C27.536 8.688 24.608 7.68 21.024 7.68C17.472 7.68 14.56 8.704 12.288 10.752C10.016 12.768 8.88 15.456 8.88 18.816C8.88 22.176 10.016 24.88 12.288 26.928C14.56 28.944 17.472 29.952 21.024 29.952Z" fill="white"/>
-                        <path d="M138.841 0.864H147.481V36.768H138.841V21.36H79.7775V36.768H71.1375V0.864H79.7775V14.16H138.841V0.864Z" fill="white"/>
-                        <path d="M189.429 36.768L186.309 29.664H165.957L162.885 36.768H153.812L169.797 0.864H182.613L198.597 36.768H189.429ZM176.133 5.664L168.837 22.752H183.429L176.133 5.664Z" fill="white"/>
-                        <path d="M210.928 18.816C210.928 22.144 212.064 24.832 214.336 26.88C216.608 28.928 219.472 29.952 222.928 29.952C227.408 29.952 231.232 28.88 234.4 26.736V35.04C231.136 36.768 227.312 37.632 222.928 37.632C216.784 37.632 211.76 35.904 207.856 32.448C203.984 28.992 202.048 24.448 202.048 18.816C202.048 12.928 203.952 8.32 207.76 4.992C211.568 1.664 216.624 0 222.928 0C224.976 0 227.056 0.256 229.168 0.767999C231.312 1.248 233.056 1.904 234.4 2.736V11.04C230.944 8.8 227.12 7.68 222.928 7.68C219.248 7.68 216.32 8.672 214.144 10.656C212 12.608 210.928 15.328 210.928 18.816Z" fill="white"/>
-                    </svg>       
+                    <svg width="468" height="38" viewBox="0 0 468 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.224 0.864C20.704 0.864 24.256 1.872 26.88 3.888C29.504 5.872 30.816 8.832 30.816 12.768C30.816 16.736 29.504 19.712 26.88 21.696C24.288 23.68 20.752 24.672 16.272 24.672H8.64V36.768H0V0.864H16.224ZM16.224 17.616C18.016 17.616 19.424 17.216 20.448 16.416C21.504 15.616 22.032 14.4 22.032 12.768C22.032 11.168 21.504 9.984 20.448 9.216C19.392 8.416 17.952 8.016 16.128 8.016H8.64V17.616H16.224Z" fill="white"/>
+                        <path d="M67.9301 36.768L64.8101 29.664H44.4581L41.3861 36.768H32.3141L48.2981 0.864H61.1141L77.0981 36.768H67.9301ZM54.6341 5.664L47.3381 22.752H61.9301L54.6341 5.664Z" fill="white"/>
+                        <path d="M105.566 17.52C109.662 19.12 111.71 22.048 111.71 26.304C111.71 33.856 105.95 37.632 94.4295 37.632C92.2535 37.632 89.9175 37.344 87.4215 36.768C84.9255 36.224 83.0375 35.536 81.7575 34.704V26.736C85.6935 29.104 89.8695 30.288 94.2855 30.288C97.3255 30.288 99.5335 30 100.91 29.424C102.317 28.848 103.021 27.808 103.021 26.304C103.021 24.288 102.334 22.944 100.958 22.272C99.6135 21.568 97.4055 21.216 94.3335 21.216H89.1495V14.448H94.0935C95.1495 14.448 96.0615 14.416 96.8295 14.352C97.6295 14.256 98.3975 14.096 99.1335 13.872C99.9015 13.648 100.478 13.312 100.862 12.864C101.278 12.384 101.486 11.792 101.486 11.088C101.486 10.192 101.07 9.44 100.238 8.832C99.4055 8.224 98.4935 7.824 97.5015 7.632C96.5095 7.44 95.4855 7.344 94.4295 7.344C91.8695 7.344 89.6775 7.616 87.8535 8.16C86.0295 8.672 84.1895 9.504 82.3335 10.656V2.976C85.7575 0.992 89.7415 0 94.2855 0C96.2695 0 98.0935 0.16 99.7575 0.48C101.453 0.768 103.102 1.28 104.701 2.016C106.333 2.752 107.614 3.856 108.542 5.328C109.47 6.768 109.934 8.512 109.934 10.56C109.934 13.44 108.478 15.76 105.566 17.52Z" fill="white"/>
+                        <path d="M144.393 16.704C146.153 17.44 147.593 18.592 148.713 20.16C149.865 21.696 150.441 23.424 150.441 25.344C150.441 29.12 149.225 31.968 146.793 33.888C144.361 35.808 141.161 36.768 137.193 36.768H119.625V0.864H134.649C138.521 0.864 141.641 1.648 144.009 3.216C146.377 4.784 147.561 7.296 147.561 10.752C147.561 12.064 147.241 13.248 146.601 14.304C145.993 15.36 145.257 16.16 144.393 16.704ZM127.833 14.544H134.217C137.673 14.544 139.401 13.44 139.401 11.232C139.401 8.864 137.833 7.68 134.697 7.68H127.833V14.544ZM141.849 25.344C141.849 22.464 139.689 21.024 135.369 21.024H127.833V29.904H135.945C137.993 29.904 139.481 29.536 140.409 28.8C141.369 28.064 141.849 26.912 141.849 25.344Z" fill="white"/>
+                        <path d="M161.944 0.864H217.64V36.768H209V8.304H170.584V20.88C170.584 26.576 169.672 30.72 167.848 33.312C166.024 35.872 162.76 37.152 158.056 37.152C156.872 37.152 155.848 37.024 154.984 36.768V29.184C155.688 29.408 156.552 29.52 157.576 29.52C159.304 29.52 160.456 28.88 161.032 27.6C161.64 26.32 161.944 24.08 161.944 20.88V0.864Z" fill="white"/>
+                        <path d="M235.901 29.616H256.253V36.768H227.261V0.864H255.965V8.016H235.901V14.352H255.101V21.264H235.901V29.616Z" fill="white"/>
+                        <path d="M288.091 0.864H296.731V36.768H288.091V23.28C284.475 23.952 280.667 24.288 276.667 24.288C272.923 24.288 269.819 23.328 267.355 21.408C264.923 19.488 263.707 16.72 263.707 13.104V0.864H272.347V12C272.347 15.424 274.107 17.136 277.627 17.136C280.859 17.136 284.347 16.768 288.091 16.032V0.864Z" fill="white"/>
+                        <path d="M314.979 29.616H335.331V36.768H306.339V0.864H335.043V8.016H314.979V14.352H334.179V21.264H314.979V29.616Z" fill="white"/>
+                        <path d="M371.681 0.864H380.321V36.768H371.681V21.36H352.385V36.768H343.745V0.864H352.385V14.16H371.681V0.864Z" fill="white"/>
+                        <path d="M413.965 0.864H428.269V36.768H419.629V5.712L404.365 36.768H389.917V0.864H398.557V31.968L413.965 0.864Z" fill="white"/>
+                        <path d="M444.158 36.768H434.51L443.918 22.32C439.534 20.368 437.342 17.056 437.342 12.384C437.374 8.544 438.718 5.664 441.374 3.744C444.03 1.824 447.598 0.864 452.078 0.864H467.87V36.768H459.23V23.856H452.03L444.158 36.768ZM459.23 16.992V7.92H452.174C450.35 7.92 448.894 8.288 447.806 9.024C446.718 9.76 446.174 10.88 446.174 12.384C446.174 15.456 448.142 16.992 452.078 16.992H459.23Z" fill="white"/>
+                    </svg>    
                 </div>
             </div>
         </div>
 
-        <section class="o-nas">
+        <section class="razvlechenia">
             <div class="wrap">
-                <div class="o-nas__img">
-                    <img src="img/onas/onas.jpg">
+                <div class="razvlechenia__top">
+                    <div class="razv__img">
+                        <img src="./img/arenda/top-img.jpg">
+                    </div>
+                    <div class="razv__top__content">
+                        <div class="razv__top1">
+                            <a href="" class="razv__name">Кино-Окко</a>
+                            <div class="razv__floo">2 этаж</div>
+                        </div>
+                        <div class="razv__text">
+                            Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. 
+                        </div>
+                        <a href="" class="razv__link">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="magazin__wrap">
+                <div class="wrap">
+                    
+                    <div class="arenda__wrap">
+                        <div class="arenda__item">
+                            <a href="" class="arenda__item__img" style="background-image: url('./img/razv/1.jpg');"></a>
+                            <div class="arenda__item__wraper">
+                                <div class="magazin__item__name-block">
+                                    <a href="">Pinko</a>
+                                    <span>2 этаж</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arenda__item">
+                            <a href="" class="arenda__item__img" style="background-image: url('./img/razv/2.jpg');"></a>
+                            <div class="arenda__item__wraper">
+                                <div class="magazin__item__name-block">
+                                    <a href="">Тир-Кузьмич</a>
+                                    <span>2 этаж</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arenda__item">
+                            <a href="" class="arenda__item__img" style="background-image: url('./img/razv/3.jpg');"></a>
+                            <div class="arenda__item__wraper">
+                                <div class="magazin__item__name-block">
+                                    <a href="">Formula-Kart</a>
+                                    <span>2 этаж</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arenda__item">
+                            <a href="" class="arenda__item__img" style="background-image: url('./img/razv/4.jpg');"></a>
+                            <div class="arenda__item__wraper">
+                                <div class="magazin__item__name-block">
+                                    <a href="">Боулинг</a>
+                                    <span>2 этаж</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arenda__item">
+                            <a href="" class="arenda__item__img" style="background-image: url('./img/razv/5.jpg');"></a>
+                            <div class="arenda__item__wraper">
+                                <div class="magazin__item__name-block">
+                                    <a href="">Батутный центр</a>
+                                    <span>2 этаж</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arenda__item">
+                            <a href="" class="arenda__item__img" style="background-image: url('./img/razv/6.jpg');"></a>
+                            <div class="arenda__item__wraper">
+                                <div class="magazin__item__name-block">
+                                    <a href="">Караоке</a>
+                                    <span>2 этаж</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arenda__item">
+                            <a href="" class="arenda__item__img" style="background-image: url('./img/razv/7.jpg');"></a>
+                            <div class="arenda__item__wraper">
+                                <div class="magazin__item__name-block">
+                                    <a href="">Детский центр</a>
+                                    <span>2 этаж</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arenda__item">
+                            <a href="" class="arenda__item__img" style="background-image: url('./img/razv/8.jpg');"></a>
+                            <div class="arenda__item__wraper">
+                                <div class="magazin__item__name-block">
+                                    <a href="">Город детей</a>
+                                    <span>2 этаж</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arenda__item">
+                            <a href="" class="arenda__item__img" style="background-image: url('./img/razv/9.jpg');"></a>
+                            <div class="arenda__item__wraper">
+                                <div class="magazin__item__name-block">
+                                    <a href="">Кино</a>
+                                    <span>2 этаж</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="pagination">
+                        <div class="swiper-count swiper-pagination">
+                            <div class="now swiper-pagination-current">1</div>
+                            <span></span>
+                            <div class="max swiper-pagination-total">4</div>
+                        </div>
+
+                        <div class="swiper__btns">
+                            <a href="" class="swiper__button swiper-button-prev2 black">
+                                <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M23 10.9281H1M1 10.9281L11.0774 1M1 10.9281L11.0774 21" stroke="#132C39"/>
+                                </svg>
+                            </a>
+                            <a href="" class="swiper__button swiper-button-next2 black">
+                                <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.79451e-07 11.0719L23 11.0719M23 11.0719L12.4645 21M23 11.0719L12.4645 0.999998" stroke="#132C39"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -218,9 +348,26 @@
             </div>
         </footer>
     </div>
+
+<!-- модалки -->
+<div class="modal">
+    <div class="modal__container modal-mini" role="dialog" aria-modal="true" data-graph-target="first">
+		<button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
+		<div class="modal-content-form">
+            <div class="modal-title">Заказать рекламу</div>
+			<input type="text" placeholder="Имя">
+            <input type="text" placeholder="Телефон">
+            <button type="button" class="btn btn-red">Заказать</button>
+            <div class="form-copy">Нажимая на кнопку вы соглашаетесь на обработку ваших персональних данных</div>
+		</div>
+	</div>
+</div>
+
+
 <!-- плагины -->
 <script src="libs/swiper/swiper.js"></script>
 <script src="libs/tabs/tabby.min.js"></script>
+<script src="libs/graf-modal/graph-modal.min.js"></script>
 <!-- основной -->
 <script src="js/main.js"></script>
 </body>
