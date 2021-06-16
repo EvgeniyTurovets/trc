@@ -56,6 +56,16 @@
     }
 }
 
+.catalog-top__wrap.catalog-top__wrap--orang a.active{
+    border-bottom: 2px solid #F9991B;
+    color: #F9991B;
+    span{
+        border-color: #F9991B;
+    }
+    svg{
+        fill: #F9991B;
+    }
+}
 .fiolet-link{
     font-weight: bold;
     font-size: 14px;
@@ -69,7 +79,20 @@
         transition: 0.3s all;
     }
 }
-.fiolet-link:hover{
+.orang-link{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F9991B;
+    text-transform: uppercase;
+    padding: 5px 0;
+    svg{
+        fill: #F9991B;
+        margin-left: 5px;
+        transition: 0.3s all;
+    }
+}
+.color-link:hover{
     svg{
         transform: translateX(5px);
     }
@@ -121,7 +144,7 @@
     .section-name{
         margin-bottom: 25px;
         padding-top: 30px;
-        padding-bottom: 30px;
+        padding-bottom: 25px;
     }
 
     .catalog-top__wrap a{
@@ -155,11 +178,13 @@
 .magazin__wrap__top{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .magazin__wrap__checkboxes{
     display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
 }
 
 .checkbox{
@@ -170,6 +195,7 @@
     line-height: 16px;
     cursor: pointer;
     color: #132C39;
+    margin-bottom: 20px;
     input{
         display: none;
     }
@@ -191,11 +217,13 @@
 
 .magazin__wrap__checkboxes .checkbox{
     margin-right: 50px;
+    min-width: 165px;
 }
 
 .magazin__top__type{
     display: flex;
     button{
+        margin-bottom: 20px;
         transition: 0.3s all;
         margin-left: 24px;
         display: flex;
@@ -230,6 +258,16 @@
         box-shadow: 0 0 5px rgba(#000, 0.3);
     }
 }
+.magazin__top__type.orang-type{
+    button{
+        border: 1px solid #F9991B;
+        color: #F9991B;
+    }
+    button.active{
+        background-color: #F9991B;
+        color: #fff;
+    }
+}
 @media(max-width: 1024px){
     .magazin__wrap__top{
         flex-direction: column;
@@ -242,12 +280,7 @@
     .magazin__top__type button:first-child{
         margin-right: 15px;
     }
-    .checkbox{
-        font-size: 12px;
-    }
-    .magazin__wrap__checkboxes{
-        margin-bottom: 25px;
-    }
+    
     .magazin__top__type button{
         font-size: 12px;
         padding: 10px 5px;
@@ -306,7 +339,7 @@
     }
 }
 @media(max-width: 767px){
-    .magazin__list .fiolet-link{
+    .magazin__list .color-link{
         display: none;
     }
     .magazin__list .magazin__item{
@@ -356,10 +389,124 @@
 
 .magazin__wrap{
     padding-bottom: 50px;
+    position: relative;
 }
+
+@media(min-width: 768px){
+    .magazin__wrap:before{
+        content: "";
+        position: absolute;
+        width: 41px;
+        height: 59px;
+        background-image: url(../img/decor/decor1.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        bottom: 30px;
+        left: 30%;
+        transform: rotate(10deg);
+        z-index: -1;
+    }
+    
+    .magazin__wrap:after{
+        content: "";
+        position: absolute;
+        width: 71px;
+        height: 99px;
+        background-image: url(../img/decor/decor1.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        bottom: 20px;
+        right: 30%;
+        transform: rotateY(-180deg) rotate(20deg);
+        z-index: -1;
+    }
+}
+
 
 @media(max-width: 767px){
     .magazin__wrap{
         padding-bottom: 25px;
+    }
+    .magazin__list{
+        padding-bottom: 25px;
+    }
+}
+.magazin__item{
+    transition: 0.3s all;
+}
+.magazin__item:hover{
+    box-shadow: 0 0 10px rgba(#000, 0.2);
+}
+.magazin__carts{
+    display: flex;
+    margin: 0 -12px;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    .magazin__item{
+        width: calc(100% / 3 - 24px);
+        margin: 0 12px;
+        background: rgba(#c4c4c4, 0.2);
+        border-radius: 20px;
+        padding: 30px 38px;
+        padding-top: 55px;
+        margin-bottom: 20px;
+        transition: 0.3s all;
+    }
+    .magazin__item:hover{
+        box-shadow: 0 0 10px rgba(#000, 0.2);
+    }
+    .magazin__item__img{
+        padding-bottom: 55%;
+        width: 100%;
+        display: block;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-bottom: 43px;
+    }
+
+    .fiolet-link{
+        display: none;
+    }
+
+    .magazin__item__name-block{
+        a{
+            font-weight: bold;
+            font-size: 24px;
+            text-decoration-line: underline;
+            color: #132C39;
+            display: block;
+            margin-bottom: 9px;
+        }
+        span{
+            display: block;
+            font-size: 14px;
+            line-height: 14px;
+            color: #9CA1A2;
+        }
+    }
+}
+
+@media(max-width: 767px){
+    .magazin__carts {
+        padding-bottom: 25px;
+        .magazin__item{
+            width: calc(100% / 2 - 24px);
+            padding: 30px 20px;
+        }
+        
+    }
+}
+
+@media(max-width: 550px){
+    .magazin__carts {
+        .magazin__item{
+            width: calc(100% / 1 - 24px);
+            padding: 30px 20px;
+        }
+        .magazin__item__img{
+            padding-bottom: 45%;
+            margin-bottom: 20px;
+        }
     }
 }

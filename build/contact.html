@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Тц</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" crossorigin="anonymous">
+    <!-- платгины -->
+    <link rel='stylesheet' type='text/css' media='screen' href='./libs/swiper/swiper.css'>
+    <!-- основные стили -->
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.min.css'>
+</head>
+
+<body>
+    <div class="app">
+        <nav class="mob-nav" id="mob-nav">
+            
+        </nav>
+        <form class="form-search" id="form-search">
+            <div class="wrap">
+                <input type="text" placeholder="Поиск...">
+                <button class="form-search__sub" type="button">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="#132C39" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.39258 15.6764C8.39258 12.4277 11.0262 9.79407 14.2749 9.79407C17.5237 9.79407 20.1573 12.4277 20.1573 15.6764C20.1573 18.9252 17.5237 21.5588 14.2749 21.5588C11.0262 21.5588 8.39258 18.9252 8.39258 15.6764ZM14.2749 7.79407C9.92163 7.79407 6.39258 11.3231 6.39258 15.6764C6.39258 20.0297 9.92163 23.5588 14.2749 23.5588C15.9552 23.5588 17.5127 23.033 18.7919 22.137L22.5678 25.913C22.9583 26.3035 23.5915 26.3035 23.982 25.913C24.3726 25.5224 24.3726 24.8893 23.982 24.4987L20.2735 20.7902C21.4482 19.4137 22.1573 17.6279 22.1573 15.6764C22.1573 11.3231 18.6283 7.79407 14.2749 7.79407Z" fill="current"></path>
+                    </svg>
+                </button>
+                <button class="form-search__close" type="button">
+                    <svg width="24" height="24" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z" class=""></path></svg>
+                </button>
+            </div>
+        </form>
+
+        <header class="header">
+            <div class="wrap" id="header-wrap">
+                <div class="header__top" id="headerTop">
+                    <div class="header__left">
+                        <div class="header__address">г. Москва, Авиаторов, вл 5</div>
+                        <div class="header__time">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                <path d="M7.9987 15.6663C11.6806 15.6663 14.6654 12.6816 14.6654 8.99967C14.6654 5.31778 11.6806 2.33301 7.9987 2.33301C4.3168 2.33301 1.33203 5.31778 1.33203 8.99967C1.33203 12.6816 4.3168 15.6663 7.9987 15.6663Z" stroke="#132C39" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8 5V9L10.6667 10.3333" stroke="#132C39" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0">
+                                <rect width="16" height="16" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                                
+                                
+                            10:00 - 22:00
+                        </div>
+                    </div>
+                    <div class="header__mid">
+                        <a href="">
+                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 6.81818C13 10.9545 8 14.5 8 14.5C8 14.5 3 10.9545 3 6.81818C3 5.40771 3.52678 4.05501 4.46447 3.05766C5.40215 2.06031 6.67392 1.5 8 1.5C9.32608 1.5 10.5979 2.06031 11.5355 3.05766C12.4732 4.05501 13 5.40771 13 6.81818Z" stroke="#132C39" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8 8.5C9.10457 8.5 10 7.60457 10 6.5C10 5.39543 9.10457 4.5 8 4.5C6.89543 4.5 6 5.39543 6 6.5C6 7.60457 6.89543 8.5 8 8.5Z" stroke="#132C39" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                
+                            КАК ДОБРАТЬСЯ
+                        </a>
+                        <a href="">
+                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.666016 4.50004V15.1667L5.33268 12.5L10.666 15.1667L15.3327 12.5V1.83337L10.666 4.50004L5.33268 1.83337L0.666016 4.50004Z" stroke="#132C39" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.33398 1.83337V12.5" stroke="#132C39" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10.666 4.5V15.1667" stroke="#132C39" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                
+                            СХЕМА ТРЦ
+                        </a>
+                    </div>
+                    <div class="header__right">
+                        <ul class="social">
+                            <li>
+                                <a href=""><i class="fab fa-vk"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fab fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header__bot" id="headerBot">
+                    <a href="" class="header__logo">
+                        <img src="./img/logo-main.svg" class="main-logo">
+                        <img src="./img/logo.svg" class="no-main-logo">
+                    </a>
+                    <div class="header__bot__right">
+
+                        <nav class="header__nav" id="headerNav">
+                            <ul>
+                                <li>
+                                    <a href="">Магазины</a>
+                                </li>
+                                <li>
+                                    <a href="">Еда</a>
+                                </li>
+                                <li>
+                                    <a href="">Услуги</a>
+                                </li>
+                                <li>
+                                    <a href="">Развлечения</a>
+                                </li>
+                                <li>
+                                    <a href="">Акции и новости</a>
+                                </li>
+                                <li>
+                                    <a href="">Афиши</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        
+                        <div class="header__searh">
+                            <button class="header__searh__btn" type="button">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="#132C39" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.39258 15.6764C8.39258 12.4277 11.0262 9.79407 14.2749 9.79407C17.5237 9.79407 20.1573 12.4277 20.1573 15.6764C20.1573 18.9252 17.5237 21.5588 14.2749 21.5588C11.0262 21.5588 8.39258 18.9252 8.39258 15.6764ZM14.2749 7.79407C9.92163 7.79407 6.39258 11.3231 6.39258 15.6764C6.39258 20.0297 9.92163 23.5588 14.2749 23.5588C15.9552 23.5588 17.5127 23.033 18.7919 22.137L22.5678 25.913C22.9583 26.3035 23.5915 26.3035 23.982 25.913C24.3726 25.5224 24.3726 24.8893 23.982 24.4987L20.2735 20.7902C21.4482 19.4137 22.1573 17.6279 22.1573 15.6764C22.1573 11.3231 18.6283 7.79407 14.2749 7.79407Z" fill="current"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <button class="menu-btn" id="menuBtn">
+                            <div class="menu-btn__burger">
+                                <svg class="no-active" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 12H3" stroke="#132C39" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M21 8H3" stroke="#132C39" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M21 16H3" stroke="#132C39" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <svg class="yes-active" width="24" height="24" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-times fa-w-10 fa-2x"><path fill="currentColor" d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z" class=""></path></svg>
+                            </div>
+                            Меню
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="section-name" style="background: #F16665;">
+            <div class="wrap">
+                <ul class="breadcrumb">
+                    <li><a href="">Главная</a></li>
+                    <li>Контакты</li>
+                </ul>
+                <div class="title">
+                    <svg width="368" height="38" viewBox="0 0 368 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.68 13.344L36.576 36.768H26.256L13.344 18.048L8.64 21.744V36.768H0V0.864H8.64V12.96L23.808 0.864H35.856L19.68 13.344Z" fill="white"/>
+                        <path d="M59.4803 0C65.8483 0 70.9523 1.712 74.7923 5.136C78.6322 8.56 80.5523 13.12 80.5523 18.816C80.5523 24.48 78.6322 29.04 74.7923 32.496C70.9523 35.92 65.8483 37.632 59.4803 37.632C53.1763 37.632 48.0883 35.92 44.2163 32.496C40.3763 29.04 38.4562 24.48 38.4562 18.816C38.4562 13.152 40.3763 8.608 44.2163 5.184C48.0563 1.728 53.1443 0 59.4803 0ZM59.4803 29.952C63.0643 29.952 65.9922 28.944 68.2643 26.928C70.5363 24.912 71.6722 22.208 71.6722 18.816C71.6722 15.424 70.5363 12.72 68.2643 10.704C65.9922 8.688 63.0643 7.68 59.4803 7.68C55.9283 7.68 53.0163 8.704 50.7443 10.752C48.4723 12.768 47.3363 15.456 47.3363 18.816C47.3363 22.176 48.4723 24.88 50.7443 26.928C53.0163 28.944 55.9283 29.952 59.4803 29.952Z" fill="white"/>
+                        <path d="M140.378 0.864H149.018V36.768H140.378V21.36H97.6087V36.768H88.9688V0.864H97.6087V14.16H140.378V0.864Z" fill="white"/>
+                        <path d="M190.582 0.864V8.304H177.238V36.768H168.598V8.304H155.254V0.864H190.582Z" fill="white"/>
+                        <path d="M226.778 36.768L223.658 29.664H203.306L200.234 36.768H191.162L207.146 0.864H219.962L235.946 36.768H226.778ZM213.482 5.664L206.186 22.752H220.778L213.482 5.664Z" fill="white"/>
+                        <path d="M261.966 13.344L278.862 36.768H268.542L255.63 18.048L250.926 21.744V36.768H242.286V0.864H250.926V12.96L266.094 0.864H278.142L261.966 13.344Z" fill="white"/>
+                        <path d="M317.285 0.864V8.304H303.941V36.768H295.301V8.304H281.957V0.864H317.285Z" fill="white"/>
+                        <path d="M358.56 36.768V0.864H367.2V36.768H358.56ZM350.16 16.32C352.72 18.24 354 21.168 354 25.104C354 29.04 352.72 31.968 350.16 33.888C347.632 35.808 344.16 36.768 339.744 36.768H323.52V0.864H332.16V13.44H339.696C344.144 13.44 347.632 14.4 350.16 16.32ZM339.648 29.664C343.392 29.664 345.264 28.144 345.264 25.104C345.264 22.064 343.376 20.544 339.6 20.544H332.16V29.664H339.648Z" fill="white"/>
+                    </svg>      
+                </div>
+            </div>
+        </div>
+
+        <section class="contact-sec">
+            <div class="wrap">
+                <div class="contact__wrap">
+                    <div class="contact__wrap__col">
+                        <div class="contact__title">Адрес</div>
+                        <div class="contact__adress">
+                            г. Москва, Ленинская Слобода, 19
+                            БЦ “OMEGA PLAZA”, офис 5.042
+                        </div>
+                        <a href="">КАК ДОБРАТЬСЯ</a>
+                    </div>
+                    <div class="contact__wrap__col">
+                        <div class="contact__title">Телефоны</div>
+                        <div class="contact__gray-text">Инфостойка</div>
+                        <div class="contact__phone">+7 495 984-70-10</div>
+                    </div>
+                    <div class="contact__wrap__col">
+                        <div class="contact__title">График работы</div>
+                        <div class="contact__gray-text">пн-чт:</div>
+                        <div class="contact__phone">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                <path d="M7.99967 15.6663C11.6816 15.6663 14.6663 12.6816 14.6663 8.99967C14.6663 5.31778 11.6816 2.33301 7.99967 2.33301C4.31778 2.33301 1.33301 5.31778 1.33301 8.99967C1.33301 12.6816 4.31778 15.6663 7.99967 15.6663Z" stroke="#132C39" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8 5V9L10.6667 10.3333" stroke="#132C39" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0">
+                                <rect width="16" height="16" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                                
+                            10:00 - 20:00
+                        </div>
+                    </div>
+                </div>
+                <div class="contact__map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2247.8815025424146!2d37.65060651589903!3d55.70843148054148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b34728f7b35%3A0x8784eea51859be73!2z0JHQpiDQntC80LXQs9CwINCf0LvQsNC30LA!5e0!3m2!1sru!2sua!4v1623833613159!5m2!1sru!2sua" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
+                
+            </div>
+            <div class="contact__otdeli">
+                <div class="wrap">
+                    <h2 class="title">
+                        <svg width="721" height="46" viewBox="0 0 721 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.4798 13.344L37.3758 36.768H27.0558L14.1438 18.048L9.43981 21.744V36.768H0.799805V0.864H9.43981V12.96L24.6078 0.864H36.6558L20.4798 13.344Z" fill="#F16665"/>
+                            <path d="M60.2801 0C66.6481 0 71.7521 1.712 75.5921 5.136C79.4321 8.56 81.3521 13.12 81.3521 18.816C81.3521 24.48 79.4321 29.04 75.5921 32.496C71.7521 35.92 66.6481 37.632 60.2801 37.632C53.9761 37.632 48.8881 35.92 45.0161 32.496C41.1761 29.04 39.2561 24.48 39.2561 18.816C39.2561 13.152 41.1761 8.608 45.0161 5.184C48.8561 1.728 53.9441 0 60.2801 0ZM60.2801 29.952C63.8641 29.952 66.7921 28.944 69.0641 26.928C71.3361 24.912 72.4721 22.208 72.4721 18.816C72.4721 15.424 71.3361 12.72 69.0641 10.704C66.7921 8.688 63.8641 7.68 60.2801 7.68C56.7281 7.68 53.8161 8.704 51.5441 10.752C49.2721 12.768 48.1361 15.456 48.1361 18.816C48.1361 22.176 49.2721 24.88 51.5441 26.928C53.8161 28.944 56.7281 29.952 60.2801 29.952Z" fill="#F16665"/>
+                            <path d="M138 0.864H146.64V36.768H138V21.36H98.4086V36.768H89.7686V0.864H98.4086V14.16H138V0.864Z" fill="#F16665"/>
+                            <path d="M188.204 0.864V8.304H174.86V36.768H166.22V8.304H152.876V0.864H188.204Z" fill="#F16665"/>
+                            <path d="M224.4 36.768L221.28 29.664H200.928L197.856 36.768H188.784L204.768 0.864H217.584L233.568 36.768H224.4ZM211.104 5.664L203.808 22.752H218.4L211.104 5.664Z" fill="#F16665"/>
+                            <path d="M259.588 13.344L276.484 36.768H266.164L253.252 18.048L248.548 21.744V36.768H239.908V0.864H248.548V12.96L263.716 0.864H275.764L259.588 13.344Z" fill="#F16665"/>
+                            <path d="M314.907 0.864V8.304H301.563V36.768H292.923V8.304H279.579V0.864H314.907Z" fill="#F16665"/>
+                            <path d="M356.182 36.768V0.864H364.822V36.768H356.182ZM347.782 16.32C350.342 18.24 351.622 21.168 351.622 25.104C351.622 29.04 350.342 31.968 347.782 33.888C345.254 35.808 341.782 36.768 337.366 36.768H321.142V0.864H329.782V13.44H337.318C341.766 13.44 345.254 14.4 347.782 16.32ZM337.27 29.664C341.014 29.664 342.886 28.144 342.886 25.104C342.886 22.064 340.998 20.544 337.222 20.544H329.782V29.664H337.27Z" fill="#F16665"/>
+                            <path d="M414.888 0C421.256 0 426.36 1.712 430.2 5.136C434.04 8.56 435.96 13.12 435.96 18.816C435.96 24.48 434.04 29.04 430.2 32.496C426.36 35.92 421.256 37.632 414.888 37.632C408.584 37.632 403.496 35.92 399.624 32.496C395.784 29.04 393.864 24.48 393.864 18.816C393.864 13.152 395.784 8.608 399.624 5.184C403.464 1.728 408.552 0 414.888 0ZM414.888 29.952C418.472 29.952 421.4 28.944 423.672 26.928C425.944 24.912 427.08 22.208 427.08 18.816C427.08 15.424 425.944 12.72 423.672 10.704C421.4 8.688 418.472 7.68 414.888 7.68C411.336 7.68 408.424 8.704 406.152 10.752C403.88 12.768 402.744 15.456 402.744 18.816C402.744 22.176 403.88 24.88 406.152 26.928C408.424 28.944 411.336 29.952 414.888 29.952Z" fill="#F16665"/>
+                            <path d="M474.891 0.864V8.304H461.547V36.768H452.907V8.304H439.563V0.864H474.891Z" fill="#F16665"/>
+                            <path d="M516.789 29.76H521.781V45.6H513.429V36.768H484.677V45.6H476.325V29.76H480.933C483.429 26.368 484.677 21.904 484.677 16.368V0.864H516.789V29.76ZM508.149 29.76V7.872H493.221V16.368C493.221 21.712 492.357 26.176 490.629 29.76H508.149Z" fill="#F16665"/>
+                            <path d="M537.157 29.616H587.152V36.768H528.517V0.864H586.864V8.016H537.157V14.352H586V21.264H537.157V29.616Z" fill="#F16665"/>
+                            <path d="M599.166 0.864H631.086V36.768H622.446V8.304H607.806V20.88C607.806 26.576 606.894 30.72 605.07 33.312C603.246 35.872 599.982 37.152 595.278 37.152C594.094 37.152 593.07 37.024 592.206 36.768V29.184C592.91 29.408 593.774 29.52 594.798 29.52C596.526 29.52 597.678 28.88 598.254 27.6C598.862 26.32 599.166 24.08 599.166 20.88V0.864Z" fill="#F16665"/>
+                            <path d="M660.531 0C666.899 0 672.003 1.712 675.843 5.136C679.683 8.56 681.603 13.12 681.603 18.816C681.603 24.48 679.683 29.04 675.843 32.496C672.003 35.92 666.899 37.632 660.531 37.632C654.227 37.632 649.139 35.92 645.267 32.496C641.427 29.04 639.507 24.48 639.507 18.816C639.507 13.152 641.427 8.608 645.267 5.184C649.107 1.728 654.195 0 660.531 0ZM660.531 29.952C664.115 29.952 667.043 28.944 669.315 26.928C671.587 24.912 672.723 22.208 672.723 18.816C672.723 15.424 671.587 12.72 669.315 10.704C667.043 8.688 664.115 7.68 660.531 7.68C656.979 7.68 654.067 8.704 651.795 10.752C649.523 12.768 648.387 15.456 648.387 18.816C648.387 22.176 649.523 24.88 651.795 26.928C654.067 28.944 656.979 29.952 660.531 29.952Z" fill="#F16665"/>
+                            <path d="M714.787 16.704C716.547 17.44 717.987 18.592 719.107 20.16C720.259 21.696 720.835 23.424 720.835 25.344C720.835 29.12 719.619 31.968 717.187 33.888C714.755 35.808 711.555 36.768 707.587 36.768H690.019V0.864H705.043C708.915 0.864 712.035 1.648 714.403 3.216C716.771 4.784 717.955 7.296 717.955 10.752C717.955 12.064 717.635 13.248 716.995 14.304C716.387 15.36 715.651 16.16 714.787 16.704ZM698.227 14.544H704.611C708.067 14.544 709.795 13.44 709.795 11.232C709.795 8.864 708.227 7.68 705.091 7.68H698.227V14.544ZM712.243 25.344C712.243 22.464 710.083 21.024 705.763 21.024H698.227V29.904H706.339C708.387 29.904 709.875 29.536 710.803 28.8C711.763 28.064 712.243 26.912 712.243 25.344Z" fill="#F16665"/>
+                        </svg>    
+                    </h2>
+                    <div class="swiper-section swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="contact__item">
+                                    <div class="contact__gray-text">Должность</div>
+                                    <div class="contact__item__name">
+                                        Имя Фамилия
+                                    </div>
+                                    <div class="contact__item__img swiper-lazy" data-background="./img/contact/1.jpg"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="contact__item">
+                                    <div class="contact__gray-text">Должность</div>
+                                    <div class="contact__item__name">
+                                        Имя Фамилия
+                                    </div>
+                                    <div class="contact__item__img swiper-lazy" data-background="./img/contact/2.jpg"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="contact__item">
+                                    <div class="contact__gray-text">Должность</div>
+                                    <div class="contact__item__name">
+                                        Имя Фамилия
+                                    </div>
+                                    <div class="contact__item__img swiper-lazy" data-background="./img/contact/3.jpg"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="contact__item">
+                                    <div class="contact__gray-text">Должность</div>
+                                    <div class="contact__item__name">
+                                        Имя Фамилия
+                                    </div>
+                                    <div class="contact__item__img swiper-lazy" data-background="./img/contact/2.jpg"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper__bot swiper__bot--black">
+                            <!-- If we need pagination -->
+                            <div class="swiper-count swiper-pagination">
+                                <div class="now swiper-pagination-current">1</div>
+                                <span></span>
+                                <div class="max swiper-pagination-total">4</div>
+                            </div>
+    
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper__btns">
+                                <div class="swiper__button swiper-button-prev2 black">
+                                    <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M23 10.9281H1M1 10.9281L11.0774 1M1 10.9281L11.0774 21" stroke="#132C39"/>
+                                    </svg>
+                                </div>
+                                <div class="swiper__button swiper-button-next2 black">
+                                    <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.79451e-07 11.0719L23 11.0719M23 11.0719L12.4645 21M23 11.0719L12.4645 0.999998" stroke="#132C39"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="wrap">
+                <div class="footer__wraper">
+                    <div class="footer__col">
+                        <a href="" class="footer__logo">
+                            <img src="./img/index/footer/footer-logo.svg">
+                        </a>
+                        <form class="footer__form">
+                            <input placeholder="E-MAIL">
+                            <button type="button">Отправить</button>
+                        </form>
+                    </div>
+                    <div class="footer__col">
+                        <div class="footer__info1">
+                            <div class="footer__adress">г. Москва, Авиаторов, вл 5</div>
+                            <div class="footer__time">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0)">
+                                    <path d="M7.9987 15.6663C11.6806 15.6663 14.6654 12.6816 14.6654 8.99967C14.6654 5.31778 11.6806 2.33301 7.9987 2.33301C4.3168 2.33301 1.33203 5.31778 1.33203 8.99967C1.33203 12.6816 4.3168 15.6663 7.9987 15.6663Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8 5V9L10.6667 10.3333" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0">
+                                    <rect width="16" height="16" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                    
+                                10:00 - 22:00
+                            </div>
+                        </div>
+                        <ul class="footer__social">
+                            <li>
+                                <a href=""><i class="fab fa-vk"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fab fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+<!-- плагины -->
+<script src="libs/swiper/swiper.js"></script>
+<script src="libs/tabs/tabby.min.js"></script>
+<!-- основной -->
+<script src="js/main.js"></script>
+</body>
+</html>

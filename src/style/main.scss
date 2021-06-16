@@ -1101,7 +1101,7 @@ button{
 .footer{
     margin: 0 auto;
     background: linear-gradient(90deg, #8D5CA6 0%, #4BA9DA 100%);
-    border-radius: 52px;    
+    border-radius: 20px;    
     padding-top: 81px;
     padding-bottom: 81px;
     color: #FFFFFF;
@@ -1404,7 +1404,7 @@ button{
     color: #fff;
     min-height: 176px;
     padding-top: 47px;
-    padding-bottom: 48px;
+    padding-bottom: 40px;
     position: relative;
     margin-top: 50px;
     
@@ -1482,3 +1482,4 @@ button{
 }
 
 @import './template/magazin.scss';
+@import './template/contact.scss';
