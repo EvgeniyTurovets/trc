@@ -18,6 +18,9 @@ button{
     transition: 0.3s all;
     font-family: 'KievitPro', sans-serif;
 }
+img{
+    max-width: 100%;
+}
 .wrap{
     padding-right: 15px;
     padding-left: 15px;
@@ -1483,3 +1486,4 @@ button{
 
 @import './template/magazin.scss';
 @import './template/contact.scss';
+@import './template/onas.scss';
