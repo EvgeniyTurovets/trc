@@ -2253,3 +2253,181 @@ img {
     padding-top: 0; }
   .o-nas {
     padding-top: 0; } }
+
+.catalog-top__wrap.catalog-top__wrap--blue {
+  font-family: '2MASS', sans-serif;
+  font-weight: bold; }
+  .catalog-top__wrap.catalog-top__wrap--blue svg {
+    fill: transparent;
+    stroke: #132C39; }
+
+.catalog-top__wrap.catalog-top__wrap--blue a:hover svg {
+  fill: transparent;
+  stroke: #132C39; }
+
+.catalog-top__wrap.catalog-top__wrap--blue a:hover g {
+  opacity: 0.6; }
+
+.catalog-top__wrap.catalog-top__wrap--blue a.active {
+  border-bottom: 2px solid #306591;
+  color: #306591; }
+  .catalog-top__wrap.catalog-top__wrap--blue a.active span {
+    border-color: #306591; }
+  .catalog-top__wrap.catalog-top__wrap--blue a.active svg {
+    stroke: #306591; }
+  .catalog-top__wrap.catalog-top__wrap--blue a.active g {
+    opacity: 1; }
+
+.arenda__wrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: -1px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1); }
+
+.arenda__item {
+  width: calc(100% / 3);
+  padding-top: 31px;
+  padding-right: 9px;
+  padding-left: 9px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+
+@media (min-width: 1024px) {
+  .arenda__item:nth-child(3n + 2) {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(0, 0, 0, 0.1); } }
+
+.arenda__item__img {
+  padding-bottom: 55%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 7px;
+  margin-bottom: 15px;
+  display: block;
+  transition: 0.3s all; }
+
+.arenda__item__img:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+
+.arenda__item__wraper {
+  padding-right: 31px;
+  padding-left: 31px; }
+
+.arenda__item__name {
+  display: block;
+  font-weight: bold;
+  font-size: 24px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #132C39;
+  margin-bottom: 28px; }
+
+.arenda__item__bot {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.arenda__price {
+  font-weight: bold;
+  font-size: 29px;
+  line-height: 35px; }
+  .arenda__price span {
+    font-size: 10px; }
+
+.arenda__btn {
+  background-color: transparent;
+  padding: 11px 35px;
+  border: 1px solid #306591;
+  border-radius: 7px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #306591;
+  display: inline-block;
+  transition: 0.3s all; }
+
+.arenda__btn:hover {
+  box-shadow: 0 0 5px #306591; }
+
+@media (max-width: 1299px) {
+  .arenda__item__wraper {
+    padding-right: 15px;
+    padding-left: 15px; } }
+
+@media (max-width: 1199px) {
+  .arenda__item__wraper {
+    padding-right: 10px;
+    padding-left: 10px; }
+  .arenda__btn {
+    padding: 8px 20px; }
+  .arenda__price {
+    font-size: 25px; }
+  .arenda__item__name {
+    font-size: 22px; } }
+
+@media (min-width: 700px) and (max-width: 1023px) {
+  .arenda__item:nth-child(2n + 1) {
+    border-right: 1px solid rgba(0, 0, 0, 0.1); } }
+
+@media (max-width: 1023px) {
+  .arenda__item {
+    width: 50%; } }
+
+@media (max-width: 699px) {
+  .arenda__item {
+    width: 100%; } }
+
+@media (max-width: 374px) {
+  .arenda__btn {
+    padding: 7px 15px;
+    font-size: 12px; }
+  .arenda__item__wraper {
+    padding-right: 0;
+    padding-left: 0; }
+  .arenda__item__name {
+    font-size: 20px; } }
+
+.modal-title {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bold; }
+
+.modal-content-form {
+  padding-top: 30px;
+  padding-bottom: 20px; }
+  .modal-content-form input {
+    height: 44px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 6px;
+    padding: 0 24px;
+    margin-right: 10px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    width: 100%;
+    margin-bottom: 15px; }
+  .modal-content-form button {
+    width: 100%; }
+
+.modal__container.modal-mini {
+  max-width: 320px; }
+
+.form-copy {
+  opacity: 0.7;
+  font-size: 12px;
+  margin-top: 10px;
+  text-align: center; }
+
+.arenda .catalog-top {
+  margin-bottom: 50px; }
+
+@media (max-width: 767px) {
+  .arenda .catalog-top {
+    margin-bottom: 35px; } }
