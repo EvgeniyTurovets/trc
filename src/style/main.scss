@@ -710,7 +710,7 @@ img{
     position: absolute;
     right: 0;
     bottom: 0;
-    padding: 8px 16px;
+    padding: 8px 13px;
     border-radius: 10px;
     background: #F15E56;
     border-radius: 10px 0px 0px 0px;
@@ -907,6 +907,9 @@ img{
     z-index: -1;
 }
 .slider-section-item2{
+    background: #FAFAFA;
+    border-radius: 19px;
+    padding-bottom: 29px;
     .slider-section__name{
         -webkit-line-clamp: 1;
         min-height: 15px;
@@ -921,11 +924,39 @@ img{
         border-radius: 10px 10px 0px 0px;       
     }
     .slider-section__bot{
+        position: relative;
         display: flex;
         justify-content: space-between;
+        position: relative;
     }
+    
     .slider-section__wrap{
         padding: 0 30px;
+        position: relative;
+    }
+    .slider-section__wrap:before{
+        content: "";
+        width: 40px;
+        height: 40px;
+        display: block;
+        position: absolute;
+        top: calc(50% - 22px);
+        z-index: 1;
+        background-color: #fff;
+        border-radius: 100%;
+        left: -20px;
+    }
+    .slider-section__wrap:after{
+        content: "";
+        width: 40px;
+        height: 40px;
+        display: block;
+        position: absolute;
+        top: calc(50% - 22px);
+        z-index: 1;
+        background-color: #fff;
+        border-radius: 100%;
+        right: -20px;
     }
     .slider-section__type{
         display: inline-block;
@@ -959,13 +990,13 @@ img{
         background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #8D5CA6, #4BA9DA);
         background-origin: border-box;
         background-clip: content-box, border-box;
-        box-shadow: 2px 1000px 1px #fff inset;
+        box-shadow: 2px 1000px 1px #fafafa inset;
         div{
             border-radius: 7px;
             display: flex;
             align-items: center;
             justify-content: center;
-            background: #fff;
+            background: #fafafa;
             overflow: hidden;
             span{
                 background: rgb(141,92,166);
@@ -1000,12 +1031,7 @@ img{
 
 
 
-@media(max-width:1024px){
-    .slider-section-item2 .slider-section__wrap{
-        padding: 0 15px;
-    }
-    
-}
+
 @media(max-width:767px){
     .main-afisha{
         padding-bottom: 35px;
@@ -1488,3 +1514,4 @@ img{
 @import './template/contact.scss';
 @import './template/onas.scss';
 @import './template/arenda.scss';
+@import './template/afisha.scss';

@@ -184,7 +184,4 @@
         formSearch.classList.remove('active')
     })
 
-    // модалки
-    const modal = new GraphModal();
-
 })();

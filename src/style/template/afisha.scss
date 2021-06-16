@@ -1,0 +1,33 @@
+.afisha{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -12px;
+    .slider-section-item2{
+        width: calc(100% / 4 - 24px);
+        margin: 0 12px;
+        margin-bottom: 41px;
+       
+    }
+}
+@media(max-width: 1199px){
+    .afisha{
+        .slider-section-item2{
+            width: calc(100% / 3 - 24px);
+        }
+    }
+    
+}
+@media(max-width: 991px){
+    .afisha{
+        .slider-section-item2{
+            width: calc(100% / 2 - 24px);
+        }
+    }
+}
+@media(max-width: 559px){
+    .afisha{
+        .slider-section-item2{
+            width: calc(100% / 1 - 24px);
+        }
+    }
+}
