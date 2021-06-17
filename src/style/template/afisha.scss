@@ -31,3 +31,16 @@
         }
     }
 }
+
+.magazin__wrap__checkboxes .catalog-top__list{
+    margin-top: 0;
+}
+.magazin__wrap__checkboxes .catalog-top__list li{
+    font-size: 16px;
+}
+
+@media(max-width: 1024px){
+    .magazin__wrap__checkboxes .catalog-top__list{
+        margin-bottom: 20px;
+    }
+}

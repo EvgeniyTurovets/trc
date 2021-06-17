@@ -683,6 +683,7 @@ img{
     background-position: top center;
     margin-bottom: 22px;
     position: relative;
+    display: block;
 }
 
 .slider-section__data{
@@ -1460,6 +1461,9 @@ img{
     right: 60px;
     bottom: -20px;
 }
+.section-name.not-decor:after{
+    display: none;
+}
 .breadcrumb{
     display: flex;
     flex-wrap: wrap;
@@ -1515,3 +1519,4 @@ img{
 @import './template/onas.scss';
 @import './template/arenda.scss';
 @import './template/afisha.scss';
+@import './template/kak-dob.scss';

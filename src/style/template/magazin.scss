@@ -19,6 +19,7 @@
     font-size: 24px;
     line-height: 40px;
     color: rgba(#132C39, 0.3);
+    font-family: '2MASS';
     transition: 0.3s all;
 }
 .catalog-top__wrap a span{
@@ -55,7 +56,12 @@
         fill: #B7587C;
     }
 }
-
+svg.not-fill{
+    fill: transparent!important;
+}
+svg.not-stroke{
+    stroke: transparent!important;
+}
 .catalog-top__wrap.catalog-top__wrap--orang a.active{
     border-bottom: 2px solid #F9991B;
     color: #F9991B;
@@ -64,6 +70,10 @@
     }
     svg{
         fill: #F9991B;
+        stroke: #F9991B;
+    }
+    g{
+        opacity: 1;
     }
 }
 .fiolet-link{
@@ -178,6 +188,7 @@
 .magazin__wrap__top{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 20px;
 }
 
@@ -271,6 +282,7 @@
 @media(max-width: 1024px){
     .magazin__wrap__top{
         flex-direction: column;
+        align-items: flex-start;
     }
     .magazin__top__type button{
         margin-left: 0;
@@ -283,7 +295,7 @@
     
     .magazin__top__type button{
         font-size: 12px;
-        padding: 10px 5px;
+        padding: 10px 10px;
         justify-content: center;
     }
 }
