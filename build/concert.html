@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Тц</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css?v=a9d9f1bcf9a0de55e054b82ad2c18228" crossorigin="anonymous">
+    <!-- платгины -->
+    <link rel='stylesheet' type='text/css' media='screen' href='./libs/swiper/swiper.css?v=a9d9f1bcf9a0de55e054b82ad2c18228'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./libs/graf-modal/graph-modal.min.css?v=a9d9f1bcf9a0de55e054b82ad2c18228'>
+    <!-- основные стили -->
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.min.css?v=a9d9f1bcf9a0de55e054b82ad2c18228'>
+</head>
+
+<body>
+    <div class="app">
+        <nav class="mob-nav" id="mob-nav">
+            
+        </nav>
+        <form class="form-search" id="form-search">
+            <div class="wrap">
+                <input type="text" placeholder="Поиск...">
+                <button class="form-search__sub" type="button">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="#132C39" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.39258 15.6764C8.39258 12.4277 11.0262 9.79407 14.2749 9.79407C17.5237 9.79407 20.1573 12.4277 20.1573 15.6764C20.1573 18.9252 17.5237 21.5588 14.2749 21.5588C11.0262 21.5588 8.39258 18.9252 8.39258 15.6764ZM14.2749 7.79407C9.92163 7.79407 6.39258 11.3231 6.39258 15.6764C6.39258 20.0297 9.92163 23.5588 14.2749 23.5588C15.9552 23.5588 17.5127 23.033 18.7919 22.137L22.5678 25.913C22.9583 26.3035 23.5915 26.3035 23.982 25.913C24.3726 25.5224 24.3726 24.8893 23.982 24.4987L20.2735 20.7902C21.4482 19.4137 22.1573 17.6279 22.1573 15.6764C22.1573 11.3231 18.6283 7.79407 14.2749 7.79407Z" fill="current"></path>
+                    </svg>
+                </button>
+                <button class="form-search__close" type="button">
+                    <svg width="24" height="24" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z" class=""></path></svg>
+                </button>
+            </div>
+        </form>
+
+        <header class="header">
+            <div class="wrap" id="header-wrap">
+                <div class="header__top" id="headerTop">
+                    <div class="header__left">
+                        <div class="header__address">г. Москва, Авиаторов, вл 5</div>
+                        <div class="header__time">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                <path d="M7.9987 15.6663C11.6806 15.6663 14.6654 12.6816 14.6654 8.99967C14.6654 5.31778 11.6806 2.33301 7.9987 2.33301C4.3168 2.33301 1.33203 5.31778 1.33203 8.99967C1.33203 12.6816 4.3168 15.6663 7.9987 15.6663Z" stroke="#132C39" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8 5V9L10.6667 10.3333" stroke="#132C39" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0">
+                                <rect width="16" height="16" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                                
+                                
+                            10:00 - 22:00
+                        </div>
+                    </div>
+                    <div class="header__mid">
+                        <a href="">
+                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 6.81818C13 10.9545 8 14.5 8 14.5C8 14.5 3 10.9545 3 6.81818C3 5.40771 3.52678 4.05501 4.46447 3.05766C5.40215 2.06031 6.67392 1.5 8 1.5C9.32608 1.5 10.5979 2.06031 11.5355 3.05766C12.4732 4.05501 13 5.40771 13 6.81818Z" stroke="#132C39" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8 8.5C9.10457 8.5 10 7.60457 10 6.5C10 5.39543 9.10457 4.5 8 4.5C6.89543 4.5 6 5.39543 6 6.5C6 7.60457 6.89543 8.5 8 8.5Z" stroke="#132C39" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                
+                            КАК ДОБРАТЬСЯ
+                        </a>
+                        <a href="">
+                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.666016 4.50004V15.1667L5.33268 12.5L10.666 15.1667L15.3327 12.5V1.83337L10.666 4.50004L5.33268 1.83337L0.666016 4.50004Z" stroke="#132C39" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.33398 1.83337V12.5" stroke="#132C39" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10.666 4.5V15.1667" stroke="#132C39" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                
+                            СХЕМА ТРЦ
+                        </a>
+                    </div>
+                    <div class="header__right">
+                        <ul class="social">
+                            <li>
+                                <a href=""><i class="fab fa-vk"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fab fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header__bot" id="headerBot">
+                    <a href="" class="header__logo">
+                        <img src="./img/logo-main.svg" class="main-logo">
+                        <img src="./img/logo.svg" class="no-main-logo">
+                    </a>
+                    <div class="header__bot__right">
+
+                        <nav class="header__nav" id="headerNav">
+                            <ul>
+                                <li>
+                                    <a href="">Магазины</a>
+                                </li>
+                                <li>
+                                    <a href="">Еда</a>
+                                </li>
+                                <li>
+                                    <a href="">Услуги</a>
+                                </li>
+                                <li>
+                                    <a href="">Развлечения</a>
+                                </li>
+                                <li>
+                                    <a href="">Акции и новости</a>
+                                </li>
+                                <li>
+                                    <a href="">Афиши</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        
+                        <div class="header__searh">
+                            <button class="header__searh__btn" type="button">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="#132C39" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.39258 15.6764C8.39258 12.4277 11.0262 9.79407 14.2749 9.79407C17.5237 9.79407 20.1573 12.4277 20.1573 15.6764C20.1573 18.9252 17.5237 21.5588 14.2749 21.5588C11.0262 21.5588 8.39258 18.9252 8.39258 15.6764ZM14.2749 7.79407C9.92163 7.79407 6.39258 11.3231 6.39258 15.6764C6.39258 20.0297 9.92163 23.5588 14.2749 23.5588C15.9552 23.5588 17.5127 23.033 18.7919 22.137L22.5678 25.913C22.9583 26.3035 23.5915 26.3035 23.982 25.913C24.3726 25.5224 24.3726 24.8893 23.982 24.4987L20.2735 20.7902C21.4482 19.4137 22.1573 17.6279 22.1573 15.6764C22.1573 11.3231 18.6283 7.79407 14.2749 7.79407Z" fill="current"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <button class="menu-btn" id="menuBtn">
+                            <div class="menu-btn__burger">
+                                <svg class="no-active" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 12H3" stroke="#132C39" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M21 8H3" stroke="#132C39" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M21 16H3" stroke="#132C39" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <svg class="yes-active" width="24" height="24" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-times fa-w-10 fa-2x"><path fill="currentColor" d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z" class=""></path></svg>
+                            </div>
+                            Меню
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <section class="afisha-kino">
+            <div class="wrap">
+                <div class="afisha-kino__wrap">
+                    <div class="afisha-kino__left">
+                        <div class="afisha-kino__top">
+                            <div class="afisha-kino__top__left">
+                                <h1 class="afisha-kino__name">Дмитрий
+                                    Билан</h1>
+                                <div class="afisha-kino__ganr">ТРАГИКОМЕДИЯ, 16+</div>
+                            </div>
+                            <div class="afisha-kino__top__right">
+                                <button class="btn btn-blue" type="button" data-graph-path="first" data-graph-animation="fadeInUp">Купить билет</button>
+                            </div>
+                        </div>
+                        <div class="afisha-kino__body">
+                            <p>
+                            В 2000 году в ротацию телеканала MTV Russia попал первый видеоклип Димы Билана, снятый на деньги его первого продюсера Елены Кан. Видео на песню «Осень» снималось на берегу Финского залива[20]. Песня считается одной из первых студийных песен Димы Билана.
+                            </p>
+                            <p> 
+                                Будучи ещё студентом, Билан познакомился со своим будущим продюсером Юрием Айзеншписом, который сразу распознал в нём талант и начал с ним работать[21][22]. В 2002 году Билан дебютировал на сцене российского фестиваля в Юрмале — «Новая волна», на котором представил свою композицию «Бум» и занял четвёртое место[23]. После конкурса последовали съёмки клипа на эту песню, а затем на композиции «Я ночной хулиган», «Ты, только ты» и «Я ошибся, я попал». В клипе на песню «Я так люблю тебя» снялась дочь Игоря Крутого.
+                            </p>
+                                
+                        </div>
+                    </div>
+                    <a data-fslightbox="gallery" href="./img/concert/concert.jpg"  class="afisha-kino__right" style="background-image: url(./img/concert/concert.jpg);"></a>
+                </div>
+
+                <div class="raspisanie blue">
+                    <h2>Расписание</h2>
+                    <div class="raspisanie__block">
+                        <div class="raspisanie__title">Среда, 28 апреля</div>
+                        <div class="raspisanie__body">
+                            <div class="raspisanie__row">
+                                <div class="raspisanie__row__left">Зал 1 (Лос-Анджелес)</div>
+                                <div class="raspisanie__items__wrap">
+                                    <div class="raspisanie__item">
+                                        <div class="raspisanie__time">15:20</div>
+                                        <div class="raspisanie__plashka">от 150 руб.</div>
+                                    </div>
+                                    <div class="raspisanie__item">
+                                        <div class="raspisanie__time">15:20</div>
+                                        <div class="raspisanie__plashka">от 150 руб.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="raspisanie__row">
+                                <div class="raspisanie__row__left">Зал 3 (Сидней)
+                                </div>
+                                <div class="raspisanie__items__wrap">
+                                    <div class="raspisanie__item">
+                                        <div class="raspisanie__time">15:20</div>
+                                        <div class="raspisanie__plashka">от 400 руб.</div>
+                                    </div>
+                                    <div class="raspisanie__item">
+                                        <div class="raspisanie__time">15:20</div>
+                                        <div class="raspisanie__plashka">от 400 руб.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="wrap">
+                <div class="footer__wraper">
+                    <div class="footer__col">
+                        <a href="" class="footer__logo">
+                            <img src="./img/index/footer/footer-logo.svg">
+                        </a>
+                        <form class="footer__form">
+                            <input placeholder="E-MAIL">
+                            <button type="button">Отправить</button>
+                        </form>
+                    </div>
+                    <div class="footer__col">
+                        <div class="footer__info1">
+                            <div class="footer__adress">г. Москва, Авиаторов, вл 5</div>
+                            <div class="footer__time">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0)">
+                                    <path d="M7.9987 15.6663C11.6806 15.6663 14.6654 12.6816 14.6654 8.99967C14.6654 5.31778 11.6806 2.33301 7.9987 2.33301C4.3168 2.33301 1.33203 5.31778 1.33203 8.99967C1.33203 12.6816 4.3168 15.6663 7.9987 15.6663Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8 5V9L10.6667 10.3333" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0">
+                                    <rect width="16" height="16" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                    
+                                10:00 - 22:00
+                            </div>
+                        </div>
+                        <ul class="footer__social">
+                            <li>
+                                <a href=""><i class="fab fa-vk"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fab fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+<!-- модалки -->
+<div class="modal">
+
+    <div class="modal__container modal-mini" role="dialog" aria-modal="true" data-graph-target="senk">
+		<button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
+		<div class="modal-content-form">
+            <div class="modal-title">Спасибо за заявку!<br> мы свяжемся с вами</div>
+		</div>
+	</div>
+    <div class="modal__container modal-mini" role="dialog" aria-modal="true" data-graph-target="first">
+		<button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
+		<div class="modal-content-form">
+            <div class="modal-title">Купить билет</div>
+			<input type="text" placeholder="Имя">
+            <input type="text" placeholder="Телефон">
+            <button type="button" class="btn btn-blue" data-graph-path="senk">Купить</button>
+            <div class="form-copy">Нажимая на кнопку вы соглашаетесь на обработку ваших персональних данных</div>
+		</div>
+	</div>
+</div>
+
+<!-- плагины -->
+<script src="libs/swiper/swiper.js?v=a9d9f1bcf9a0de55e054b82ad2c18228"></script>
+<script src="libs/tabs/tabby.min.js?v=a9d9f1bcf9a0de55e054b82ad2c18228"></script>
+<script src="libs/graf-modal/graph-modal.min.js?v=a9d9f1bcf9a0de55e054b82ad2c18228"></script>
+<script src="libs/lightbox/fslightbox.js?v=a9d9f1bcf9a0de55e054b82ad2c18228"></script>
+<!-- основной -->
+<script src="js/main.js?v=a9d9f1bcf9a0de55e054b82ad2c18228"></script>
+</body>
+</html>

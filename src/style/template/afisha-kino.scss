@@ -1,0 +1,288 @@
+.afisha-kino__wrap{
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 124px;
+}
+.afisha-kino{
+    padding-top: 10px;
+}
+.afisha-kino__left{
+    flex: 1;
+    margin-right: 133px;
+}
+.afisha-kino__right{
+    padding-bottom: 53%;
+    flex: 0 0 512px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.afisha-kino__top{
+    display: flex;
+    border-bottom: 1px solid rgba(#000, 0.1);
+    padding-bottom: 31px;
+}
+
+.afisha-kino__top__left{
+    flex: 1;
+}
+.afisha-kino__top__right{
+    button,a{
+        margin-left: 18px;
+        padding: 16px 26px;
+    }
+}
+
+.btn.btn-red-border {
+    background-color: #fff;
+    border: 1px solid #f16665;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #F16665;
+    transition: 0.3s all;
+}
+
+.btn.btn-red-border:hover {
+    box-shadow: 0 0 19px #f16665;
+}
+.afisha-kino__name{
+    color: #132C39;
+    font-size: 36px;
+    line-height: 1.1;
+    font-family: '2MASS'; 
+    margin-bottom: 10px;
+    font-weight: normal;
+    word-break: break-word;
+}
+.afisha-kino__ganr{
+    color: #9CA1A2;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+}
+
+.afisha-kino__body{
+    .afisha-kino__title{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: #132C39;
+        margin-top: 42px;
+        margin-bottom: 8px;
+    }
+    p{
+        font-size: 18px;
+        line-height: 27px;
+        color: #132C39;
+        margin-top: 33px;
+    }
+}
+
+.raspisanie h2{
+    margin-bottom: 35px;
+    color: #132C39;
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: normal;
+    font-family: '2MASS'
+}
+
+.raspisanie__title{
+    color: #FFFFFF;
+    font-size: 24px;
+    line-height: 40px;
+    font-family: '2MASS';
+    background: #F16665;
+    border-radius: 25px;
+    padding: 32px 38px;
+}
+
+.raspisanie__body{
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.raspisanie__row{
+    border-bottom: 1px solid rgba(#000, 0.1);
+    padding-top: 32px;
+    padding-bottom: 45px;
+    display: flex;
+    align-items: center;
+}
+.raspisanie__row:last-child{
+    border-bottom: 0;
+}
+
+.raspisanie__row__left{
+    color: #132C39;
+    font-size: 18px;
+    line-height: 22px;
+    flex: 0 0 247px;
+    padding-right: 15px;
+    margin-bottom: 15px;
+}
+
+.raspisanie__time{
+    color: #132C39;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    border: 1px solid #E4E4E4;
+    border-radius: 10px;
+    padding: 9px 29px;
+    margin-right: 15px;
+    text-align: center;
+}
+.raspisanie__item{
+    display: flex;
+    align-items: center;
+    margin-right: 39px;
+}
+
+.raspisanie__plashka{
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    background-color: #F16665;
+    border-radius: 13px;
+    padding: 8px 20px;
+    text-transform: uppercase;
+    margin-right: 15px;
+}
+
+.raspisanie__items__wrap{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.raspisanie__item{
+    margin-bottom: 15px;
+}
+
+@media(max-width: 1309px){
+    .afisha-kino__top{
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+    .afisha-kino__top__right button,.afisha-kino__top__right a{
+        margin-left: 0;
+        margin-right: 15px;
+        margin-bottom: 10px;
+    }
+    .afisha-kino__top__left{
+        margin-bottom: 15px;
+    }
+}
+
+@media(max-width: 1199px){
+    .afisha-kino__left{
+        margin-right:35px;
+    }
+    .afisha-kino__right{
+        flex: 0 0 400px;
+    }
+}
+
+@media(max-width: 1023px){
+    .afisha-kino__right{
+        flex: 0 0 300px;
+    }
+}
+
+@media(max-width: 991px){
+    .afisha-kino{
+        padding-top: 25px;
+    }
+    .afisha-kino__body .afisha-kino__title{
+        margin-top: 25px;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+    .afisha-kino__name{
+        font-size: 30px;
+    }
+    .afisha-kino__ganr{
+        font-size: 12px;
+    }
+    .afisha-kino__body p{
+        font-size: 16px;
+    }
+    .afisha-kino__left{
+        margin-right: 25px;
+    }
+}
+
+@media(max-width: 767px){
+    .afisha-kino__wrap{
+        flex-direction: column;
+    }
+    .afisha-kino__left{
+        margin-right: 0;
+    }
+    .afisha-kino__right{
+        flex: auto;
+        width: 100%;
+        margin-top: 25px;
+        padding-bottom: 80%;
+    }
+    .afisha-kino__wrap{
+        padding-bottom: 50px;
+    }
+}
+
+// расписание адаптив
+@media(max-width: 767px){
+    .raspisanie__row{
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .raspisanie__row__left{
+        flex: auto;
+        text-align: left;
+        margin-bottom: 15px;
+    }
+    .raspisanie__body{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+@media(max-width: 679px){
+    .raspisanie__title{
+        font-size: 18px;
+        line-height: 1.2;
+        padding: 25px 20px;
+    }
+    .raspisanie__item{
+        margin-right: 15px;
+    }
+    .raspisanie__item{
+        margin-right: 5px;
+    }
+    .raspisanie__time{
+        margin-right: 10px;
+    }
+    .raspisanie__plashka{
+        margin-right: 10px;
+    }
+}
+
+.raspisanie.blue{
+    .raspisanie__title{
+        background-color: #6C83C1;
+    }
+    .raspisanie__plashka{
+        background-color: #6C83C1;;
+    }
+}
+

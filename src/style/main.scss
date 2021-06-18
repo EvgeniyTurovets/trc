@@ -464,6 +464,8 @@ img{
         transform: translateX(110%);
         transition: 0.3s all;
         overflow: auto;
+        border-left: 1px solid rgba(#000000, 0.3);
+        border-bottom: 1px solid rgba(#000000, 0.3);
     }
     .mob-nav.active{
         transform: translateX(0);
@@ -1419,6 +1421,7 @@ img{
         position: fixed;
         top: 69px;
         left: 0;
+        border-bottom: 1px solid rgba(#000, 0.1);
     }
     .form-search input{
         padding-left: 20px;
@@ -1525,3 +1528,5 @@ img{
 @import './template/kak-dob.scss';
 @import './template/vakancii.scss';
 @import './template/arendatoram.scss';
+@import './template/afisha-kino.scss';
+@import './template/news-d.scss';

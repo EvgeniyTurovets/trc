@@ -139,6 +139,47 @@
         }
     });
 
+	// сладер новостей
+	const swiperNews = new Swiper('.news-slider', {
+        navigation: {
+          nextEl: '.swiper-button-next2',
+          prevEl: '.swiper-button-prev2',
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            type: "fraction",
+        },
+        spaceBetween: 15,
+        slidesPerView: 2,
+        lazy: true,
+        breakpoints: {
+            768: {
+                spaceBetween: 33,
+                 slidesPerView: 4,
+            },
+            1024: {
+                spaceBetween: 33,
+                 slidesPerView: 6,
+            },
+        }
+    });
+
+	// сладер детальной страницы
+	const swiperDetailPage = new Swiper('.detail-page-slider', {
+        navigation: {
+          nextEl: '.swiper-button-next2',
+          prevEl: '.swiper-button-prev2',
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            type: "fraction",
+        },
+		effect: 'fade',
+        slidesPerView: 1,
+        lazy: true,
+    });
+
+
     // табы на главной всегда нужно после слайдеров запускать а то ломаются
     let tabsNavs = document.querySelectorAll('.tabs-nav')
     tabsNavs.forEach(function(el,index){
