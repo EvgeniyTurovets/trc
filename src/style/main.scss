@@ -1439,7 +1439,7 @@ img{
     margin-top: 50px;
     
     .wrap{
-        padding-right: 300px;
+        padding-right: 340px;
         padding-left: 60px;
         max-width: 100%;
     }
@@ -1493,9 +1493,12 @@ img{
 
 @media(max-width: 1440px){
     .section-name{
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
         width: auto;
+    }
+    .section-name .wrap{
+        padding-left: 25px;
     }
 }
 @media(max-width: 680px){
@@ -1520,3 +1523,5 @@ img{
 @import './template/arenda.scss';
 @import './template/afisha.scss';
 @import './template/kak-dob.scss';
+@import './template/vakancii.scss';
+@import './template/arendatoram.scss';

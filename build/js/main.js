@@ -184,4 +184,52 @@
         formSearch.classList.remove('active')
     })
 
+	// Акордион вакансий
+    if(document.querySelector('.acordion')){
+		let acordionToggle = document.querySelectorAll('.acordion__toggle')
+		let acordionItems = document.querySelectorAll('.acordion__item')
+		acordionToggle.forEach(el => el.addEventListener('click', function(){
+
+			let thisParent = el.closest('.acordion__item')
+
+			if(thisParent.classList.contains('active')){
+				thisParent.classList.remove('active')
+			}else{
+				acordionItems.forEach(function(el,index){
+					el.classList.remove('active')
+				})
+				thisParent.classList.add('active')
+			}
+		}))
+    }
+
+	// модалки
+	const modal = new GraphModal();
+
+	// Арендаторам форма
+	if(document.querySelector('.zayvka-orendu')){
+		let zayvkaInputDiv = document.querySelectorAll('.zayvka__input')
+		let zayvkaInput = document.querySelectorAll('.zayvka__input input')
+
+		zayvkaInputDiv.forEach(el => el.addEventListener('click', function(){
+			el.classList.add('active')
+			el.querySelector('input').focus()
+		}))
+
+		zayvkaInput.forEach(el => el.addEventListener('blur', function(){
+			if(!el.value.length > 0){
+				el.closest('.zayvka__input').classList.remove('active')
+			}
+		}))
+
+		let file = document.getElementById('file')
+		let fileConteiner = document.getElementById('file-conteiner')
+		file.addEventListener('change', handleFiles, false)
+
+		function handleFiles() {
+			const fileList = this.files[0];
+			fileConteiner.innerHTML = fileList.name
+		}
+	}
+	
 })();
