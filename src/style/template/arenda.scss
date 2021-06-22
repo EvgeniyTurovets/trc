@@ -3,13 +3,13 @@
     font-weight: bold;
 
     svg{
-        fill: transparent;
+        fill: rgba(19,44,57,1);
         stroke: #132C39;
     }
 }
 .catalog-top__wrap.catalog-top__wrap--blue a:hover{
     svg{
-        fill: transparent;
+        fill: rgba(19,44,57,1);
         stroke: #132C39;
     }
     g{
@@ -24,6 +24,10 @@
     }
     svg{
         stroke: #306591;
+        fill: #306591;
+    }
+    path{
+        opacity: 1;
     }
     g{
         opacity: 1;

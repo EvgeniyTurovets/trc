@@ -177,7 +177,16 @@ img{
         display: none;
     }
 }
+.menu-btn.active{
+    background: linear-gradient(90deg, #8D5CA6 0%, #4BA9DA 100%);
+    border: 0;
+    color: #fff;
+}
 .menu-btn.active .menu-btn__burger{
+    
+    svg path{
+        fill: #fff;
+    }
     .yes-active{
         display: block;
     }
@@ -219,8 +228,12 @@ img{
 .main-logo{
     display: none;
 }
+.header{
+    background-color: #fff;
+}
 @media(min-width: 992px){
     .header.main{
+        background-color: transparent;
         .header__address{
             color: #fff;
         }
@@ -441,7 +454,47 @@ img{
 
 .mob-nav{
     display: none;
+    position: absolute;
+    background-color: #fff;
+    top: 155.6px;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    z-index: 4;
+    padding-top: 100px;
+    overflow: auto;
+    transition: 0.3s all;
+    opacity: 0;
 }
+.mob-nav .wrap{
+    display: flex;
+    flex-direction: column;
+}
+.mob-nav.active{
+    display: block;
+    opacity: 1;
+    animation: fadein 0.3s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+.mob-nav ul li{
+    color: #132C39;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 24px;
+    font-family: '2MASS';
+    margin-bottom: 47px;
+    transition: 0.3s all;
+}
+.mob-nav ul li:hover{
+    opacity: 0.8;
+}
+body.no-sroll{
+    overflow: hidden;
+}
+
 @media(max-width: 991px){
     .header__bot{
         padding-top: 10px;
@@ -452,24 +505,11 @@ img{
         margin-right: 25px;
     }
     .mob-nav{
-        display: flex;
-        flex-direction: column;
-        position: fixed;
         top: 69px;
-        right: 0;
-        z-index: 5;
-        background-color: #fff;
-        width: 300px;
-        bottom: 0;
-        transform: translateX(110%);
-        transition: 0.3s all;
-        overflow: auto;
-        border-left: 1px solid rgba(#000000, 0.3);
-        border-bottom: 1px solid rgba(#000000, 0.3);
+        padding-top: 50px;
+        position: fixed;
     }
-    .mob-nav.active{
-        transform: translateX(0);
-    }
+   
     .header__mid{
         flex-direction: column;
         align-items: flex-start;
@@ -485,7 +525,7 @@ img{
         flex-direction: column;
         align-items: flex-start;
         border-bottom: 0;
-        padding-left: 15px;
+        padding-top: 15px;
     }
     .header__mid a{
         margin-bottom: 15px;
@@ -504,11 +544,14 @@ img{
     .header__mid{
         margin-bottom: 25px;
     }
-    .header__nav a{
-        font-size: 20px;
-        line-height: 1.2;
-        border-bottom: 1px solid rgba(19,44,57,.2);
-        padding: 10px 15px;
+    .header__nav li a{
+        padding: 0px;
+        color: #132c39;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 24px;
+        font-family: '2MASS';
+        text-transform: initial;
     }
     .header__nav a:hover{
         text-decoration: none;
@@ -527,7 +570,6 @@ img{
         left: 0;
         width: 100%;
         z-index: 5;
-        border-bottom: 1px solid rgba(#132C39, 0.2) ;
         height: 69px;
     }
     .first-sec-item{
@@ -542,6 +584,20 @@ img{
     .first-sec__title{
         font-size: 27px;
     }
+    .mob-nav ul li{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .header__nav li a{
+        font-size: 18px;
+    }
+    .header__nav li{
+        margin-bottom: 20px;
+    }
+    .mob-nav{
+        padding-top: 25px;
+    }
+    
 }
 @media(max-width: 374px){
     .menu-btn{
@@ -554,6 +610,7 @@ img{
     .first-sec__title{
         font-size: 22px;
     }
+  
 }
 
 .title{
@@ -772,7 +829,7 @@ img{
     }
 }
 .btn.btn-red{
-    background: #F16665;
+    background: #EF5241;
     border: 0;
     font-weight: bold;
     font-size: 14px;
@@ -781,7 +838,7 @@ img{
     color: #FEFEFE;
 }
 .btn.btn-red:hover{
-    box-shadow: 0px 0px 19px rgba(241, 102, 101, 0.77);
+    box-shadow: 0px 0px 19px rgba(#EF5241, 0.77);
 }
 .swiper-bot-btn{
     flex: 1;
@@ -1530,3 +1587,5 @@ img{
 @import './template/arendatoram.scss';
 @import './template/afisha-kino.scss';
 @import './template/news-d.scss';
+@import './template/magazin-d.scss';
+@import './template/uslugi.scss';

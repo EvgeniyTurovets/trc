@@ -50,6 +50,50 @@
 .btn.btn-red-border:hover {
     box-shadow: 0 0 19px #f16665;
 }
+.btn.btn-fiolet-border {
+    background-color: #fff;
+    border: 1px solid #9263A7;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #9263A7;
+    transition: 0.3s all;
+}
+
+.btn.btn-fiolet-border:hover {
+    box-shadow: 0 0 19px #9263A7;
+}
+
+.btn.btn-fiolet{
+    background-color: #9263A7;
+    border: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #fff;
+    transition: 0.3s all;
+}
+.btn.btn-fiolet:hover{
+    box-shadow: 0 0 19px #9263A7;
+}
+
+.btn.btn-fiolet2{
+    background-color: #BF5E7A;
+    border: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #fff;
+    transition: 0.3s all;
+}
+.btn.btn-fiolet2:hover{
+    box-shadow: 0 0 19px #BF5E7A;
+}
+
+
 .afisha-kino__name{
     color: #132C39;
     font-size: 36px;
@@ -279,10 +323,10 @@
 
 .raspisanie.blue{
     .raspisanie__title{
-        background-color: #6C83C1;
+        background-color: #9263A7;
     }
     .raspisanie__plashka{
-        background-color: #6C83C1;;
+        background-color: #9263A7;
     }
 }
 

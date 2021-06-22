@@ -12,16 +12,18 @@
     });
     
     // меню 
+    let header = document.querySelector('.header')
     let headerNav = document.getElementById('headerNav')
     let headerTop =  document.getElementById('headerTop') 
     let headerBot =  document.getElementById('headerBot') 
     let mobNav = document.getElementById('mob-nav')
+    let mobNavWrap = document.getElementById('mob-nav').querySelector('.wrap')
     let headerBotRight = document.querySelector('.header__bot__right')
 
     function navRefresh(){
       if(window.innerWidth < 992){
-        mobNav.appendChild(headerNav)
-        mobNav.appendChild(headerTop)
+        mobNavWrap.appendChild(headerNav)
+        mobNavWrap.appendChild(headerTop)
       }else{
         headerBotRight.appendChild(headerNav)
         document.getElementById('header-wrap').insertBefore(headerTop, headerBot)
@@ -37,10 +39,22 @@
 
     // меню кнопка
     let menuBtn = document.getElementById('menuBtn')
+    let ifmain;
 
     menuBtn.addEventListener('click', () =>{
         menuBtn.classList.toggle('active')
         mobNav.classList.toggle('active')
+        document.querySelector('body').classList.toggle('no-sroll')
+
+        if(header.classList.contains('main')){
+            ifmain = 1;
+        }
+       
+        if(ifmain == 1){
+            header.classList.toggle('main')
+        }
+        
+        console.log(ifmain)
     })
    
     
@@ -245,32 +259,8 @@
     }
 
 	// модалки
-	const modal = new GraphModal();
-
-	// Арендаторам форма
-	if(document.querySelector('.zayvka-orendu')){
-		let zayvkaInputDiv = document.querySelectorAll('.zayvka__input')
-		let zayvkaInput = document.querySelectorAll('.zayvka__input input')
-
-		zayvkaInputDiv.forEach(el => el.addEventListener('click', function(){
-			el.classList.add('active')
-			el.querySelector('input').focus()
-		}))
-
-		zayvkaInput.forEach(el => el.addEventListener('blur', function(){
-			if(!el.value.length > 0){
-				el.closest('.zayvka__input').classList.remove('active')
-			}
-		}))
-
-		let file = document.getElementById('file')
-		let fileConteiner = document.getElementById('file-conteiner')
-		file.addEventListener('change', handleFiles, false)
-
-		function handleFiles() {
-			const fileList = this.files[0];
-			fileConteiner.innerHTML = fileList.name
-		}
-	}
-	
+    if(document.querySelector('.modal')){
+        const modal = new GraphModal();
+    }
+		
 })();
