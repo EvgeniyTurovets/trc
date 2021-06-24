@@ -1576,6 +1576,9 @@ body.no-sroll{
         display: none;
     }
 }
+.modal__container{
+    border-radius: 20px;
+}
 
 @import './template/magazin.scss';
 @import './template/contact.scss';
@@ -1589,3 +1592,4 @@ body.no-sroll{
 @import './template/news-d.scss';
 @import './template/magazin-d.scss';
 @import './template/uslugi.scss';
+@import './template/carta.scss';
