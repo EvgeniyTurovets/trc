@@ -54,7 +54,6 @@
             header.classList.toggle('main')
         }
         
-        console.log(ifmain)
     })
    
     
