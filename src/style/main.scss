@@ -512,6 +512,10 @@ img{
 .mob-nav .wrap{
     display: flex;
     flex-direction: column;
+    opacity: 0;
+}
+.app.loaded .mob-nav .wrap{
+    opacity: 1;
 }
 .mob-nav.active{
     display: block;
@@ -721,16 +725,20 @@ body.no-sroll{
     max-width: 1600px;
     transform: translateY(64%) translateX(50%);
     z-index: 1;
-    animation-name: spin;
-    animation-duration: 10000ms;
+    
+    animation-duration: 7000ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    opacity: 0;
     img{
         max-width: 100%;
         width: 100%;
     }
 }
-
+.app.loaded .first-section-anim{
+    opacity: 1;
+    animation-name: spin;
+}
 @keyframes spin { 
     from { 
         transform: translateY(64%) translateX(50%) rotate(0deg); 
@@ -1488,7 +1496,7 @@ body.no-sroll{
         margin-right: 0;
     }
     .footer{
-        margin-bottom: 50px;
+        margin-bottom: 20px;
     }
     .footer__info1{
         display: none;
@@ -1507,7 +1515,7 @@ body.no-sroll{
     }
     
 }
-@media(max-width: 424px){
+@media(max-width: 559px){
     .footer__form{
         flex-direction: column;
         align-items: center;
@@ -1517,6 +1525,7 @@ body.no-sroll{
         width: 100%;
         margin-bottom: 16px;
         margin-right: 0;
+        max-width: 295px;
     }
     .footer__form button{
         width: 167px;
@@ -1732,7 +1741,7 @@ body.no-sroll{
 .footer-mob-label{
     display: none;
 }
-@media(max-width:424px){
+@media(max-width:559px){
     .footer-mob-label{
         display: block;
         font-size: 11px;

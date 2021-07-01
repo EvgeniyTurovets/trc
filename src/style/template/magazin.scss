@@ -20,6 +20,7 @@
     line-height: 40px;
     color: rgba(#132C39, 0.3);
     font-family: '2MASS';
+    font-weight: 900;
     transition: 0.3s all;
 }
 .catalog-top__wrap a span{
@@ -164,6 +165,7 @@ svg.not-stroke{
 
     .catalog-top__wrap a{
         margin-right: 30px;
+        font-weight: 400;
     }
     .catalog-top__list ul li{
         margin-right: 10px;
@@ -259,6 +261,7 @@ svg.not-stroke{
         color: #B7587C;
         svg{
             margin-left: 10px;
+            min-width: 28px;
         }
         svg.active{
             display: none;
@@ -295,17 +298,36 @@ svg.not-stroke{
     }
     .magazin__top__type button{
         margin-left: 0;
-        width: 50%;
         max-width: 170px;
+        width: 164px;
+        height: 60px;
     }
     .magazin__top__type button:first-child{
         margin-right: 15px;
     }
     
     .magazin__top__type button{
+        font-size: 14px;
+        padding: 10px 15px;
+        justify-content: space-between;
+    }
+}
+
+@media(max-width: 374px){
+    .magazin__top__type button{
         font-size: 12px;
         padding: 10px 10px;
-        justify-content: center;
+        width: 50%;
+        margin-right: 0;
+        margin: 0 5px;
+    }
+    .magazin__top__type button:first-child{
+        margin-right: 0;
+    }
+    .magazin__top__type{
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 -5px;
     }
 }
 @media(max-width: 767px){

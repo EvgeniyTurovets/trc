@@ -294,4 +294,9 @@
     }
     
 
+    document.addEventListener("DOMContentLoaded", function(){
+        document.querySelector('.app').classList.add('loaded')
+    });
+    
+
 })();
