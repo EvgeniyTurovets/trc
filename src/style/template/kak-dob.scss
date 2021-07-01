@@ -224,12 +224,30 @@
     .kak-dob-time{
         margin-right: 0;
         text-align: center;
+        max-width: 276px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .kak-dob-time-hour{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .kak-dob__link{
+        max-width: 196px;
+        margin: 0 auto;
+        display: block;
+        margin-top: 42px;
     }
     .kak-dob__col:first-child{
         margin-right: 0;
     }
     .kak-dob__left:after{
         display: none;
+    }
+    .kak-dob__bot{
+        margin-bottom: 40px;
     }
     .kak-dob__bot .contact__title{
         font-size: 22px;

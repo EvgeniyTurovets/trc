@@ -87,12 +87,19 @@
 
 @media(max-width: 767px){
     .news-d__title{
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: flex-start;
         margin-bottom: 20px;
         h1{
             margin-bottom: 20px;
             font-size: 24px;
+        }
+        .logo-label{
+            margin: 0 auto;
+            min-width: 215px;
+            height: 118px;
+            margin: 0 auto;
+            margin-bottom: 30px;
         }
     }
     .news-d__text p{
@@ -189,7 +196,7 @@
         font-size: 28px;
     }
     .detail__floor{
-        margin-right: 15px;
+        margin-right: 24px;
     }
     .detail__title__block{
         padding-left: 15px;
@@ -202,20 +209,23 @@
         flex-wrap: wrap;
     }
     .detail__title__block{
-        flex: 0 0 100%;
+        flex: 1;
         order: 1;
         padding: 0;
-        margin-bottom: 25px;
     }
     .detail__title .logo-label{
-        order: 2;
-        margin-right: 40px;
+        margin-right: 20px;
     }
     .detail__right{
         order: 3;
+        width: 100%;
+        margin-top: 20px;
     }
     .detail__floor{
         margin-right: 25px;
+    }
+    .detail__title{
+        align-items: flex-start;
     }
 }
 
@@ -224,31 +234,45 @@
         width: 100%;
         margin-top: 25px;
     }
+    .detail__title__block {
+        padding-top: 2px;
+    }
     .detail__title__block h1{
         font-size: 22px;
+       
+    }
+    .logo-label{
+        width: 100px;
+        min-width: 100px;
+        height: 73px;
+        margin-right: 20px;
     }
 }
 
 @media(max-width: 640px){
     .detail__right{
         .detail__floor{
-            margin-right: 15px;
+            margin-right: 24px;
         }
-        .btn.btn-orang{
-            padding: 15px 20px;
-        }
+        
     }
-
-    .logo-label {
-        width: 180px;
-        min-width: 180px;
-        height: 100px;
+    .detail__title__block h1{
+        font-size: 20px;
+line-height: 24px;
     }
+    
 }
 
 @media(max-width: 374px){
-    .detail__right .btn.btn-orang{
-        font-size: 12px;
+   
+    .detail__right{
+        .btn{
+            font-size: 12px;
+            padding: 15px 20px;
+        }
+    }
+    .detail__title__block h1{
+        font-size: 18px;
     }
 }
 

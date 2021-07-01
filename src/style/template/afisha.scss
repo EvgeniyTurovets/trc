@@ -28,6 +28,18 @@
     .afisha{
         .slider-section-item2{
             width: calc(100% / 1 - 24px);
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
+}
+
+@media(max-width: 374px){
+    .afisha{
+        .slider-section-item2{
+            width: calc(100% / 1 - 24px);
+            margin-left: 12px;
+            margin-right: 12px;
         }
     }
 }

@@ -262,5 +262,37 @@
     if(document.querySelector('.modal')){
         const modal = new GraphModal();
     }
-		
+
+    let cmodal = document.querySelectorAll('.c-modal')
+    
+    cmodal.forEach(el => el.addEventListener('mouseenter', function(){
+        el.classList.add('active')
+    }))
+    cmodal.forEach(el => el.addEventListener('mouseout', function(){
+        el.classList.remove('active')
+    }))
+
+
+    // афиша кино
+    if(document.querySelector('.afisha-kino__right')){
+        let afisha_kino_right = document.querySelector('.afisha-kino__right')
+        let afisha_kino_left = document.querySelector('.afisha-kino__left')
+        let afisha_kino_wrap = document.querySelector('.afisha-kino__wrap')
+    
+        function afishRefreshMob(){
+            if(window.innerWidth < 768){
+                afisha_kino_left.appendChild(afisha_kino_right)
+               
+            }else{
+                afisha_kino_wrap.appendChild(afisha_kino_right)
+            }
+        }
+        afishRefreshMob();
+    
+        window.addEventListener('resize', () => {
+            afishRefreshMob();
+        })
+    }
+    
+
 })();

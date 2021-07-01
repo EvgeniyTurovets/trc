@@ -172,6 +172,10 @@
 }
 .c-modal{
     pointer-events: bounding-box;
+    transition: 0.3s all;   
+    stroke: #2b363cff;
+    stroke-width: 0px;
+    fill: none;
     path{
         transition: 0.3s all;   
         stroke: #2b363cff;
@@ -179,7 +183,13 @@
     }
    
 }
-.c-modal:hover{
+.c-modal.active{
+    background: linear-gradient(90deg, #8D5CA6 0%, #4BA9DA 100%);
+    opacity: 0.7;
+    cursor: pointer;
+    position: relative;
+    fill : url(#gradient);
+    transition: 0.3s all;
     path{
         stroke-width: 2px;
         stroke: #000;

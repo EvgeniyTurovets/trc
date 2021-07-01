@@ -70,6 +70,11 @@
     margin-bottom: -1px;
     border-top: 1px solid rgba(#000000, 0.1);
 }
+@media(max-width: 767px){
+    .arenda__wrap{
+        border-top: 0;
+    }
+}
 .arenda__item{
     width: calc(100% / 3);
     padding-top: 31px;
@@ -346,6 +351,8 @@
 @media(max-width: 767px){
     .razvlechenia__top{
         flex-direction: column;
+        border-top: 0;
+        padding-top: 0;
     }
     .razv__img{
         width: 100%;
