@@ -2525,6 +2525,10 @@ svg.not-stroke {
   .o-nas__info-item {
     margin-right: 50px; } }
 
+@media (max-width: 767px) {
+  .o-nas__img {
+    border-radius: 0; } }
+
 @media (max-width: 550px) {
   .o-nas__info-item {
     margin-bottom: 25px;
@@ -4187,7 +4191,9 @@ svg.not-stroke {
 @media (max-width: 767px) {
   .detail__text {
     font-size: 16px;
-    line-height: 25px; } }
+    line-height: 25px; }
+  .detail-page-slider__item {
+    border-radius: 0; } }
 
 .detail-akcii {
   position: relative;
