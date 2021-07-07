@@ -20,7 +20,7 @@
     line-height: 40px;
     color: rgba(#132C39, 0.3);
     font-family: '2MASS';
-    font-weight: 900;
+    font-weight: 400;
     transition: 0.3s all;
 }
 .catalog-top__wrap a span{
@@ -33,6 +33,15 @@
     border-radius: 100%;
     margin-right: 20px;
     transition: 0.3s all;
+    position: relative;
+    .absolute{
+        position: absolute;
+        bottom: 0;
+        right: -5px;
+        path{
+            fill: #000;
+        }
+    }
 }
 .catalog-top__wrap a svg{
     fill: rgba(#132C39, 0.3);
