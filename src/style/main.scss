@@ -726,7 +726,7 @@ body.no-sroll{
     transform: translateY(64%) translateX(50%);
     z-index: 1;
     
-    animation-duration: 7000ms;
+    animation-duration: 5000ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     opacity: 0;
@@ -750,6 +750,9 @@ body.no-sroll{
 @media(max-width: 767px){
     .first-section-anim{
         width: 150vw;
+        transform: translate(0);
+        left: -40vw;
+        bottom: 5vw;
     }
 }
 @media(min-height: 1081px){

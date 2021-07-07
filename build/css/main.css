@@ -797,8 +797,8 @@ body.no-sroll {
   -webkit-transform: translateY(64%) translateX(50%);
           transform: translateY(64%) translateX(50%);
   z-index: 1;
-  -webkit-animation-duration: 7000ms;
-          animation-duration: 7000ms;
+  -webkit-animation-duration: 5000ms;
+          animation-duration: 5000ms;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
@@ -831,7 +831,11 @@ body.no-sroll {
 
 @media (max-width: 767px) {
   .first-section-anim {
-    width: 150vw; } }
+    width: 150vw;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    left: -40vw;
+    bottom: 5vw; } }
 
 @media (min-height: 1081px) {
   .first-section {
@@ -2436,12 +2440,13 @@ svg.not-stroke {
   padding-top: 30px; }
 
 .o-nas__img {
-  border-radius: 52px;
+  border-radius: 20px;
   overflow: hidden;
   margin-bottom: 50px; }
 
 .o-nas__img img {
-  max-width: 100%; }
+  max-width: 100%;
+  width: 100%; }
 
 .o-nas__bot {
   display: -ms-flexbox;
