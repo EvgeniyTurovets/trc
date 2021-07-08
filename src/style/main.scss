@@ -30,6 +30,7 @@ img{
 }
 .header{
     margin-bottom: 50px;
+    transition: 0.3s all;
 }
 .row{
     display: flex;
@@ -271,7 +272,7 @@ img{
 .header{
     background-color: #fff;
 }
-@media(min-width: 992px){
+
     .header.main{
         background-color: transparent;
         .header__address{
@@ -320,7 +321,7 @@ img{
         }
     } 
     
-}
+
   
 
 
@@ -762,9 +763,9 @@ body.no-sroll{
 
 @media(max-width: 767px){
     .first-section-anim{
-        width: 200vw;
+        width: 240vw;
         transform: translate(0);
-        left: -80vw;
+        left: -109vw;
         bottom: 20vw;
     }
 }
@@ -1603,10 +1604,23 @@ body.no-sroll{
 }
 
 @media(max-width: 991px){
+    .first-section{
+        margin-top: -69px;
+        padding-top: 69px;
+    }
     .form-search{
         position: fixed;
         top: 69px;
         left: 0;
+        
+    }
+    .header.sroll{
+        border-bottom: 1px solid rgba(#000, 0.1);
+    }
+    .header.main{
+        border-bottom: 0;
+    }
+    .form-search.active{
         border-bottom: 1px solid rgba(#000, 0.1);
     }
     .form-search input{
