@@ -38,20 +38,24 @@
 
     thisMain = 0
     window.addEventListener('scroll', () => {
-        console.log(window.scrollY)
         
-        if(header.classList.contains('main')){
-            thisMain = 1;
-        }
-        if(window.scrollY > 0){
-            header.classList.add('sroll')
-            header.classList.remove('main')
-        }else{
-            header.classList.remove('sroll')
-            if(thisMain){
-                header.classList.add('main')
+        if(window.innerWidth <= 992){
+          
+            if(header.classList.contains('main')){
+                thisMain = 1;
+            }
+
+            if(window.scrollY > 0){
+                header.classList.add('sroll')
+                header.classList.remove('main')
+            }else{
+                header.classList.remove('sroll')
+                if(thisMain){
+                    header.classList.add('main')
+                }
             }
         }
+        
     })
 
 
