@@ -808,6 +808,17 @@ body.no-sroll {
     max-width: 100%;
     width: 100%; }
 
+.first-section-img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-image: url("../img/index/girl.png");
+  background-position: bottom center;
+  background-size: cover;
+  z-index: 2; }
+
 .app.loaded .first-section-anim {
   opacity: 1;
   -webkit-animation-name: spin;
@@ -831,11 +842,11 @@ body.no-sroll {
 
 @media (max-width: 767px) {
   .first-section-anim {
-    width: 150vw;
+    width: 200vw;
     -webkit-transform: translate(0);
             transform: translate(0);
-    left: -40vw;
-    bottom: 5vw; } }
+    left: -80vw;
+    bottom: 20vw; } }
 
 @media (min-height: 1081px) {
   .first-section {
