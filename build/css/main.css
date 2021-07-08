@@ -797,8 +797,8 @@ body.no-sroll {
   -webkit-transform: translateY(64%) translateX(50%);
           transform: translateY(64%) translateX(50%);
   z-index: 1;
-  -webkit-animation-duration: 5000ms;
-          animation-duration: 5000ms;
+  -webkit-animation-duration: 15000ms;
+          animation-duration: 15000ms;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
