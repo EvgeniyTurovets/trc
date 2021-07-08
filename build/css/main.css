@@ -817,11 +817,8 @@ body.no-sroll {
   background-image: url("../img/index/girl.png");
   background-position: bottom center;
   background-repeat: no-repeat;
+  background-size: cover;
   z-index: 2; }
-
-@media (max-width: 991px) {
-  .first-section-img {
-    background-size: auto 560px; } }
 
 .app.loaded .first-section-anim {
   opacity: 1;
