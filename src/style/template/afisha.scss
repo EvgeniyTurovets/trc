@@ -9,6 +9,36 @@
        
     }
 }
+.fiolet2-link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9263A7;
+    text-transform: uppercase;
+    padding: 5px 0;
+}
+.fiolet2-link svg {
+    fill: #9263A7;
+    margin-left: 5px;
+    transition: .3s all;
+}
+.slider-section__type.data-fiolet{
+    background: transparent;
+    color: #9263A7;
+    -webkit-text-fill-color: #9263A7;
+    -webkit-background-clip:initial
+}
+.slider-section__buy.data-fiolet{
+    button{
+        background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0)),linear-gradient(101deg,#8d5ca6,#9263A7)
+    }
+    button div span{
+        -webkit-text-fill-color: #9263A7;
+    }
+}
+.slider-section-item2 .slider-section__data.data-fiolet{
+    background: #9263A7;
+}
 @media(max-width: 1199px){
     .afisha{
         .slider-section-item2{

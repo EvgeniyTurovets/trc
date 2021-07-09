@@ -63,6 +63,35 @@
     }
 }
 
+.catalog-top__wrap.catalog-top__wrap-fiolet2{
+    font-family: '2MASS', sans-serif;
+
+    svg{
+        fill: #9263A7;
+    }
+}
+.catalog-top__wrap.catalog-top__wrap--fiolet2 a:hover{
+    svg{
+        fill: #9263A7;
+    }
+    g{
+        opacity: 0.6;
+    }
+}
+.catalog-top__wrap.catalog-top__wrap--fiolet2 a.active{
+    border-bottom: 2px solid #9263A7;
+    color: #9263A7;
+    span{
+        border-color: #9263A7;
+    }
+    svg{
+        fill: #9263A7;
+    }
+    g{
+        opacity: 1;
+    }
+}
+
 
 .arenda__wrap{
     display: flex;
@@ -111,9 +140,13 @@
     display: block;
     font-weight: bold;
     font-size: 24px;
-    text-decoration-line: underline;
+    border-bottom: 1px solid #132C39;
     color: #132C39;
     margin-bottom: 28px;
+    display: inline-block;
+}
+.arenda__item__name:hover{
+    border-bottom: 1px solid transparent;
 }
 .arenda__item__bot{
     display: flex;
@@ -281,8 +314,12 @@
     font-weight: bold;
     font-size: 24px;
     color: #132C39;
-    text-decoration-line: underline;
+    border-bottom: 1px solid #132C39;
+    transition: 0.3s all;
     margin-right: 25px;
+}
+.razv__name:hover{
+    border-bottom: 1px solid transparent;
 }
 .razv__floo{
     font-size: 14px;
@@ -317,13 +354,15 @@
         a{
             font-weight: bold;
             font-size: 24px;
-            text-decoration-line: underline;
+            border-bottom: 1px solid #132C39;
             color: #132C39;
             display: block;
+            display: inline-block;
             margin-bottom: 9px;
         }
         a:hover{
             text-decoration: none;
+            border-bottom: 1px solid transparent;
         }
         span{
             display: block;

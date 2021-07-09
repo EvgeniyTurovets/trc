@@ -161,7 +161,9 @@ img {
 
 .header {
   margin-bottom: 50px;
-  transition: 0.3s all; }
+  transition: 0.3s all;
+  position: relative;
+  z-index: 5; }
 
 .row {
   display: -ms-flexbox;
@@ -234,8 +236,8 @@ img {
   display: block;
   color: #132C39; }
   .header__right a svg {
-    width: 14px;
-    height: 14px; }
+    width: 15px;
+    height: 15px; }
 
 @media (max-width: 991px) {
   .header__right a svg {
@@ -461,6 +463,10 @@ img {
 .first-sec-slider .swiper__bot {
   border-top: 1px solid rgba(255, 255, 255, 0.2); }
 
+.first-sec-slider {
+  padding-left: 15px;
+  margin-left: -15px; }
+
 .swiper-slide {
   height: 100%; }
 
@@ -596,7 +602,7 @@ img {
   display: none;
   position: absolute;
   background-color: #fff;
-  top: 155.6px;
+  top: 155px;
   left: 0;
   width: 100%;
   bottom: 0;
@@ -761,7 +767,8 @@ body.no-sroll {
   position: absolute;
   width: 61px;
   height: 89px;
-  background-image: url("../img/decor/decor1.png");
+  background-image: url("../img/decor/decor1.svg");
+  background-repeat: no-repeat;
   background-size: contain;
   top: 24px;
   left: 51%;
@@ -774,7 +781,8 @@ body.no-sroll {
   position: absolute;
   width: 61px;
   height: 89px;
-  background-image: url("../img/decor/decor1.png");
+  background-image: url("../img/decor/decor1.svg");
+  background-repeat: no-repeat;
   background-size: contain;
   bottom: -30px;
   right: 30%;
@@ -893,7 +901,7 @@ body.no-sroll {
   background-color: #000; }
 
 .slider-section__img {
-  padding-bottom: 50%;
+  padding-bottom: 56%;
   border-radius: 10px;
   overflow: hidden;
   background-size: cover;
@@ -1103,7 +1111,8 @@ body.no-sroll {
   position: absolute;
   width: 61px;
   height: 89px;
-  background-image: url(../img/decor/decor1.png);
+  background-image: url(../img/decor/decor1.svg);
+  background-repeat: no-repeat;
   background-size: contain;
   top: 24px;
   left: 35%;
@@ -1116,7 +1125,8 @@ body.no-sroll {
   position: absolute;
   width: 38px;
   height: 89px;
-  background-image: url(../img/decor/decor1.png);
+  background-image: url(../img/decor/decor1.svg);
+  background-repeat: no-repeat;
   background-repeat: no-repeat;
   background-size: contain;
   bottom: 10px;
@@ -1124,6 +1134,20 @@ body.no-sroll {
   -webkit-transform: rotateZ(10deg);
           transform: rotateZ(10deg);
   z-index: -1; }
+
+.slider-section-item-logo {
+  width: 51px;
+  height: 51px;
+  position: absolute;
+  background-color: #fff;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
+  .slider-section-item-logo img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%; }
 
 .slider-section-item2 {
   background: #FAFAFA;
@@ -1274,8 +1298,9 @@ body.no-sroll {
   position: absolute;
   width: 61px;
   height: 89px;
-  background-image: url(../img/decor/decor1.png);
+  background-image: url(../img/decor/decor1.svg);
   background-size: contain;
+  background-repeat: no-repeat;
   top: -20px;
   right: 30%;
   -webkit-transform: rotate(30deg);
@@ -1286,8 +1311,9 @@ body.no-sroll {
   position: absolute;
   width: 61px;
   height: 89px;
-  background-image: url(../img/decor/decor1.png);
+  background-image: url(../img/decor/decor1.svg);
   background-size: contain;
+  background-repeat: no-repeat;
   bottom: -40px;
   left: 30%;
   -webkit-transform: rotateY(180deg) rotateZ(25deg);
@@ -1651,7 +1677,7 @@ body.no-sroll {
 .section-name {
   width: 100%;
   margin-top: 50px;
-  max-width: 1399px;
+  max-width: 1400px;
   margin: 0 auto;
   border-radius: 20px;
   margin-bottom: 50px;
@@ -1662,17 +1688,15 @@ body.no-sroll {
   position: relative;
   margin-top: 50px; }
   .section-name .wrap {
-    padding-right: 340px;
-    padding-left: 60px;
-    max-width: 100%; }
+    padding-right: 340px; }
   .section-name .title {
     margin-bottom: 0; }
 
 .section-name:after {
   content: "";
   width: 260px;
-  height: 220px;
-  background-image: url(../img/index/footer.png);
+  height: calc(100% + 10px);
+  background-image: url(../img/decor/section-decor.svg);
   background-size: contain;
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -1712,9 +1736,7 @@ body.no-sroll {
   .section-name {
     margin-left: 15px;
     margin-right: 15px;
-    width: auto; }
-  .section-name .wrap {
-    padding-left: 25px; } }
+    width: auto; } }
 
 @media (max-width: 680px) {
   .section-name:after {
@@ -2189,7 +2211,7 @@ svg.not-stroke {
     position: absolute;
     width: 41px;
     height: 59px;
-    background-image: url(../img/decor/decor1.png);
+    background-image: url(../img/decor/decor1.svg);
     background-size: contain;
     background-repeat: no-repeat;
     bottom: 30px;
@@ -2202,7 +2224,7 @@ svg.not-stroke {
     position: absolute;
     width: 71px;
     height: 99px;
-    background-image: url(../img/decor/decor1.png);
+    background-image: url(../img/decor/decor1.svg);
     background-size: contain;
     background-repeat: no-repeat;
     bottom: 20px;
@@ -2317,14 +2339,15 @@ svg.not-stroke {
 .contact__wrap:before {
   content: "";
   position: absolute;
-  width: 61px;
+  width: 75px;
   height: 89px;
-  background-image: url(../img/decor/decor1.png);
+  background-image: url(../img/decor/decor1.svg);
+  background-repeat: no-repeat;
   background-size: contain;
   top: 20px;
-  right: 20%;
-  -webkit-transform: rotate(20deg);
-          transform: rotate(20deg);
+  right: 23%;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
   z-index: -1; }
 
 .contact__wrap:after {
@@ -2332,7 +2355,8 @@ svg.not-stroke {
   position: absolute;
   width: 61px;
   height: 89px;
-  background-image: url(../img/decor/decor1.png);
+  background-image: url(../img/decor/decor1.svg);
+  background-repeat: no-repeat;
   background-size: contain;
   bottom: -25px;
   right: 5%;
@@ -2628,6 +2652,27 @@ svg.not-stroke {
   .catalog-top__wrap.catalog-top__wrap--blue2 a.active g {
     opacity: 1; }
 
+.catalog-top__wrap.catalog-top__wrap-fiolet2 {
+  font-family: '2MASS', sans-serif; }
+  .catalog-top__wrap.catalog-top__wrap-fiolet2 svg {
+    fill: #9263A7; }
+
+.catalog-top__wrap.catalog-top__wrap--fiolet2 a:hover svg {
+  fill: #9263A7; }
+
+.catalog-top__wrap.catalog-top__wrap--fiolet2 a:hover g {
+  opacity: 0.6; }
+
+.catalog-top__wrap.catalog-top__wrap--fiolet2 a.active {
+  border-bottom: 2px solid #9263A7;
+  color: #9263A7; }
+  .catalog-top__wrap.catalog-top__wrap--fiolet2 a.active span {
+    border-color: #9263A7; }
+  .catalog-top__wrap.catalog-top__wrap--fiolet2 a.active svg {
+    fill: #9263A7; }
+  .catalog-top__wrap.catalog-top__wrap--fiolet2 a.active g {
+    opacity: 1; }
+
 .arenda__wrap {
   display: -ms-flexbox;
   display: flex;
@@ -2673,10 +2718,13 @@ svg.not-stroke {
   display: block;
   font-weight: bold;
   font-size: 24px;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  border-bottom: 1px solid #132C39;
   color: #132C39;
-  margin-bottom: 28px; }
+  margin-bottom: 28px;
+  display: inline-block; }
+
+.arenda__item__name:hover {
+  border-bottom: 1px solid transparent; }
 
 .arenda__item__bot {
   display: -ms-flexbox;
@@ -2829,9 +2877,12 @@ svg.not-stroke {
   font-weight: bold;
   font-size: 24px;
   color: #132C39;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  border-bottom: 1px solid #132C39;
+  transition: 0.3s all;
   margin-right: 25px; }
+
+.razv__name:hover {
+  border-bottom: 1px solid transparent; }
 
 .razv__floo {
   font-size: 14px;
@@ -2866,13 +2917,14 @@ svg.not-stroke {
   .arenda__item__wraper .magazin__item__name-block a {
     font-weight: bold;
     font-size: 24px;
-    -webkit-text-decoration-line: underline;
-            text-decoration-line: underline;
+    border-bottom: 1px solid #132C39;
     color: #132C39;
     display: block;
+    display: inline-block;
     margin-bottom: 9px; }
   .arenda__item__wraper .magazin__item__name-block a:hover {
-    text-decoration: none; }
+    text-decoration: none;
+    border-bottom: 1px solid transparent; }
   .arenda__item__wraper .magazin__item__name-block span {
     display: block;
     font-size: 14px;
@@ -2917,6 +2969,34 @@ svg.not-stroke {
     width: calc(100% / 4 - 24px);
     margin: 0 12px;
     margin-bottom: 41px; }
+
+.fiolet2-link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #9263A7;
+  text-transform: uppercase;
+  padding: 5px 0; }
+
+.fiolet2-link svg {
+  fill: #9263A7;
+  margin-left: 5px;
+  transition: .3s all; }
+
+.slider-section__type.data-fiolet {
+  background: transparent;
+  color: #9263A7;
+  -webkit-text-fill-color: #9263A7;
+  -webkit-background-clip: initial; }
+
+.slider-section__buy.data-fiolet button {
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #8d5ca6, #9263A7); }
+
+.slider-section__buy.data-fiolet button div span {
+  -webkit-text-fill-color: #9263A7; }
+
+.slider-section-item2 .slider-section__data.data-fiolet {
+  background: #9263A7; }
 
 @media (max-width: 1199px) {
   .afisha .slider-section-item2 {
@@ -2977,7 +3057,8 @@ svg.not-stroke {
   position: absolute;
   width: 61px;
   height: 89px;
-  background-image: url(../img/decor/decor1.png);
+  background-image: url(../img/decor/decor1.svg);
+  background-repeat: no-repeat;
   background-size: contain;
   bottom: 70px;
   right: -3%;
@@ -3024,7 +3105,8 @@ svg.not-stroke {
   position: absolute;
   width: 61px;
   height: 89px;
-  background-image: url(../img/decor/decor1.png);
+  background-image: url(../img/decor/decor1.svg);
+  background-repeat: no-repeat;
   background-size: contain;
   left: 20%;
   bottom: 10px;
@@ -4123,7 +4205,7 @@ svg.not-stroke {
     width: 100%;
     margin-top: 25px; }
   .detail__title__block {
-    padding-top: 2px; }
+    padding-top: 10px; }
   .detail__title__block h1 {
     font-size: 22px; }
   .logo-label {
@@ -4235,19 +4317,15 @@ svg.not-stroke {
     background-color: #F47B20; }
   .detail-akcii .slider-section__type {
     color: #F47B20; }
-  .detail-akcii .slider-section__name {
-    -webkit-text-decoration-line: underline;
-            text-decoration-line: underline; }
-  .detail-akcii .slider-section__name:hover {
-    text-decoration: none; }
 
 .detail-akcii:before {
   content: "";
   position: absolute;
   width: 61px;
   height: 89px;
-  background-image: url(../img/decor/decor1.png);
+  background-image: url(../img/decor/decor1.svg);
   background-size: contain;
+  background-repeat: no-repeat;
   top: -30px;
   right: 25%;
   -webkit-transform: rotate(20deg);

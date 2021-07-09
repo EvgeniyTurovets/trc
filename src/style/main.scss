@@ -31,6 +31,8 @@ img{
 .header{
     margin-bottom: 50px;
     transition: 0.3s all;
+    position: relative;
+    z-index: 5;
 }
 .row{
     display: flex;
@@ -96,8 +98,8 @@ img{
     display: block;
     color: #132C39;
     svg{
-        width: 14px;
-        height: 14px;
+        width: 15px;
+        height: 15px;
     }
 }
 @media(max-width: 991px){
@@ -341,6 +343,12 @@ img{
 .first-sec-slider .swiper__bot{
     border-top: 1px solid rgba(#fff, 0.2);
 }
+.first-sec-slider{
+   
+    padding-left: 15px;
+    margin-left: -15px;
+    
+}
 .swiper-slide{
     height: 100%;
 }
@@ -500,7 +508,7 @@ img{
     display: none;
     position: absolute;
     background-color: #fff;
-    top: 155.6px;
+    top: 155px;
     left: 0;
     width: 100%;
     bottom: 0;
@@ -692,7 +700,8 @@ body.no-sroll{
     position: absolute;
     width: 61px;
     height: 89px;
-    background-image: url('../img/decor/decor1.png');
+    background-image: url('../img/decor/decor1.svg');
+    background-repeat: no-repeat;
     background-size: contain;
     top: 24px;
     left: 51%;
@@ -704,7 +713,8 @@ body.no-sroll{
     position: absolute;
     width: 61px;
     height: 89px;
-    background-image: url('../img/decor/decor1.png');
+    background-image: url('../img/decor/decor1.svg');
+    background-repeat: no-repeat;
     background-size: contain;
     bottom: -30px;
     right: 30%;
@@ -814,7 +824,7 @@ body.no-sroll{
 
 
 .slider-section__img{
-    padding-bottom: 50%;
+    padding-bottom: 56%;
     border-radius: 10px;
     overflow: hidden;
     background-size: cover;
@@ -1030,7 +1040,8 @@ body.no-sroll{
     position: absolute;
     width: 61px;
     height: 89px;
-    background-image: url(../img/decor/decor1.png);
+    background-image: url(../img/decor/decor1.svg);
+    background-repeat: no-repeat;
     background-size: contain;
     top: 24px;
     left: 35%;
@@ -1042,13 +1053,28 @@ body.no-sroll{
     position: absolute;
     width: 38px;
     height: 89px;
-    background-image: url(../img/decor/decor1.png);
+    background-image: url(../img/decor/decor1.svg);
+    background-repeat: no-repeat;
     background-repeat: no-repeat;
     background-size: contain;
     bottom: 10px;
     left: 25%;
     transform: rotateZ(10deg);
     z-index: -1;
+}
+.slider-section-item-logo{
+    width: 51px;
+    height: 51px;
+    position: absolute;
+    background-color: #fff;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    img{
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+    }
 }
 .slider-section-item2{
     background: #FAFAFA;
@@ -1217,8 +1243,9 @@ body.no-sroll{
     position: absolute;
     width: 61px;
     height: 89px;
-    background-image: url(../img/decor/decor1.png);
+    background-image: url(../img/decor/decor1.svg);
     background-size: contain;
+    background-repeat: no-repeat;
     top: -20px;
     right: 30%;
     transform: rotate(30deg);
@@ -1228,8 +1255,9 @@ body.no-sroll{
     position: absolute;
     width: 61px;
     height: 89px;
-    background-image: url(../img/decor/decor1.png);
+    background-image: url(../img/decor/decor1.svg);
     background-size: contain;
+    background-repeat: no-repeat;
     bottom: -40px;
     left: 30%;
     transform: rotateY(180deg) rotateZ(25deg);
@@ -1634,7 +1662,7 @@ body.no-sroll{
 .section-name{
     width: 100%;
     margin-top: 50px;
-    max-width: 1399px;
+    max-width: 1400px;
     margin: 0 auto;
     border-radius: 20px;
     margin-bottom: 50px;
@@ -1647,8 +1675,6 @@ body.no-sroll{
     
     .wrap{
         padding-right: 340px;
-        padding-left: 60px;
-        max-width: 100%;
     }
     .title{
         margin-bottom: 0;
@@ -1658,8 +1684,8 @@ body.no-sroll{
 .section-name:after {
     content: "";
     width: 260px;
-    height: 220px;
-    background-image: url(../img/index/footer.png);
+    height: calc(100% + 10px);
+    background-image: url(../img/decor/section-decor.svg);
     background-size: contain;
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -1704,9 +1730,7 @@ body.no-sroll{
         margin-right: 15px;
         width: auto;
     }
-    .section-name .wrap{
-        padding-left: 25px;
-    }
+    
 }
 
 @media(max-width: 680px){

@@ -8,20 +8,16 @@
     .slider-section__type{
         color: #F47B20;
     }
-    .slider-section__name{
-        text-decoration-line: underline;
-    }
-    .slider-section__name:hover{
-        text-decoration: none;
-    }
+    
 }
 .detail-akcii:before{
     content: "";
     position: absolute;
     width: 61px;
     height: 89px;
-    background-image: url(../img/decor/decor1.png);
+    background-image: url(../img/decor/decor1.svg);
     background-size: contain;
+    background-repeat: no-repeat;
     top: -30px;
     right: 25%;
     transform: rotate(20deg);

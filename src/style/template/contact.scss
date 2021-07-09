@@ -8,13 +8,14 @@
 .contact__wrap:before{
     content: "";
     position: absolute;
-    width: 61px;
+    width: 75px;
     height: 89px;
-    background-image: url(../img/decor/decor1.png);
+    background-image: url(../img/decor/decor1.svg);
+    background-repeat: no-repeat;
     background-size: contain;
     top: 20px;
-    right: 20%;
-    transform: rotate(20deg);
+    right: 23%;
+    transform: rotate(30deg);
     z-index: -1;
 }
 .contact__wrap:after{
@@ -22,7 +23,8 @@
     position: absolute;
     width: 61px;
     height: 89px;
-    background-image: url(../img/decor/decor1.png);
+    background-image: url(../img/decor/decor1.svg);
+    background-repeat: no-repeat;
     background-size: contain;
     bottom: -25px;
     right: 5%;

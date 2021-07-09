@@ -32,19 +32,20 @@
 
     window.addEventListener('resize', () => {
       navRefresh()
+      menuMainRefresh()
     })
 
     navRefresh()
 
     thisMain = 0
-    window.addEventListener('scroll', () => {
-        
+    function menuMainRefresh(){
+
+        if(header.classList.contains('main')){
+            thisMain = 1;
+        }
+
         if(window.innerWidth <= 992){
           
-            if(header.classList.contains('main')){
-                thisMain = 1;
-            }
-
             if(window.scrollY > 0){
                 header.classList.add('sroll')
                 header.classList.remove('main')
@@ -54,8 +55,16 @@
                     header.classList.add('main')
                 }
             }
+
+        }else{
+            header.classList.remove('sroll')
+            if(thisMain){
+                header.classList.add('main')
+            }
         }
-        
+    }
+    window.addEventListener('scroll', () => {
+        menuMainRefresh()
     })
 
 
