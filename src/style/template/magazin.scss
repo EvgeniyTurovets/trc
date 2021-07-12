@@ -418,10 +418,11 @@ svg.not-stroke{
         display: flex;
         align-items: center;
         font-weight: bold;
-        font-size: 19px;
-        line-height: 23px;
+        font-size: 14px;
+        line-height: 18px;
         text-transform: uppercase;
         color: #000;
+        font-family: '2MASS', sans-serif;
         
         .now:after{
             display: none;
@@ -432,7 +433,7 @@ svg.not-stroke{
             height: 1px;
             background-color: #000;
             margin: 0 5px;
-            margin-top: 6px;
+            margin-top: 2px;
         }
         .max{
             font-size: 14px;

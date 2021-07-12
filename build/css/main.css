@@ -531,11 +531,12 @@ img {
   -ms-flex-align: center;
       align-items: center;
   color: #fff;
-  background-color: transparent; }
+  background-color: transparent;
+  font-family: '2MASS', sans-serif; }
   .swiper-count span {
-    font-weight: bold;
-    font-size: 19px;
-    line-height: 23px;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 18px;
     text-transform: uppercase; }
   .swiper-count .swiper-pagination-current {
     display: -ms-flexbox;
@@ -550,7 +551,7 @@ img {
     background-color: #fff;
     margin-left: 5px;
     margin-right: 5px;
-    margin-top: 3px; }
+    margin-top: 1px; }
   .swiper-count .swiper-pagination-total {
     font-size: 14px;
     line-height: 17px; }
@@ -2185,10 +2186,11 @@ svg.not-stroke {
     -ms-flex-align: center;
         align-items: center;
     font-weight: bold;
-    font-size: 19px;
-    line-height: 23px;
+    font-size: 14px;
+    line-height: 18px;
     text-transform: uppercase;
-    color: #000; }
+    color: #000;
+    font-family: '2MASS', sans-serif; }
     .pagination .swiper-count .now:after {
       display: none; }
     .pagination .swiper-count span {
@@ -2197,7 +2199,7 @@ svg.not-stroke {
       height: 1px;
       background-color: #000;
       margin: 0 5px;
-      margin-top: 6px; }
+      margin-top: 2px; }
     .pagination .swiper-count .max {
       font-size: 14px; }
 
