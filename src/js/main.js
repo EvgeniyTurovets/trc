@@ -13,7 +13,7 @@
     
     // меню 
     let header = document.querySelector('.header')
-    let headerNav = document.getElementById('headerNav')
+    // let headerNav = document.getElementById('headerNav')
     let headerTop =  document.getElementById('headerTop') 
     let headerBot =  document.getElementById('headerBot') 
     let mobNav = document.getElementById('mob-nav')
@@ -22,10 +22,10 @@
 
     function navRefresh(){
       if(window.innerWidth < 992){
-        mobNavWrap.appendChild(headerNav)
+        // mobNavWrap.appendChild(headerNav)
         mobNavWrap.appendChild(headerTop)
       }else{
-        headerBotRight.appendChild(headerNav)
+        // headerBotRight.appendChild(headerNav)
         document.getElementById('header-wrap').insertBefore(headerTop, headerBot)
       }
     }
@@ -82,7 +82,10 @@
         }
        
         if(ifmain == 1){
-            header.classList.toggle('main')
+            if(!header.classList.contains('sroll')){
+                header.classList.toggle('main')
+            }
+            
         }
         
     })
@@ -100,18 +103,24 @@
             el: ".swiper-pagination",
             type: "fraction",
         },
-        spaceBetween: 23,
+        spaceBetween: 60,
         lazy: true,
-        slidesPerView: 1,
+        slidesPerView: 3,
+        direction: 'vertical',
+        allowTouchMove: false,
         breakpoints: {
             // when window width is >= 320px
             560: {
                 slidesPerView: 2,
-                spaceBetween: 23
+                spaceBetween: 23,
+                direction: 'horizontal',
+                allowTouchMove: true,
             },
             1024: {
-              slidesPerView: 3,
-              spaceBetween: 23
+                slidesPerView: 3,
+                spaceBetween: 23,
+                direction: 'horizontal',
+                allowTouchMove: true,
             },
             
         },
@@ -133,22 +142,30 @@
         el: ".swiper-pagination",
         type: "fraction",
       },
-      spaceBetween: 23,
+      spaceBetween: 60,
       lazy: true,
-      slidesPerView: 1,
+      slidesPerView: 4,
+      direction: 'vertical',
+      allowTouchMove: false,
       breakpoints: {
           // when window width is >= 320px
           560: {
               slidesPerView: 2,
-              spaceBetween: 23
+              spaceBetween: 23,
+              direction: 'horizontal',
+              allowTouchMove: true,
           },
           1024: {
             slidesPerView: 3,
-            spaceBetween: 23
+            spaceBetween: 23,
+            direction: 'horizontal',
+            allowTouchMove: true,
           },
           1200: {
             slidesPerView: 4,
-            spaceBetween: 23
+            spaceBetween: 23,
+            direction: 'horizontal',
+            allowTouchMove: true,
           },
           
       },
@@ -169,16 +186,22 @@
             type: "fraction",
         },
         spaceBetween: 40,
-        slidesPerView: 2,
+        slidesPerView: 3,
+        direction: 'vertical',
+        allowTouchMove: false,
         lazy: true,
         breakpoints: {
             768: {
                 spaceBetween: 40,
-                 slidesPerView: 4,
+                slidesPerView: 4,
+                direction: 'horizontal',
+                allowTouchMove: true,
             },
             1024: {
                 spaceBetween: 80,
-                 slidesPerView: 6,
+                slidesPerView: 6,
+                direction: 'horizontal',
+                allowTouchMove: true,
             },
         }
     });

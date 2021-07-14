@@ -484,7 +484,7 @@ img{
     transition: 0.3s all;
 }
 .swiper__button:hover{
-    box-shadow: 0 0 10px rgba(#000000, 0.3);
+    box-shadow: none;
 }
 
 .swiper-container-fade .swiper-slide{
@@ -524,6 +524,10 @@ img{
     display: flex;
     flex-direction: column;
     opacity: 0;
+    height: 100%;
+}
+.mob-nav .wrap > ul{
+    flex: 1;
 }
 .app.loaded .mob-nav .wrap{
     opacity: 1;
@@ -554,6 +558,9 @@ body.no-sroll{
 }
 
 @media(max-width: 991px){
+    .header__nav{
+        display: none;
+    }
     .header__bot{
         padding-top: 10px;
         padding-bottom: 10px;
@@ -563,9 +570,10 @@ body.no-sroll{
         margin-right: 25px;
     }
     .mob-nav{
-        top: 69px;
-        padding-top: 75px;
+        top: 67px;
+        padding-top: 95px;
         position: fixed;
+        z-index: 5;
     }
    
     .header__mid{
@@ -718,9 +726,9 @@ body.no-sroll{
     background-image: url(../img/decor/decor1.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    bottom: -30px;
-    right: 28%;
-    transform: rotate(20deg);
+    bottom: -55px;
+    right: 27%;
+    transform: rotate(30deg);
     z-index: -1;
 }
 .first-section{
@@ -981,6 +989,22 @@ body.no-sroll{
         margin-top: 35px;
     }
 }
+
+@media(max-width: 559px){
+    .slider-tabs__nav{
+        padding-bottom: 30px;
+    }
+    .slider-tabs__nav li{
+        margin-left: 0;
+        margin-right: 16px;
+    }
+    .slider-tabs__nav li:before{
+        display: none;
+    }
+    .slider-tabs__nav li.active:before{
+        display: inline-block;
+    }
+}
 .main-akcii-fon{
     position: absolute;
     width: 100%;
@@ -990,7 +1014,11 @@ body.no-sroll{
     background-color: #FAFAFA;
     z-index: -1;
 }
-
+@media(max-width: 559px){
+    .main-akcii-fon {
+        height: 75%;
+    }
+}
 @media(max-width: 1260px){
     .main-akcii:before{
         left: auto;
@@ -1007,7 +1035,7 @@ body.no-sroll{
     }
     .main-akcii{
         padding-top: 70px;
-        padding-bottom: 35px;
+        padding-bottom: 60px;
     }
     .main-akcii:after{
         display: none;
@@ -1024,12 +1052,7 @@ body.no-sroll{
     animation-duration: 1000ms;
     animation-timing-function: ease
 }
-.swiper-section{
-    margin-left: -10px;
-    margin-right: -10px;
-    padding-right: 10px;
-    padding-left: 10px;
-}
+
 
 @keyframes fadeIn { 
     from { 
@@ -1043,7 +1066,7 @@ body.no-sroll{
     background-color: #FAFAFA;
 }
 .main-afisha{
-    padding-top: 98px;
+    padding-top: 100px;
     position: relative;
 }
 @media(min-width: 1024px){
@@ -1059,28 +1082,28 @@ body.no-sroll{
 .main-afisha:before {
     content: "";
     position: absolute;
-    width: 61px;
-    height: 89px;
+    width: 88px;
+    height: 100px;
     background-image: url(../img/decor/decor1.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    top: 24px;
-    left: 35%;
+    top: 39px;
+    left: 33%;
     transform: rotateY(180deg) rotateZ(25deg);
     z-index: -1;
 }
 .main-afisha:after{
     content: "";
     position: absolute;
-    width: 38px;
-    height: 89px;
+    width: 54px;
+    height: 100px;
     background-image: url(../img/decor/decor1.svg);
     background-repeat: no-repeat;
     background-repeat: no-repeat;
     background-size: contain;
-    bottom: 10px;
-    left: 25%;
-    transform: rotateZ(10deg);
+    bottom: 15px;
+    left: 26%;
+    transform: rotateZ(4deg);
     z-index: -1;
 }
 .slider-section-item-logo{
@@ -1210,7 +1233,39 @@ body.no-sroll{
 @media(max-width: 559px){
     .slider-section-item2{
         margin: 0 20px;
-        margin-bottom: 40px;
+        margin-bottom: 0px;
+    }
+    .swiper-section{
+       
+        height: calc(3 * 93vw + 220px);
+        padding-bottom: 220px;
+        .swiper__bot{
+            position: absolute;
+            bottom: 0;
+            z-index: 5;
+            background-color: #fafafa;
+            margin-bottom: 0;
+        }
+    }
+    .swiper-section2{
+       
+        height: calc( 4 * 161vw + 220px);
+        padding-bottom: 220px;
+        .swiper__bot{
+            position: absolute;
+            bottom: 0;
+            z-index: 5;
+            background-color: #fff;
+            margin-bottom: 0;
+        }
+    }
+   
+
+    
+}
+@media(max-width: 374px){
+    .swiper-section2{
+        height: calc( 4 * 187vw + 220px);
     }
 }
 @media(max-width: 374px){
@@ -1266,13 +1321,13 @@ body.no-sroll{
 .main-brand:before{
     content: "";
     position: absolute;
-    width: 61px;
-    height: 89px;
+    width: 106px;
+    height: 125px;
     background-image: url(../img/decor/decor1.svg);
     background-size: contain;
     background-repeat: no-repeat;
     top: -20px;
-    right: 30%;
+    right: 23%;
     transform: rotate(30deg);
 }
 .main-brand:after{
@@ -1329,8 +1384,8 @@ body.no-sroll{
     }
     .main-brand{
         padding-top: 35px;
-        padding-bottom: 35px;
-        margin-bottom: 35px;
+        padding-bottom: 70px;
+        margin-bottom: 40px;
     }
     .main-brand:before{
         display: none;
@@ -1339,7 +1394,27 @@ body.no-sroll{
         display: none;
     }
 }
-
+@media(max-width: 559px){
+    .brand-slider{
+        height: calc(3 * 22vw + 220px + 60px);
+        padding-bottom: 220px;
+        padding-top: 60px;
+        .swiper__bot{
+            position: absolute;
+            bottom: 0;
+            z-index: 5;
+            background-color: #fafafa;
+            margin-bottom: 0;
+        }
+    }
+    .barnd-slider-item{
+        height: 100%;
+    }
+    .brand-slider img{
+        max-height: 100%;
+        max-width: 100%;
+    }
+}
 .footer{
     margin: 0 auto;
     background: linear-gradient(90deg, #8D5CA6 0%, #4BA9DA 100%);
@@ -1832,7 +1907,11 @@ body.no-sroll{
     .footer__logo{
         margin-bottom: 20px;
     }
+
+    
 }
+
+
 // magazin
 @import './template/magazin.scss';
 // contact
