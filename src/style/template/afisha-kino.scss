@@ -4,7 +4,7 @@
     padding-bottom: 124px;
 }
 .afisha-kino{
-    padding-top: 10px;
+    padding-top: 4px;
 }
 .afisha-kino__left{
     flex: 1;
@@ -31,7 +31,7 @@
 }
 .afisha-kino__top__right{
     button,a{
-        margin-left: 18px;
+        margin-left: 10px;
         padding: 16px 26px;
     }
 }
@@ -148,15 +148,16 @@
 
 .raspisanie__body{
     padding-top: 45px;
-    padding-bottom: 45px;
+    padding-bottom: 28px;
 }
 
 .raspisanie__row{
     border-bottom: 1px solid rgba(#000, 0.1);
-    padding-top: 32px;
-    padding-bottom: 45px;
+    padding-top: 17px;
+    padding-bottom: 14px;
     display: flex;
     align-items: center;
+    margin-bottom: 13px;
 }
 .raspisanie__row:last-child{
     border-bottom: 0;
@@ -166,7 +167,7 @@
     color: #132C39;
     font-size: 18px;
     line-height: 22px;
-    flex: 0 0 247px;
+    flex: 0 0 215px;
     padding-right: 15px;
     margin-bottom: 15px;
 }
@@ -174,7 +175,7 @@
 .raspisanie__time{
     color: #132C39;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 17px;
     text-transform: uppercase;
     border: 1px solid #E4E4E4;
@@ -247,7 +248,7 @@
     }
     .afisha-kino__body .afisha-kino__title{
         margin-top: 25px;
-        font-size: 20px;
+        font-size: 24px;
         line-height: 1.2;
     }
     .afisha-kino__name{
@@ -342,5 +343,26 @@
     .raspisanie__plashka{
         background-color: #9263A7;
     }
+}
+
+@media(max-width: 559px){
+    .raspisanie.blue{
+        .raspisanie__title{
+            background-color:  #6C83C1;
+        }
+        .raspisanie__plashka{
+            background-color:  #6C83C1;
+        }
+    }
+    .afisha-kino__top__right{
+        .btn.btn-fiolet{
+            background-color: #6C83C1;
+        }
+        .btn.btn-fiolet-border{
+            color: #6C83C1;
+            border: 1px solid #6C83C1;
+        }
+    }
+   
 }
 

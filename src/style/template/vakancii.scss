@@ -1,3 +1,8 @@
+@media(min-width: 1024px){
+    .vakan{
+        min-height: calc(100vh - 700px)
+    }
+}
 
 
 .acordion{
@@ -95,6 +100,9 @@
         .acordion__body ul{
             font-size: 16px;
             line-height: 22px;
+        }
+        .acordion__body .btn.btn-red{
+            background: #F26F75;
         }
         .acordion__item{
             padding: 20px;

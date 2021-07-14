@@ -60,3 +60,10 @@
     text-transform: uppercase;
     color: #fefefe;
 }
+
+@media(max-width: 767px){
+    .detail-akcii{
+        background: #FAFAFA;
+        padding-bottom: 20px;
+    }
+}

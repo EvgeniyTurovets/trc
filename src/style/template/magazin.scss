@@ -2,7 +2,7 @@
     background: #FAFAFA;
     padding-top: 50px;
     padding-bottom: 50px;
-    margin-bottom: 70px;
+    margin-bottom: 61px;
 }
 
 .catalog-top__wrap{
@@ -47,6 +47,7 @@
     fill: rgba(#132C39, 0.3);
     transition: 0.3s all;
 }
+
 .catalog-top__wrap a:hover{
     color: rgba(#132C39, 0.5);
     span{
@@ -110,6 +111,9 @@ svg.not-stroke{
         fill: #F9991B;
         margin-left: 5px;
         transition: 0.3s all;
+        path{
+            fill: #F9991B;
+        }
     }
 }
 .color-link:hover{
@@ -120,7 +124,7 @@ svg.not-stroke{
 .catalog-top__bot{
     display: flex;
     justify-content: center;
-    margin-top: 35px;
+    margin-top: 14px;
 }
 
 .catalog-top__list{
@@ -135,7 +139,7 @@ svg.not-stroke{
             display: flex;
             align-items: center;
             color: rgba(#132C39, 0.2);
-            margin-right: 25px;
+            margin-right: 40px;
             margin-bottom: 20px;
             transition: 0.3s all;
         }
@@ -182,14 +186,14 @@ svg.not-stroke{
         font-size: 16px;
     }
     .catalog-top__wrap a{
-        font-size: 20px;
+        font-size: 18px;
     }
     .catalog-top__wrap a span{
         width: 60px;
         height: 60px;
     }
     .catalog-top__list{
-        margin-top: 20px;
+        margin-top: 30px;
     }
     .catalog-top__bot{
         margin-top: 15px;
@@ -203,6 +207,20 @@ svg.not-stroke{
 @media(max-width: 767px){
     .catalog-top__bot{
         justify-content: flex-start;
+    }
+}
+@media(max-width: 559px){
+    .catalog-top__wrap a{
+        border-bottom: 0!important;
+    }
+    
+    .catalog-top__wrap a span{
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
+    .catalog-top__wrap a span svg{
+        max-width: 20px;
     }
 }
 .magazin__wrap__top{
@@ -256,13 +274,13 @@ svg.not-stroke{
     button{
         margin-bottom: 20px;
         transition: 0.3s all;
-        margin-left: 24px;
+        margin-left: 27px;
         display: flex;
         align-items: center;
         padding: 16px 21px;
         background-color: transparent;
         border: 1px solid #B7587C;
-        border-radius: 7px;
+        border-radius: 10px;
         font-weight: bold;
         font-size: 14px;
         line-height: 17px;
@@ -365,7 +383,7 @@ svg.not-stroke{
     }
     .magazin__item__img{
         width: 222px;
-        height: 124px;
+        height: 121px;
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
@@ -377,10 +395,11 @@ svg.not-stroke{
         a{
             font-weight: bold;
             font-size: 24px;
-            text-decoration-line: underline;
+            border-bottom: 1px solid #132C39;
             color: #132C39;
             display: block;
             margin-bottom: 9px;
+            display: inline-block;
         }
         span{
             display: block;
@@ -399,12 +418,12 @@ svg.not-stroke{
         padding-right: 15px;
     }
     .magazin__list .magazin__item__img{
-        flex: 0 0 40%;
+        flex: 0 0 35%;
         height: 60px;
         margin-right: 20px;
     }
     .magazin__list .magazin__item__name-block a{
-        font-size: 18px;
+        font-size: 24px;
     }
 }
 .pagination{
@@ -442,7 +461,7 @@ svg.not-stroke{
 }
 
 .magazin__wrap{
-    padding-bottom: 50px;
+    padding-bottom:22px;
     position: relative;
 }
 
@@ -479,7 +498,7 @@ svg.not-stroke{
 
 @media(max-width: 767px){
     .magazin__wrap{
-        padding-bottom: 25px;
+        padding-bottom: 0px;
     }
     .magazin__list{
         padding-bottom: 25px;
@@ -519,7 +538,7 @@ svg.not-stroke{
         margin-bottom: 43px;
     }
 
-    .fiolet-link{
+    .color-link {
         display: none;
     }
 

@@ -1,5 +1,5 @@
 .o-nas{
-    padding-top: 30px;
+    padding-top: 0px;
 }
 .o-nas__img{
     border-radius: 20px;
@@ -10,7 +10,17 @@
     max-width: 100%;
     width: 100%;
 }
-
+.o-nas__img .mob{
+    display: none;
+}
+@media(max-width: 559px){
+    .o-nas__img img{
+        display: none;
+    }
+    .o-nas__img .mob{
+        display: block;
+    } 
+}
 .o-nas__bot{
     display: flex;
 }
@@ -111,7 +121,7 @@
 }
 @media(max-width: 550px){
     .o-nas__info-item{
-        margin-bottom: 25px;
+        margin-bottom: 60px;
         margin-right: 0;
         max-width: 300px;
     }

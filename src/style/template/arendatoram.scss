@@ -3,14 +3,16 @@
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 15px;
+    padding-top: 18px;
     .arendatoram1__text{
         max-width: 900px;
         padding-right: 25px;
+        padding-top: 15px;
         p{
             font-size: 18px;
             line-height: 27px;
             color: #132C39;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
         }
     }
     a{
@@ -101,8 +103,12 @@
 
 .zayvka-orendu{
     background: #FAFAFA;
-    padding-top: 70px;
+    padding-top: 92px;
     padding-bottom: 70px;
+    margin-bottom: 70px;
+    .title{
+        margin-bottom: 30px;
+    }
 }
 
 .zayvka-orendu__wrap{
@@ -114,8 +120,8 @@
 }
 
 .zayvka-orendu__right{
-    flex: 0 0 415px;
-    padding-left: 131px;
+    flex: 0 0 366px;
+    padding-left: 64px;
 }
 
 .zayvka__input{
@@ -151,6 +157,7 @@
 
 .zayvka__input__sqere{
     margin-bottom:20px;
+    margin-top: -5px;
 }
 
 .zayvka__input__sqere1{
@@ -159,7 +166,7 @@
     font-family: '2MASS'; 
     color: #222222;
     margin-right: 32px;
-    margin-bottom: 20px;
+    margin-bottom: 13px;
 }
 
 .zayvka__input__sqere2{
@@ -170,7 +177,7 @@
         line-height: 23px;
         font-family: '2MASS'; 
         color: #222222;
-        margin-right: 20px;
+        margin-right: 11px;
     }
     input{
         width: 108px;
