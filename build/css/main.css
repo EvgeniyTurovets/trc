@@ -44,91 +44,91 @@ input, button, textarea {
 @font-face {
   font-family: 'KievitPro';
   src: url("../fonts/KievitPro-ExtraLight.eot");
-  src: local("../fonts/KievitPro-ExtraLight"), url("../fonts/KievitPro-ExtraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/KievitPro-ExtraLight.woff") format("woff"), url("../fonts/KievitPro-ExtraLight.ttf") format("truetype");
+  src: url("../fonts/KievitPro-ExtraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/KievitPro-ExtraLight.woff") format("woff"), url("../fonts/KievitPro-ExtraLight.ttf") format("truetype");
   font-weight: 200;
   font-style: normal; }
 
 @font-face {
   font-family: 'KievitPro';
   src: url("../fonts/KievitPro-Light.eot");
-  src: local("../fonts/KievitPro-Light"), url("../fonts/KievitPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/KievitPro-Light.woff") format("woff"), url("../fonts/KievitPro-Light.ttf") format("truetype");
+  src: url("../fonts/KievitPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/KievitPro-Light.woff") format("woff"), url("../fonts/KievitPro-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: 'KievitPro';
   src: url("../fonts/KievitPro-Italic.eot");
-  src: local("../fonts/KievitPro-Italic"), url("../fonts/KievitPro-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/KievitPro-Italic.woff") format("woff"), url("../fonts/KievitPro-Italic.ttf") format("truetype");
+  src: url("../fonts/KievitPro-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/KievitPro-Italic.woff") format("woff"), url("../fonts/KievitPro-Italic.ttf") format("truetype");
   font-weight: normal;
   font-style: italic; }
 
 @font-face {
   font-family: 'KievitPro-Book';
   src: url("../fonts/KievitPro-Book.eot");
-  src: local("../fonts/KievitPro-Book"), url("../fonts/KievitPro-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/KievitPro-Book.woff") format("woff"), url("../fonts/KievitPro-Book.ttf") format("truetype");
+  src: url("../fonts/KievitPro-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/KievitPro-Book.woff") format("woff"), url("../fonts/KievitPro-Book.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'KievitPro';
   src: url("../fonts/KievitPro-Bold.eot");
-  src: local("../fonts/KievitPro-Bold"), url("../fonts/KievitPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/KievitPro-Bold.woff") format("woff"), url("../fonts/KievitPro-Bold.ttf") format("truetype");
+  src: url("../fonts/KievitPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/KievitPro-Bold.woff") format("woff"), url("../fonts/KievitPro-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'KievitPro';
   src: url("../fonts/KievitPro-ExtraBold.eot");
-  src: local("../fonts/KievitPro-ExtraBold"), url("../fonts/KievitPro-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/KievitPro-ExtraBold.woff") format("woff"), url("../fonts/KievitPro-ExtraBold.ttf") format("truetype");
+  src: url("../fonts/KievitPro-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/KievitPro-ExtraBold.woff") format("woff"), url("../fonts/KievitPro-ExtraBold.ttf") format("truetype");
   font-weight: 800;
   font-style: normal; }
 
 @font-face {
   font-family: 'KievitPro';
   src: url("../fonts/KievitPro-Black.eot");
-  src: local("../fonts/KievitPro-Black"), url("../fonts/KievitPro-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/KievitPro-Black.woff") format("woff"), url("../fonts/KievitPro-Black.ttf") format("truetype");
+  src: url("../fonts/KievitPro-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/KievitPro-Black.woff") format("woff"), url("../fonts/KievitPro-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal; }
 
 @font-face {
   font-family: 'KievitPro';
   src: url("../fonts/KievitPro-Medium.eot");
-  src: local("../fonts/KievitPro-Medium"), url("../fonts/KievitPro-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/KievitPro-Medium.woff") format("woff"), url("../fonts/KievitPro-Medium.ttf") format("truetype");
+  src: url("../fonts/KievitPro-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/KievitPro-Medium.woff") format("woff"), url("../fonts/KievitPro-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: 'KievitPro';
   src: url("../fonts/KievitPro-Thin.eot");
-  src: local("../fonts/KievitPro-Thin"), url("../fonts/KievitPro-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/KievitPro-Thin.woff") format("woff"), url("../fonts/KievitPro-Thin.ttf") format("truetype");
+  src: url("../fonts/KievitPro-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/KievitPro-Thin.woff") format("woff"), url("../fonts/KievitPro-Thin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal; }
 
 @font-face {
   font-family: 'KievitPro';
   src: url("../fonts/KievitPro-Regular.eot");
-  src: local("../fonts/KievitPro-Regular"), url("../fonts/KievitPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/KievitPro-Regular.woff") format("woff"), url("../fonts/KievitPro-Regular.ttf") format("truetype");
+  src: url("../fonts/KievitPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/KievitPro-Regular.woff") format("woff"), url("../fonts/KievitPro-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Gilroy';
   src: url("../fonts/");
-  src: local("../fonts/Gilroy-Regular"), url("../fonts/Gilroy-Regular?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.ttf") format("truetype");
+  src: url("../fonts/Gilroy-Regular?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: '2MASS';
   src: url("../fonts/2MASSJ1808-Heavy.eot");
-  src: local("../fonts/2MASS J1808 Heavy"), local("../fonts/2MASSJ1808-Heavy"), url("../fonts/2MASSJ1808-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/2MASSJ1808-Heavy.woff2") format("woff2"), url("../fonts/2MASSJ1808-Heavy.woff") format("woff"), url("../fonts/2MASSJ1808-Heavy.ttf") format("truetype");
+  src: url("../fonts/2MASSJ1808-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/2MASSJ1808-Heavy.woff2") format("woff2"), url("../fonts/2MASSJ1808-Heavy.woff") format("woff"), url("../fonts/2MASSJ1808-Heavy.ttf") format("truetype");
   font-weight: 900;
   font-style: normal; }
 
 @font-face {
   font-family: '2MASS';
   src: url("../fonts/2MASSJ1808-Normal.eot");
-  src: local("../fonts/2MASS J1808 Normal"), local("../fonts/2MASSJ1808-Normal"), url("../fonts/2MASSJ1808-Normal.eot?#iefix") format("embedded-opentype"), url("../fonts/2MASSJ1808-Normal.woff2") format("woff2"), url("../fonts/2MASSJ1808-Normal.woff") format("woff"), url("../fonts/2MASSJ1808-Normal.ttf") format("truetype");
+  src: url("../fonts/2MASSJ1808-Normal.eot?#iefix") format("embedded-opentype"), url("../fonts/2MASSJ1808-Normal.woff2") format("woff2"), url("../fonts/2MASSJ1808-Normal.woff") format("woff"), url("../fonts/2MASSJ1808-Normal.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
