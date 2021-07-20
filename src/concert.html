@@ -290,20 +290,28 @@
 <!-- модалки -->
 <div class="modal">
 
-    <div class="modal__container modal-mini" role="dialog" aria-modal="true" data-graph-target="senk">
-		<button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="modal__container modal-medium" role="dialog" aria-modal="true" data-graph-target="senk">
+		<button class="btn-reset modal__close another-close" aria-label="Закрыть модальное окно"></button>
 		<div class="modal-content-form">
-            <div class="modal-title">Спасибо за заявку!<br> мы свяжемся с вами</div>
+            <div class="modal-title2">Заявка на аренду!</div>
+            <div class="modal__text" style="max-width: 577px;">
+                Спасибо! Ваша заявка принята. Наши менеджеры скоро с вами свяжуться
+            </div>
+            <button class="btn btn-blue-dart btn-senk m-btn-close modal__close" aria-label="Закрыть модальное окно">Закрыть</button>
 		</div>
 	</div>
-    <div class="modal__container modal-mini" role="dialog" aria-modal="true" data-graph-target="first">
-		<button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
-		<div class="modal-content-form">
-            <div class="modal-title">Купить билет</div>
-			<input type="text" placeholder="Имя">
-            <input type="text" placeholder="Телефон">
-            <button type="button" class="btn btn-blue" data-graph-path="senk">Купить</button>
-            <div class="form-copy">Нажимая на кнопку вы соглашаетесь на обработку ваших персональних данных</div>
+    <div class="modal__container modal-medium" role="dialog" aria-modal="true" data-graph-target="first">
+		<button class="btn-reset modal__close another-close" aria-label="Закрыть модальное окно"></button>
+		<div class="modal-content-form2">
+            <div class="modal-title2">Оставьте вашу заявку</div>
+            <label>ФИО</label>
+			<input type="text">
+            <label>Номер телефона</label>
+            <input type="text">
+            <label>E-mail</label>
+            <input type="text">
+            <button class="btn btn-blue-dart btn-senk m-btn-close modal__close" data-graph-path="senk" aria-label="Закрыть модальное окно">Отправить</button>
+            <div class="form-copy">Отправляя свои персональные данные, вы соглашаетесь на их обработку</div>
 		</div>
 	</div>
 </div>

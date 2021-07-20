@@ -106,7 +106,7 @@
 }
 .arenda__item{
     width: calc(100% / 3);
-    padding-top: 31px;
+    padding-top: 38px;
     padding-right: 9px;
     padding-left: 9px;
     padding-bottom: 40px;
@@ -408,7 +408,28 @@
         padding-top: 10px;
     }
 }
+@media(max-width: 559px){
 
+    .arenda__item__img{
+        margin-bottom: 30px;
+    }
+
+    .arenda__item__wraper .magazin__item__name-block a{
+        font-size: 18px;
+        line-height: 18px;
+        font-weight: bold;
+        border-bottom: 0;
+        margin-bottom: 15px;
+    }
+    .arenda__item{
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    .arenda__item:first-child{
+        padding-top: 0;
+    }
+    
+}
 @media(max-width: 450px){
     .razv__top__content{
         padding-left: 15px;

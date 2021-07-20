@@ -467,6 +467,13 @@ svg.not-stroke{
     }
     .magazin__list .magazin__item__name-block a{
         font-size: 24px;
+        border-bottom: 1px solid #132c39;
+        word-break: break-word;
+    }
+    .magazin__list.uslugi-list.magazin__list .magazin__item__name-block a{
+        font-size: 20px;
+        text-decoration: underline;
+        border-bottom: 0;
     }
 }
 .pagination{
@@ -504,7 +511,7 @@ svg.not-stroke{
 }
 
 .magazin__wrap{
-    padding-bottom:22px;
+    padding-bottom:40px;
     position: relative;
 }
 
@@ -557,7 +564,7 @@ svg.not-stroke{
     display: flex;
     margin: 0 -12px;
     flex-wrap: wrap;
-    padding-bottom: 50px;
+    padding-bottom: 35px;
     .magazin__item{
         width: calc(100% / 3 - 24px);
         margin: 0 12px;
@@ -572,7 +579,7 @@ svg.not-stroke{
         box-shadow: 0 0 10px rgba(#000, 0.2);
     }
     .magazin__item__img{
-        padding-bottom: 55%;
+        padding-bottom: 52%;
         width: 100%;
         display: block;
         background-position: center;
@@ -602,7 +609,11 @@ svg.not-stroke{
         }
     }
 }
-
+.uslugi-list.magazin__list .magazin__item__img{
+    background-size: auto 100%;
+    border-radius: 10px;
+    width: 210px;
+}
 @media(max-width: 767px){
     .magazin__carts {
         padding-bottom: 25px;
@@ -658,3 +669,4 @@ svg.not-stroke{
         line-height:18px;
     }
 }
+

@@ -8,3 +8,140 @@
         color: #fff;
     }
 }
+
+.arenda__wrap{
+    .magazin__wrap__top{
+        margin-top: -3px;
+    }
+    .pagination{
+        border-top: none;
+    }
+   
+}
+
+@media(min-width: 1200px){
+    .arenda__wrap{
+        margin: 0 -9px;
+        border-top: 0;
+        position: relative;
+    }
+    .arenda__wrap:before{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0px;
+        width: calc(100% - 18px);
+        margin: 0 9px;
+        border-top: 1px solid rgba(0,0,0,.1);
+    }
+}
+
+.red-link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16665;
+    text-transform: uppercase;
+    padding: 5px 0;
+    svg{
+        fill:#F16665;
+        transition: 0.3s all;
+    }
+}
+.akcii-news-list{
+    .magazin__list .magazin__item{
+        max-width: 100%;
+    }
+    .magazin__list .magazin__item__img{
+        position: relative;
+        background-size: cover;
+        border-radius: 10px;
+        height: 124px;
+        margin-right: 230px;
+    }
+    .magazin__list .magazin__item__name-block a{
+        border-bottom: 0;
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+    }
+    .magazin__list .magazin__item__name-block{
+        padding-right: 35px;
+    }
+    .slider-section__data{
+        position: absolute;
+        right: -40px;
+        top: 50%;
+        font-size: 12px;
+        transform: translateX(100%) translateY(-50%);
+        padding: 10px 16px;
+        border-radius: 10px;
+        background: #F16665;
+    }
+}
+
+
+@media(max-width: 1024px){
+    .akcii-news-list{
+        .slider-section__data{
+            right: auto;
+            left: 0;
+            bottom: 0;
+            top: auto;
+            padding: 8px 10px;
+            transform: translate(0);
+            border-radius: 0 10px 0px 10px;
+        }
+        .magazin__list .magazin__item__img{
+            margin-right: 30px;
+        }
+    }
+}
+
+@media(max-width: 767px){
+    .akcii-news-list{
+        .magazin__list .magazin__item__name-block a{
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            font-size: 20px;
+        }
+        .slider-section__data{
+            right: 0;
+            left: auto;
+            padding: 8px 16px;
+            border-radius: 10px 0 10px 0;
+        }
+        .magazin__list .magazin__item{
+            flex-direction: column;
+            padding: 0;
+            border: 0;
+            box-shadow: none;
+            border-bottom: 1px solid rgba(0,0,0,.1);
+            padding-bottom: 20px;
+            padding-top: 20px;
+            border-radius: 0;
+        }
+        .magazin__list .magazin__item:last-child{
+            border-bottom: 0;
+        }
+        .magazin__list .magazin__item__img{
+            flex: auto;
+            padding-bottom: 56%;
+            border-radius: 10px;
+            overflow: hidden;
+            background-size: cover;
+            background-position: top center;
+            margin-bottom: 22px;
+            position: relative;
+            display: block;
+            margin-right: 0;
+            height: auto;
+            width: 100%;
+        }
+        .akcii-news-list .magazin__list .magazin__item__img{
+            margin-right: 0;
+        }
+    }
+    
+}
