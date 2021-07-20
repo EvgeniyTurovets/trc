@@ -13,7 +13,7 @@
     
     // меню 
     let header = document.querySelector('.header')
-    // let headerNav = document.getElementById('headerNav')
+    let headerNav = document.getElementById('headerNav')
     let headerTop =  document.getElementById('headerTop') 
     let headerBot =  document.getElementById('headerBot') 
     let mobNav = document.getElementById('mob-nav')
@@ -22,10 +22,10 @@
 
     function navRefresh(){
       if(window.innerWidth < 992){
-        // mobNavWrap.appendChild(headerNav)
+        mobNavWrap.appendChild(headerNav)
         mobNavWrap.appendChild(headerTop)
       }else{
-        // headerBotRight.appendChild(headerNav)
+        headerBotRight.appendChild(headerNav)
         document.getElementById('header-wrap').insertBefore(headerTop, headerBot)
       }
     }
@@ -104,23 +104,19 @@
             type: "fraction",
         },
         spaceBetween: 60,
-        lazy: true,
-        slidesPerView: 3,
-        direction: 'vertical',
-        allowTouchMove: false,
+        watchSlidesVisibility: true,
+        slidesPerColumn: 3,
         breakpoints: {
             // when window width is >= 320px
             560: {
                 slidesPerView: 2,
                 spaceBetween: 23,
-                direction: 'horizontal',
-                allowTouchMove: true,
+                slidesPerColumn: 1,
             },
             1024: {
                 slidesPerView: 3,
                 spaceBetween: 23,
-                direction: 'horizontal',
-                allowTouchMove: true,
+                slidesPerColumn: 1,
             },
             
         },
@@ -128,6 +124,20 @@
     for(let i = 0; i < sliderCount.length; i++){
         mySwiper = new Swiper(sliderCount[i], options);
         mySwiper.init();
+
+        function resizeSlide(swiper){
+            if(window.innerWidth < 560){
+                $wrapperEl = swiper.$wrapperEl[0];
+                $wraperItemHeigh = Number($wrapperEl.querySelector('.swiper-slide-visible .slider-section-item').offsetHeight)
+                $wraperItemLength = Number($wrapperEl.querySelectorAll('.swiper-slide-visible').length)
+                corectVal = ($wraperItemLength - 1) * 60
+                $wrapperEl.style.height = $wraperItemHeigh * $wraperItemLength + corectVal + 'px';
+            }
+        }
+
+        mySwiper.on('transitionEnd', function (swiper, initialized) {
+            resizeSlide(swiper)
+        });
     }
 
     // .swiper-section2
@@ -143,36 +153,49 @@
         type: "fraction",
       },
       spaceBetween: 60,
-      lazy: true,
-      slidesPerView: 4,
-      direction: 'vertical',
-      allowTouchMove: false,
+      slidesPerView: 1,
+      watchSlidesVisibility: true,
+      slidesPerColumn: 4,
       breakpoints: {
           // when window width is >= 320px
-          560: {
-              slidesPerView: 2,
-              spaceBetween: 23,
-              direction: 'horizontal',
-              allowTouchMove: true,
-          },
-          1024: {
+        560: {
+            slidesPerView: 2,
+            spaceBetween: 23,
+            slidesPerColumn: 1,
+        },
+        1024: {
             slidesPerView: 3,
             spaceBetween: 23,
-            direction: 'horizontal',
-            allowTouchMove: true,
-          },
-          1200: {
+            slidesPerColumn: 1,
+        },
+        1200: {
             slidesPerView: 4,
             spaceBetween: 23,
-            direction: 'horizontal',
-            allowTouchMove: true,
-          },
+            slidesPerColumn: 1,
+        },
           
       },
     }
     for(let i = 0; i < sliderCount.length; i++){
       mySwiper2 = new Swiper(sliderCount2[i], options2);
+      
       mySwiper2.init();
+
+      function resizeSlide(swiper){
+          console.log('1')
+        if(window.innerWidth < 560){
+            $wrapperEl = swiper.$wrapperEl[0];
+            $wraperItemHeigh = Number($wrapperEl.querySelector('.swiper-slide-visible .slider-section-item2').offsetHeight)
+            $wraperItemLength = Number($wrapperEl.querySelectorAll('.swiper-slide-visible').length)
+            corectVal = ($wraperItemLength - 1) * 60
+            $wrapperEl.style.height = $wraperItemHeigh * $wraperItemLength + corectVal + 'px';
+        }
+      }
+
+      mySwiper2.on('transitionEnd', function (swiper, initialized) {
+        resizeSlide(swiper)
+      });
+      
     }
 
     // сладер брендов
@@ -185,26 +208,71 @@
             el: ".swiper-pagination",
             type: "fraction",
         },
-        spaceBetween: 40,
-        slidesPerView: 3,
-        direction: 'vertical',
-        allowTouchMove: false,
-        lazy: true,
+        spaceBetween: 10,
+        slidesPerView: 1,
+        slidesPerColumn: 3,
         breakpoints: {
             768: {
                 spaceBetween: 40,
                 slidesPerView: 4,
-                direction: 'horizontal',
-                allowTouchMove: true,
+                slidesPerColumn: 1,
             },
             1024: {
                 spaceBetween: 80,
                 slidesPerView: 6,
-                direction: 'horizontal',
-                allowTouchMove: true,
+                slidesPerColumn: 1,
             },
         }
     });
+
+    // .swiper-section-contact
+    let sliderCount3 = document.querySelectorAll('.swiper-section-contact')
+    let options3 = {
+        init: false,
+        navigation: {
+              nextEl: '.swiper-button-next2',
+              prevEl: '.swiper-button-prev2',
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            type: "fraction",
+        },
+        spaceBetween: 60,
+        watchSlidesVisibility: true,
+        slidesPerColumn: 3,
+        breakpoints: {
+            // when window width is >= 320px
+            560: {
+                slidesPerView: 2,
+                spaceBetween: 23,
+                slidesPerColumn: 1,
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 23,
+                slidesPerColumn: 1,
+            },
+            
+        },
+    }
+    for(let i = 0; i < sliderCount3.length; i++){
+        mySwiper = new Swiper(sliderCount3[i], options3);
+        mySwiper.init();
+
+        function resizeSlide(swiper){
+            if(window.innerWidth < 560){
+                $wrapperEl = swiper.$wrapperEl[0];
+                $wraperItemHeigh = Number($wrapperEl.querySelector('.swiper-slide-visible .contact__item').offsetHeight)
+                $wraperItemLength = Number($wrapperEl.querySelectorAll('.swiper-slide-visible').length)
+                corectVal = ($wraperItemLength - 1) * 60
+                $wrapperEl.style.height = $wraperItemHeigh * $wraperItemLength + corectVal + 'px';
+            }
+        }
+
+        mySwiper.on('transitionEnd', function (swiper, initialized) {
+            resizeSlide(swiper)
+        });
+    }
 
 	// сладер новостей
 	const swiperNews = new Swiper('.news-slider', {
@@ -282,14 +350,15 @@
     // поиск
     let headerSearhBtn = document.querySelector('.header__searh__btn')
     let formSearch = document.getElementById('form-search')
-    let formSearchClose = document.querySelector('.form-search__close')
-
+    let formSearchClose = document.querySelector('.header__search__close')
+    let header__search__form = document.querySelector('.header__search__form')
     headerSearhBtn.addEventListener('click', () => {
-        formSearch.classList.toggle('active')
+        header.classList.add('search');
+        header__search__form.focus()
     })
 
     formSearchClose.addEventListener('click', () => {
-        formSearch.classList.remove('active')
+        header.classList.remove('search')
     })
 
 	// Акордион вакансий
@@ -347,6 +416,42 @@
         })
     }
     
+    // табы в каталоге
+    if(document.querySelector('.catalog-top__tabs')){
+        let catalogTabsLink = document.querySelectorAll('.catalog-top__tabs')
+        let catalogTabs = document.querySelector('.catalog-top')
+
+        catalogTabsLink.forEach(el => el.addEventListener('click', function(e){
+            e.preventDefault()
+            catalogTabsLink.forEach(function(el2, index){
+                el2.classList.remove('active')
+            })
+            el.classList.add('active')
+
+            if(el.getAttribute('data-index') == 1){
+                console.log('1')
+                catalogTabs.classList.remove('tabs-alfavit')
+                catalogTabs.classList.remove('tabs-search')
+            }
+            if(el.getAttribute('data-index') == 2){
+                console.log('2')
+                catalogTabs.classList.add('tabs-alfavit')
+                catalogTabs.classList.remove('tabs-search')
+            }
+            if(el.getAttribute('data-index') == 3){
+                console.log('3')
+                catalogTabs.classList.remove('tabs-alfavit')
+                catalogTabs.classList.add('tabs-search')
+            }
+        }))
+    }
+
+    if(document.getElementById('podpiska')){
+        let btnPodpiska = document.getElementById('podpiska')
+        btnPodpiska.addEventListener('click', function(){
+            this.closest('.footer__form').classList.add('active')
+        })
+    }
 
     document.addEventListener("DOMContentLoaded", function(){
         document.querySelector('.app').classList.add('loaded')

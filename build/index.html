@@ -6,11 +6,11 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Тц</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css?v=e558085402ef7a62271ed895a765c8ec" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" crossorigin="anonymous">
     <!-- платгины -->
-    <link rel='stylesheet' type='text/css' media='screen' href='./libs/swiper/swiper.css?v=e558085402ef7a62271ed895a765c8ec'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./libs/swiper/swiper.css'>
     <!-- основные стили -->
-    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.min.css?v=e558085402ef7a62271ed895a765c8ec'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.min.css'>
 </head>
 
 <body>
@@ -127,13 +127,22 @@
                                 </ul>
                             </nav>
                             
-                            <div class="header__searh">
+                            <form class="header__searh">
+                                <input class="header__search__form" placeholder="Поиск">
+                                
                                 <button class="header__searh__btn" type="button">
                                     <svg width="32" height="32" viewBox="0 0 32 32" fill="#132C39" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M8.39258 15.6764C8.39258 12.4277 11.0262 9.79407 14.2749 9.79407C17.5237 9.79407 20.1573 12.4277 20.1573 15.6764C20.1573 18.9252 17.5237 21.5588 14.2749 21.5588C11.0262 21.5588 8.39258 18.9252 8.39258 15.6764ZM14.2749 7.79407C9.92163 7.79407 6.39258 11.3231 6.39258 15.6764C6.39258 20.0297 9.92163 23.5588 14.2749 23.5588C15.9552 23.5588 17.5127 23.033 18.7919 22.137L22.5678 25.913C22.9583 26.3035 23.5915 26.3035 23.982 25.913C24.3726 25.5224 24.3726 24.8893 23.982 24.4987L20.2735 20.7902C21.4482 19.4137 22.1573 17.6279 22.1573 15.6764C22.1573 11.3231 18.6283 7.79407 14.2749 7.79407Z" fill="current"/>
                                     </svg>
                                 </button>
-                            </div>
+
+                                <button type="button" class="header__search__close">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18.364 5.63609L5.63605 18.364" stroke="#132C39" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M5.6367 5.63585L18.3646 18.3638" stroke="#132C39" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>    
+                                </button>
+                            </form>
                             <button class="menu-btn" id="menuBtn">
                                 <div class="menu-btn__burger">
                                     <svg class="no-active" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -437,7 +446,7 @@
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="slider-section-item">
-                                            <a href="" class="slider-section__img swiper-lazy" data-background="./img/index/1.jpg">
+                                            <a href="" class="slider-section__img swiper-lazy" style="background-image: url('./img/index/1.jpg');">
                                                 <div class="slider-section-item-logo">
                                                     <img src="./img/akcii-logo/1.svg">
                                                 </div>
@@ -465,7 +474,7 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="slider-section-item">
-                                            <a href="" class="slider-section__img swiper-lazy" data-background="./img/index/2.jpg">
+                                            <a href="" class="slider-section__img swiper-lazy" style="background-image: url('./img/index/2.jpg');">
                                                 <div class="slider-section-item-logo">
                                                     <img src="./img/akcii-logo/2.svg">
                                                 </div>
@@ -492,7 +501,7 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="slider-section-item">
-                                            <a href="" class="slider-section__img swiper-lazy" data-background="./img/index/3.jpg">
+                                            <a href="" class="slider-section__img swiper-lazy" style="background-image: url('./img/index/3.jpg');">
                                                 <div class="slider-section-item-logo">
                                                     <img src="./img/akcii-logo/3.svg">
                                                 </div>
@@ -518,7 +527,7 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="slider-section-item">
-                                            <a href="" class="slider-section__img swiper-lazy" data-background="./img/index/3.jpg">
+                                            <a href="" class="slider-section__img swiper-lazy" style="background-image: url('./img/index/3.jpg');">
                                                 <div class="slider-section-item-logo">
                                                     <img src="./img/akcii-logo/1.svg">
                                                 </div>
@@ -546,7 +555,7 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="slider-section-item">
-                                            <a href="" class="slider-section__img swiper-lazy" data-background="./img/index/1.jpg">
+                                            <a href="" class="slider-section__img swiper-lazy" style="background-image: url('./img/index/1.jpg');">
                                                 <div class="slider-section-item-logo">
                                                     <img src="./img/akcii-logo/2.svg">
                                                 </div>
@@ -613,7 +622,7 @@
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="slider-section-item">
-                                            <a href="" class="slider-section__img swiper-lazy" data-background="./img/index/2.jpg">
+                                            <a href="" class="slider-section__img swiper-lazy" style="background-image: url('./img/index/2.jpg');">
                                                 <div class="slider-section-item-logo">
                                                     <img src="./img/akcii-logo/1.svg">
                                                 </div>
@@ -641,7 +650,7 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="slider-section-item">
-                                            <a href="" class="slider-section__img swiper-lazy" data-background="./img/index/2.jpg">
+                                            <a href="" class="slider-section__img swiper-lazy" style="background-image: url('./img/index/2.jpg');">
                                                 <div class="slider-section-item-logo">
                                                     <img src="./img/akcii-logo/2.svg">
                                                 </div>
@@ -668,7 +677,7 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="slider-section-item">
-                                            <a href="" class="slider-section__img swiper-lazy" data-background="./img/index/3.jpg">
+                                            <a href="" class="slider-section__img swiper-lazy" style="background-image: url('./img/index/3.jpg');">
                                                 <div class="slider-section-item-logo">
                                                     <img src="./img/akcii-logo/3.svg">
                                                 </div>
@@ -694,7 +703,7 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="slider-section-item">
-                                            <a href="" class="slider-section__img swiper-lazy" data-background="./img/index/3.jpg">
+                                            <a href="" class="slider-section__img swiper-lazy" style="background-image: url('./img/index/3.jpg');">
                                                 <div class="slider-section-item-logo">
                                                     <img src="./img/akcii-logo/1.svg">
                                                 </div>
@@ -722,7 +731,7 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="slider-section-item">
-                                            <a href="" class="slider-section__img swiper-lazy" data-background="./img/index/1.jpg">
+                                            <a href="" class="slider-section__img swiper-lazy" style="background-image: url('./img/index/1.jpg');">
                                                 <div class="slider-section-item-logo">
                                                     <img src="./img/akcii-logo/2.svg">
                                                 </div>
@@ -789,7 +798,7 @@
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="slider-section-item">
-                                            <div class="slider-section__img swiper-lazy" data-background="./img/index/3.jpg">
+                                            <div class="slider-section__img swiper-lazy" style="background-image: url('./img/index/3.jpg');">
                                                 <div class="slider-section-item-logo">
                                                     <img src="./img/akcii-logo/3.svg">
                                                 </div>
@@ -817,7 +826,7 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="slider-section-item">
-                                            <div class="slider-section__img swiper-lazy" data-background="./img/index/2.jpg">
+                                            <div class="slider-section__img swiper-lazy" style="background-image: url('./img/index/2.jpg');">
                                                 <div class="slider-section-item-logo">
                                                     <img src="./img/akcii-logo/1.svg">
                                                 </div>
@@ -844,7 +853,7 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="slider-section-item">
-                                            <div class="slider-section__img swiper-lazy" data-background="./img/index/3.jpg">
+                                            <div class="slider-section__img swiper-lazy" style="background-image: url('./img/index/3.jpg');">
                                                 <div class="slider-section-item-logo">
                                                     <img src="./img/akcii-logo/3.svg">
                                                 </div>
@@ -870,7 +879,7 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="slider-section-item">
-                                            <div class="slider-section__img swiper-lazy" data-background="./img/index/3.jpg">
+                                            <div class="slider-section__img swiper-lazy" style="background-image: url('./img/index/3.jpg');">
                                                 <div class="slider-section-item-logo">
                                                     <img src="./img/akcii-logo/1.svg">
                                                 </div>
@@ -898,7 +907,7 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="slider-section-item">
-                                            <div class="slider-section__img swiper-lazy" data-background="./img/index/1.jpg">
+                                            <div class="slider-section__img swiper-lazy" style="background-image: url('./img/index/1.jpg');">
                                                 <div class="slider-section-item-logo">
                                                     <img src="./img/akcii-logo/2.svg">
                                                 </div>
@@ -965,7 +974,7 @@
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="slider-section-item">
-                                            <div class="slider-section__img swiper-lazy" data-background="./img/index/3.jpg">
+                                            <div class="slider-section__img swiper-lazy" style="background-image: url('./img/index/3.jpg');">
                                                 <div class="slider-section-item-logo">
                                                     <img src="./img/akcii-logo/2.svg">
                                                 </div>
@@ -993,7 +1002,7 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="slider-section-item">
-                                            <div class="slider-section__img swiper-lazy" data-background="./img/index/2.jpg">
+                                            <div class="slider-section__img swiper-lazy" style="background-image: url('./img/index/2.jpg');">
                                                 <div class="slider-section-item-logo">
                                                     <img src="./img/akcii-logo/3.svg">
                                                 </div>
@@ -1020,7 +1029,7 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="slider-section-item">
-                                            <div class="slider-section__img swiper-lazy" data-background="./img/index/3.jpg">
+                                            <div class="slider-section__img swiper-lazy" style="background-image: url('./img/index/3.jpg');">
                                                 <div class="slider-section-item-logo">
                                                     <img src="./img/akcii-logo/2.svg">
                                                 </div>
@@ -1046,7 +1055,7 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="slider-section-item">
-                                            <div class="slider-section__img swiper-lazy" data-background="./img/index/3.jpg">
+                                            <div class="slider-section__img swiper-lazy" style="background-image: url('./img/index/3.jpg');">
                                                 <div class="slider-section-item-logo">
                                                     <img src="./img/akcii-logo/1.svg">
                                                 </div>
@@ -1074,7 +1083,7 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="slider-section-item">
-                                            <div class="slider-section__img swiper-lazy" data-background="./img/index/1.jpg">
+                                            <div class="slider-section__img swiper-lazy" style="background-image: url('./img/index/1.jpg');">
                                                 <div class="slider-section-item-logo">
                                                     <img src="./img/akcii-logo/2.svg">
                                                 </div>
@@ -1141,7 +1150,7 @@
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="slider-section-item">
-                                            <div class="slider-section__img swiper-lazy" data-background="./img/index/1.jpg">
+                                            <div class="slider-section__img swiper-lazy" style="background-image: url('./img/index/1.jpg');">
                                                 <div class="slider-section-item-logo">
                                                     <img src="./img/akcii-logo/1.svg">
                                                 </div>
@@ -1169,7 +1178,7 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="slider-section-item">
-                                            <div class="slider-section__img swiper-lazy" data-background="./img/index/2.jpg">
+                                            <div class="slider-section__img swiper-lazy" style="background-image: url('./img/index/2.jpg');">
                                                 <div class="slider-section-item-logo">
                                                     <img src="./img/akcii-logo/2.svg">
                                                 </div>
@@ -1196,7 +1205,7 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="slider-section-item">
-                                            <div class="slider-section__img swiper-lazy" data-background="./img/index/2.jpg">
+                                            <div class="slider-section__img swiper-lazy" style="background-image: url('./img/index/2.jpg');">
                                                 <div class="slider-section-item-logo">
                                                     <img src="./img/akcii-logo/3.svg">
                                                 </div>
@@ -1223,7 +1232,7 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="slider-section-item">
-                                            <div class="slider-section__img swiper-lazy" data-background="./img/index/2.jpg">
+                                            <div class="slider-section__img swiper-lazy" style="background-image: url('./img/index/2.jpg');">
                                                 <div class="slider-section-item-logo">
                                                     <img src="./img/akcii-logo/1.svg">
                                                 </div>
@@ -1250,7 +1259,7 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="slider-section-item">
-                                            <div class="slider-section__img swiper-lazy" data-background="./img/index/3.jpg">
+                                            <div class="slider-section__img swiper-lazy" style="background-image: url('./img/index/3.jpg');">
                                                 <div class="slider-section-item-logo">
                                                     <img src="./img/akcii-logo/2.svg">
                                                 </div>
@@ -1276,7 +1285,7 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="slider-section-item">
-                                            <div class="slider-section__img swiper-lazy" data-background="./img/index/3.jpg">
+                                            <div class="slider-section__img swiper-lazy" style="background-image: url('./img/index/3.jpg');">
                                                 <div class="slider-section-item-logo">
                                                     <img src="./img/akcii-logo/3.svg">
                                                 </div>
@@ -1304,7 +1313,7 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="slider-section-item">
-                                            <div class="slider-section__img swiper-lazy" data-background="./img/index/1.jpg">
+                                            <div class="slider-section__img swiper-lazy" style="background-image: url('./img/index/1.jpg');">
                                                 <div class="slider-section-item-logo">
                                                     <img src="./img/akcii-logo/2.svg">
                                                 </div>
@@ -1446,7 +1455,7 @@
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="slider-section-item2">
-                                            <div class="slider-section__img swiper-lazy" data-background="./img/index/4.jpg">
+                                            <div class="slider-section__img swiper-lazy"  style="background-image: url('./img/index/4.jpg');">
                                                 <div class="slider-section__data">
                                                     <span>
                                                         <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1482,7 +1491,7 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="slider-section-item2">
-                                            <div class="slider-section__img swiper-lazy" data-background="./img/index/5.jpg">
+                                            <div class="slider-section__img swiper-lazy" style="background-image: url('./img/index/5.jpg');">
                                                 <div class="slider-section__data">
                                                     <span>
                                                         <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1518,7 +1527,7 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="slider-section-item2">
-                                            <div class="slider-section__img swiper-lazy" data-background="./img/index/6.jpg">
+                                            <div class="slider-section__img swiper-lazy" style="background-image: url('./img/index/6.jpg');">
                                                 <div class="slider-section__data">
                                                     <span>
                                                         <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1554,7 +1563,7 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="slider-section-item2">
-                                            <div class="slider-section__img swiper-lazy" data-background="./img/index/7.jpg">
+                                            <div class="slider-section__img swiper-lazy" style="background-image: url('./img/index/7.jpg');">
                                                 <div class="slider-section__data">
                                                     <span>
                                                         <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1590,226 +1599,7 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="slider-section-item2">
-                                            <div class="slider-section__img swiper-lazy" data-background="./img/index/4.jpg">
-                                                <div class="slider-section__data">
-                                                    <span>
-                                                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M11.9782 2.78876H2.72261C1.99237 2.78876 1.40039 3.38074 1.40039 4.11098V13.3665C1.40039 14.0968 1.99237 14.6888 2.72261 14.6888H11.9782C12.7084 14.6888 13.3004 14.0968 13.3004 13.3665V4.11098C13.3004 3.38074 12.7084 2.78876 11.9782 2.78876Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                                                            <path d="M9.99414 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                                                            <path d="M4.70703 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                                                            <path d="M1.40039 6.7554H13.3004" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        </svg>    
-                                                    </span>
-                                                    23 апр - 23 июл
-                                                </div>
-                                            </div>
-                                            <div class="slider-section__wrap">
-                                                <div class="slider-section__type data-fiolet">Фильм</div>
-                                                <div class="slider-section__name">
-                                                    Призрак
-                                                </div>
-                                                <div class="slider-section__bot">
-                                                    <div class="slider-section__price">
-                                                        <div class="slider-section__price1">Цена:</div>
-                                                        <div class="slider-section__price2">от 150 руб.</div>
-                                                    </div>
-                                                    <div class="slider-section__buy data-fiolet">
-                                                        <button type="button">
-                                                            <div>
-                                                                <span>Купить</span>
-                                                            </div>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper__bot swiper__bot--black">
-                                    <!-- If we need pagination -->
-                                    <div class="swiper-count swiper-pagination">
-                                        <div class="now swiper-pagination-current">1</div>
-                                        <span></span>
-                                        <div class="max swiper-pagination-total">4</div>
-                                    </div>
-
-                                    <div class="swiper-bot-btn">
-                                        <a href="" class="btn btn-blue">
-                                            Все АФИШИ
-                                            <svg width="23" height="9" viewBox="0 0 23 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M22.4243 4.92426C22.6586 4.68995 22.6586 4.31005 22.4243 4.07574L18.6059 0.257359C18.3716 0.0230446 17.9917 0.0230446 17.7574 0.257359C17.523 0.491674 17.523 0.871573 17.7574 1.10589L21.1515 4.5L17.7574 7.89411C17.523 8.12843 17.523 8.50833 17.7574 8.74264C17.9917 8.97696 18.3716 8.97696 18.6059 8.74264L22.4243 4.92426ZM0 5.1H22V3.9H0V5.1Z" fill="white"/>
-                                            </svg>    
-                                        </a>
-                                    </div>
-                                    
-            
-                                    <!-- If we need navigation buttons -->
-                                    <div class="swiper__btns">
-                                        <div class="swiper__button swiper-button-prev2 black">
-                                            <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M23 10.9281H1M1 10.9281L11.0774 1M1 10.9281L11.0774 21" stroke="#132C39"/>
-                                            </svg>
-                                        </div>
-                                        <div class="swiper__button swiper-button-next2 black">
-                                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M2.79451e-07 11.0719L23 11.0719M23 11.0719L12.4645 21M23 11.0719L12.4645 0.999998" stroke="#132C39"/>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tabs-item">
-                            <div class="swiper-section2 swiper-container">
-                                <!-- Additional required wrapper -->
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="slider-section-item2">
-                                            <div class="slider-section__img swiper-lazy" data-background="./img/index/4.jpg">
-                                                <div class="slider-section__data">
-                                                    <span>
-                                                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M11.9782 2.78876H2.72261C1.99237 2.78876 1.40039 3.38074 1.40039 4.11098V13.3665C1.40039 14.0968 1.99237 14.6888 2.72261 14.6888H11.9782C12.7084 14.6888 13.3004 14.0968 13.3004 13.3665V4.11098C13.3004 3.38074 12.7084 2.78876 11.9782 2.78876Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                                                            <path d="M9.99414 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                                                            <path d="M4.70703 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                                                            <path d="M1.40039 6.7554H13.3004" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        </svg>    
-                                                    </span>
-                                                    23 апр - 23 июл
-                                                </div>
-                                            </div>
-                                            <div class="slider-section__wrap">
-                                                <div class="slider-section__type data-fiolet">Фильм</div>
-                                                <div class="slider-section__name">
-                                                    Призрак
-                                                </div>
-                                                <div class="slider-section__bot">
-                                                    <div class="slider-section__price">
-                                                        <div class="slider-section__price1">Цена:</div>
-                                                        <div class="slider-section__price2">от 150 руб.</div>
-                                                    </div>
-                                                    <div class="slider-section__buy data-fiolet">
-                                                        <button type="button">
-                                                            <div>
-                                                                <span>Купить</span>
-                                                            </div>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="slider-section-item2">
-                                            <div class="slider-section__img swiper-lazy" data-background="./img/index/5.jpg">
-                                                <div class="slider-section__data">
-                                                    <span>
-                                                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M11.9782 2.78876H2.72261C1.99237 2.78876 1.40039 3.38074 1.40039 4.11098V13.3665C1.40039 14.0968 1.99237 14.6888 2.72261 14.6888H11.9782C12.7084 14.6888 13.3004 14.0968 13.3004 13.3665V4.11098C13.3004 3.38074 12.7084 2.78876 11.9782 2.78876Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                                                            <path d="M9.99414 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                                                            <path d="M4.70703 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                                                            <path d="M1.40039 6.7554H13.3004" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        </svg>    
-                                                    </span>
-                                                    23 апр - 23 июл
-                                                </div>
-                                            </div>
-                                            <div class="slider-section__wrap">
-                                                <div class="slider-section__type data-fiolet">Фильм</div>
-                                                <div class="slider-section__name">
-                                                    Призрак
-                                                </div>
-                                                <div class="slider-section__bot">
-                                                    <div class="slider-section__price">
-                                                        <div class="slider-section__price1">Цена:</div>
-                                                        <div class="slider-section__price2">от 150 руб.</div>
-                                                    </div>
-                                                    <div class="slider-section__buy data-fiolet">
-                                                        <button type="button">
-                                                            <div>
-                                                                <span>Купить</span>
-                                                            </div>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="slider-section-item2">
-                                            <div class="slider-section__img swiper-lazy" data-background="./img/index/6.jpg">
-                                                <div class="slider-section__data">
-                                                    <span>
-                                                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M11.9782 2.78876H2.72261C1.99237 2.78876 1.40039 3.38074 1.40039 4.11098V13.3665C1.40039 14.0968 1.99237 14.6888 2.72261 14.6888H11.9782C12.7084 14.6888 13.3004 14.0968 13.3004 13.3665V4.11098C13.3004 3.38074 12.7084 2.78876 11.9782 2.78876Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                                                            <path d="M9.99414 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                                                            <path d="M4.70703 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                                                            <path d="M1.40039 6.7554H13.3004" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        </svg>    
-                                                    </span>
-                                                    23 апр - 23 июл
-                                                </div>
-                                            </div>
-                                            <div class="slider-section__wrap">
-                                                <div class="slider-section__type data-fiolet">Фильм</div>
-                                                <div class="slider-section__name">
-                                                    Призрак
-                                                </div>
-                                                <div class="slider-section__bot">
-                                                    <div class="slider-section__price">
-                                                        <div class="slider-section__price1">Цена:</div>
-                                                        <div class="slider-section__price2">от 150 руб.</div>
-                                                    </div>
-                                                    <div class="slider-section__buy data-fiolet">
-                                                        <button type="button">
-                                                            <div>
-                                                                <span>Купить</span>
-                                                            </div>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="slider-section-item2">
-                                            <div class="slider-section__img swiper-lazy" data-background="./img/index/7.jpg">
-                                                <div class="slider-section__data">
-                                                    <span>
-                                                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M11.9782 2.78876H2.72261C1.99237 2.78876 1.40039 3.38074 1.40039 4.11098V13.3665C1.40039 14.0968 1.99237 14.6888 2.72261 14.6888H11.9782C12.7084 14.6888 13.3004 14.0968 13.3004 13.3665V4.11098C13.3004 3.38074 12.7084 2.78876 11.9782 2.78876Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                                                            <path d="M9.99414 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                                                            <path d="M4.70703 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                                                            <path d="M1.40039 6.7554H13.3004" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        </svg>    
-                                                    </span>
-                                                    23 апр - 23 июл
-                                                </div>
-                                            </div>
-                                            <div class="slider-section__wrap">
-                                                <div class="slider-section__type data-fiolet">Фильм</div>
-                                                <div class="slider-section__name">
-                                                    Призрак
-                                                </div>
-                                                <div class="slider-section__bot">
-                                                    <div class="slider-section__price">
-                                                        <div class="slider-section__price1">Цена:</div>
-                                                        <div class="slider-section__price2">от 150 руб.</div>
-                                                    </div>
-                                                    <div class="slider-section__buy data-fiolet">
-                                                        <button type="button">
-                                                            <div>
-                                                                <span>Купить</span>
-                                                            </div>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="slider-section-item2">
-                                            <div class="slider-section__img swiper-lazy" data-background="./img/index/4.jpg">
+                                            <div class="slider-section__img swiper-lazy" style="background-image: url('./img/index/4.jpg');">
                                                 <div class="slider-section__data">
                                                     <span>
                                                         <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1884,7 +1674,7 @@
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="slider-section-item2">
-                                            <div class="slider-section__img swiper-lazy" data-background="./img/index/4.jpg">
+                                            <div class="slider-section__img swiper-lazy" style="background-image: url('./img/index/4.jpg');">
                                                 <div class="slider-section__data">
                                                     <span>
                                                         <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1920,7 +1710,7 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="slider-section-item2">
-                                            <div class="slider-section__img swiper-lazy" data-background="./img/index/5.jpg">
+                                            <div class="slider-section__img swiper-lazy" style="background-image: url('./img/index/5.jpg');">
                                                 <div class="slider-section__data">
                                                     <span>
                                                         <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1956,7 +1746,7 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="slider-section-item2">
-                                            <div class="slider-section__img swiper-lazy" data-background="./img/index/6.jpg">
+                                            <div class="slider-section__img swiper-lazy" style="background-image: url('./img/index/6.jpg');">
                                                 <div class="slider-section__data">
                                                     <span>
                                                         <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1992,7 +1782,7 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="slider-section-item2">
-                                            <div class="slider-section__img swiper-lazy" data-background="./img/index/7.jpg">
+                                            <div class="slider-section__img swiper-lazy" style="background-image: url('./img/index/7.jpg');">
                                                 <div class="slider-section__data">
                                                     <span>
                                                         <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2028,7 +1818,7 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="slider-section-item2">
-                                            <div class="slider-section__img swiper-lazy" data-background="./img/index/4.jpg">
+                                            <div class="slider-section__img swiper-lazy" style="background-image: url('./img/index/4.jpg');">
                                                 <div class="slider-section__data">
                                                     <span>
                                                         <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2103,7 +1893,7 @@
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="slider-section-item2">
-                                            <div class="slider-section__img swiper-lazy" data-background="./img/index/4.jpg">
+                                            <div class="slider-section__img swiper-lazy" style="background-image: url('./img/index/4.jpg');">
                                                 <div class="slider-section__data">
                                                     <span>
                                                         <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2139,7 +1929,7 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="slider-section-item2">
-                                            <div class="slider-section__img swiper-lazy" data-background="./img/index/5.jpg">
+                                            <div class="slider-section__img swiper-lazy" style="background-image: url('./img/index/5.jpg');">
                                                 <div class="slider-section__data">
                                                     <span>
                                                         <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2175,7 +1965,7 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="slider-section-item2">
-                                            <div class="slider-section__img swiper-lazy" data-background="./img/index/6.jpg">
+                                            <div class="slider-section__img swiper-lazy" style="background-image: url('./img/index/6.jpg');">
                                                 <div class="slider-section__data">
                                                     <span>
                                                         <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2211,7 +2001,7 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="slider-section-item2">
-                                            <div class="slider-section__img swiper-lazy" data-background="./img/index/7.jpg">
+                                            <div class="slider-section__img swiper-lazy" style="background-image: url('./img/index/7.jpg');">
                                                 <div class="slider-section__data">
                                                     <span>
                                                         <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2247,7 +2037,226 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="slider-section-item2">
-                                            <div class="slider-section__img swiper-lazy" data-background="./img/index/4.jpg">
+                                            <div class="slider-section__img swiper-lazy" style="background-image: url('./img/index/4.jpg');">
+                                                <div class="slider-section__data">
+                                                    <span>
+                                                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M11.9782 2.78876H2.72261C1.99237 2.78876 1.40039 3.38074 1.40039 4.11098V13.3665C1.40039 14.0968 1.99237 14.6888 2.72261 14.6888H11.9782C12.7084 14.6888 13.3004 14.0968 13.3004 13.3665V4.11098C13.3004 3.38074 12.7084 2.78876 11.9782 2.78876Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M9.99414 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M4.70703 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M1.40039 6.7554H13.3004" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>    
+                                                    </span>
+                                                    23 апр - 23 июл
+                                                </div>
+                                            </div>
+                                            <div class="slider-section__wrap">
+                                                <div class="slider-section__type data-fiolet">Фильм</div>
+                                                <div class="slider-section__name">
+                                                    Призрак
+                                                </div>
+                                                <div class="slider-section__bot">
+                                                    <div class="slider-section__price">
+                                                        <div class="slider-section__price1">Цена:</div>
+                                                        <div class="slider-section__price2">от 150 руб.</div>
+                                                    </div>
+                                                    <div class="slider-section__buy data-fiolet">
+                                                        <button type="button">
+                                                            <div>
+                                                                <span>Купить</span>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper__bot swiper__bot--black">
+                                    <!-- If we need pagination -->
+                                    <div class="swiper-count swiper-pagination">
+                                        <div class="now swiper-pagination-current">1</div>
+                                        <span></span>
+                                        <div class="max swiper-pagination-total">4</div>
+                                    </div>
+
+                                    <div class="swiper-bot-btn">
+                                        <a href="" class="btn btn-blue">
+                                            Все АФИШИ
+                                            <svg width="23" height="9" viewBox="0 0 23 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M22.4243 4.92426C22.6586 4.68995 22.6586 4.31005 22.4243 4.07574L18.6059 0.257359C18.3716 0.0230446 17.9917 0.0230446 17.7574 0.257359C17.523 0.491674 17.523 0.871573 17.7574 1.10589L21.1515 4.5L17.7574 7.89411C17.523 8.12843 17.523 8.50833 17.7574 8.74264C17.9917 8.97696 18.3716 8.97696 18.6059 8.74264L22.4243 4.92426ZM0 5.1H22V3.9H0V5.1Z" fill="white"/>
+                                            </svg>    
+                                        </a>
+                                    </div>
+                                    
+            
+                                    <!-- If we need navigation buttons -->
+                                    <div class="swiper__btns">
+                                        <div class="swiper__button swiper-button-prev2 black">
+                                            <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M23 10.9281H1M1 10.9281L11.0774 1M1 10.9281L11.0774 21" stroke="#132C39"/>
+                                            </svg>
+                                        </div>
+                                        <div class="swiper__button swiper-button-next2 black">
+                                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2.79451e-07 11.0719L23 11.0719M23 11.0719L12.4645 21M23 11.0719L12.4645 0.999998" stroke="#132C39"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs-item">
+                            <div class="swiper-section2 swiper-container">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="slider-section-item2">
+                                            <div class="slider-section__img swiper-lazy" style="background-image: url('./img/index/4.jpg');">
+                                                <div class="slider-section__data">
+                                                    <span>
+                                                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M11.9782 2.78876H2.72261C1.99237 2.78876 1.40039 3.38074 1.40039 4.11098V13.3665C1.40039 14.0968 1.99237 14.6888 2.72261 14.6888H11.9782C12.7084 14.6888 13.3004 14.0968 13.3004 13.3665V4.11098C13.3004 3.38074 12.7084 2.78876 11.9782 2.78876Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M9.99414 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M4.70703 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M1.40039 6.7554H13.3004" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>    
+                                                    </span>
+                                                    23 апр - 23 июл
+                                                </div>
+                                            </div>
+                                            <div class="slider-section__wrap">
+                                                <div class="slider-section__type data-fiolet">Фильм</div>
+                                                <div class="slider-section__name">
+                                                    Призрак
+                                                </div>
+                                                <div class="slider-section__bot">
+                                                    <div class="slider-section__price">
+                                                        <div class="slider-section__price1">Цена:</div>
+                                                        <div class="slider-section__price2">от 150 руб.</div>
+                                                    </div>
+                                                    <div class="slider-section__buy data-fiolet">
+                                                        <button type="button">
+                                                            <div>
+                                                                <span>Купить</span>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-section-item2">
+                                            <div class="slider-section__img swiper-lazy" style="background-image: url('./img/index/5.jpg');">
+                                                <div class="slider-section__data">
+                                                    <span>
+                                                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M11.9782 2.78876H2.72261C1.99237 2.78876 1.40039 3.38074 1.40039 4.11098V13.3665C1.40039 14.0968 1.99237 14.6888 2.72261 14.6888H11.9782C12.7084 14.6888 13.3004 14.0968 13.3004 13.3665V4.11098C13.3004 3.38074 12.7084 2.78876 11.9782 2.78876Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M9.99414 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M4.70703 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M1.40039 6.7554H13.3004" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>    
+                                                    </span>
+                                                    23 апр - 23 июл
+                                                </div>
+                                            </div>
+                                            <div class="slider-section__wrap">
+                                                <div class="slider-section__type data-fiolet">Фильм</div>
+                                                <div class="slider-section__name">
+                                                    Призрак
+                                                </div>
+                                                <div class="slider-section__bot">
+                                                    <div class="slider-section__price">
+                                                        <div class="slider-section__price1">Цена:</div>
+                                                        <div class="slider-section__price2">от 150 руб.</div>
+                                                    </div>
+                                                    <div class="slider-section__buy data-fiolet">
+                                                        <button type="button">
+                                                            <div>
+                                                                <span>Купить</span>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-section-item2">
+                                            <div class="slider-section__img swiper-lazy" style="background-image: url('./img/index/6.jpg');">
+                                                <div class="slider-section__data">
+                                                    <span>
+                                                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M11.9782 2.78876H2.72261C1.99237 2.78876 1.40039 3.38074 1.40039 4.11098V13.3665C1.40039 14.0968 1.99237 14.6888 2.72261 14.6888H11.9782C12.7084 14.6888 13.3004 14.0968 13.3004 13.3665V4.11098C13.3004 3.38074 12.7084 2.78876 11.9782 2.78876Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M9.99414 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M4.70703 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M1.40039 6.7554H13.3004" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>    
+                                                    </span>
+                                                    23 апр - 23 июл
+                                                </div>
+                                            </div>
+                                            <div class="slider-section__wrap">
+                                                <div class="slider-section__type data-fiolet">Фильм</div>
+                                                <div class="slider-section__name">
+                                                    Призрак
+                                                </div>
+                                                <div class="slider-section__bot">
+                                                    <div class="slider-section__price">
+                                                        <div class="slider-section__price1">Цена:</div>
+                                                        <div class="slider-section__price2">от 150 руб.</div>
+                                                    </div>
+                                                    <div class="slider-section__buy data-fiolet">
+                                                        <button type="button">
+                                                            <div>
+                                                                <span>Купить</span>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-section-item2">
+                                            <div class="slider-section__img swiper-lazy" style="background-image: url('./img/index/7.jpg');">
+                                                <div class="slider-section__data">
+                                                    <span>
+                                                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M11.9782 2.78876H2.72261C1.99237 2.78876 1.40039 3.38074 1.40039 4.11098V13.3665C1.40039 14.0968 1.99237 14.6888 2.72261 14.6888H11.9782C12.7084 14.6888 13.3004 14.0968 13.3004 13.3665V4.11098C13.3004 3.38074 12.7084 2.78876 11.9782 2.78876Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M9.99414 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M4.70703 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M1.40039 6.7554H13.3004" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>    
+                                                    </span>
+                                                    23 апр - 23 июл
+                                                </div>
+                                            </div>
+                                            <div class="slider-section__wrap">
+                                                <div class="slider-section__type data-fiolet">Фильм</div>
+                                                <div class="slider-section__name">
+                                                    Призрак
+                                                </div>
+                                                <div class="slider-section__bot">
+                                                    <div class="slider-section__price">
+                                                        <div class="slider-section__price1">Цена:</div>
+                                                        <div class="slider-section__price2">от 150 руб.</div>
+                                                    </div>
+                                                    <div class="slider-section__buy data-fiolet">
+                                                        <button type="button">
+                                                            <div>
+                                                                <span>Купить</span>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-section-item2">
+                                            <div class="slider-section__img swiper-lazy" style="background-image: url('./img/index/4.jpg');">
                                                 <div class="slider-section__data">
                                                     <span>
                                                         <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2368,36 +2377,36 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="barnd-slider-item">
-                                <img class="swiper-lazy" data-src="./img/index/brand/1.svg">
+                                <img class="swiper-lazy" src="./img/index/brand/1.svg">
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="barnd-slider-item">
-                                <img class="swiper-lazy" data-src="./img/index/brand/2.svg">
+                                <img class="swiper-lazy" src="./img/index/brand/2.svg">
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="barnd-slider-item">
-                                <img class="swiper-lazy" data-src="./img/index/brand/3.svg">
+                                <img class="swiper-lazy" src="./img/index/brand/3.svg">
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="barnd-slider-item">
-                                <img class="swiper-lazy" data-src="./img/index/brand/4.svg">
+                                <img class="swiper-lazy" src="./img/index/brand/4.svg">
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="barnd-slider-item">
-                                <img class="swiper-lazy" data-src="./img/index/brand/5.svg">
+                                <img class="swiper-lazy" src="./img/index/brand/5.svg">
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="barnd-slider-item"><img class="swiper-lazy" data-src="./img/index/brand/6.svg"></div>
+                            <div class="barnd-slider-item"><img class="swiper-lazy" src="./img/index/brand/6.svg"></div>
                             
                         </div>
                         <div class="swiper-slide">
                             <div class="barnd-slider-item">
-                                <img class="swiper-lazy" data-src="./img/index/brand/2.svg">
+                                <img class="swiper-lazy" src="./img/index/brand/2.svg">
                             </div>
                         </div>
                     </div>
@@ -2458,7 +2467,8 @@
                         <form class="footer__form">
                             <div class="footer-mob-label">Подписаться на новости:</div>
                             <input placeholder="E-MAIL">
-                            <button type="button">Отправить</button>
+                            <button type="button" id="podpiska">Отправить</button>
+                            <div class="footer__form__success">Спасибо! Подписка оформлена</div>
                         </form>
                     </div>
                     <div class="footer__col">
@@ -2505,9 +2515,9 @@
         </footer>
     </div>
 <!-- плагины -->
-<script src="libs/swiper/swiper.js?v=e558085402ef7a62271ed895a765c8ec"></script>
-<script src="libs/tabs/tabby.min.js?v=e558085402ef7a62271ed895a765c8ec"></script>
+<script src="libs/swiper/swiper.js"></script>
+<script src="libs/tabs/tabby.min.js"></script>
 <!-- основной -->
-<script src="js/main.js?v=e558085402ef7a62271ed895a765c8ec"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

@@ -6,12 +6,12 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Тц</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css?v=e558085402ef7a62271ed895a765c8ec" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" crossorigin="anonymous">
     <!-- платгины -->
-    <link rel='stylesheet' type='text/css' media='screen' href='./libs/swiper/swiper.css?v=e558085402ef7a62271ed895a765c8ec'>
-    <link rel='stylesheet' type='text/css' media='screen' href='./libs/graf-modal/graph-modal.min.css?v=e558085402ef7a62271ed895a765c8ec'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./libs/swiper/swiper.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./libs/graf-modal/graph-modal.min.css'>
     <!-- основные стили -->
-    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.min.css?v=e558085402ef7a62271ed895a765c8ec'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.min.css'>
 </head>
 
 <body>
@@ -129,13 +129,22 @@
                             </ul>
                         </nav>
                         
-                        <div class="header__searh">
+                        <form class="header__searh">
+                            <input class="header__search__form" placeholder="Поиск">
+                            
                             <button class="header__searh__btn" type="button">
                                 <svg width="32" height="32" viewBox="0 0 32 32" fill="#132C39" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M8.39258 15.6764C8.39258 12.4277 11.0262 9.79407 14.2749 9.79407C17.5237 9.79407 20.1573 12.4277 20.1573 15.6764C20.1573 18.9252 17.5237 21.5588 14.2749 21.5588C11.0262 21.5588 8.39258 18.9252 8.39258 15.6764ZM14.2749 7.79407C9.92163 7.79407 6.39258 11.3231 6.39258 15.6764C6.39258 20.0297 9.92163 23.5588 14.2749 23.5588C15.9552 23.5588 17.5127 23.033 18.7919 22.137L22.5678 25.913C22.9583 26.3035 23.5915 26.3035 23.982 25.913C24.3726 25.5224 24.3726 24.8893 23.982 24.4987L20.2735 20.7902C21.4482 19.4137 22.1573 17.6279 22.1573 15.6764C22.1573 11.3231 18.6283 7.79407 14.2749 7.79407Z" fill="current"/>
                                 </svg>
                             </button>
-                        </div>
+
+                            <button type="button" class="header__search__close">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.364 5.63609L5.63605 18.364" stroke="#132C39" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.6367 5.63585L18.3646 18.3638" stroke="#132C39" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>    
+                            </button>
+                        </form>
                         <button class="menu-btn" id="menuBtn">
                             <div class="menu-btn__burger">
                                 <svg class="no-active" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -396,10 +405,10 @@
 </div>
 
 <!-- плагины -->
-<script src="libs/swiper/swiper.js?v=e558085402ef7a62271ed895a765c8ec"></script>
-<script src="libs/tabs/tabby.min.js?v=e558085402ef7a62271ed895a765c8ec"></script>
-<script src="libs/graf-modal/graph-modal.min.js?v=e558085402ef7a62271ed895a765c8ec"></script>
+<script src="libs/swiper/swiper.js"></script>
+<script src="libs/tabs/tabby.min.js"></script>
+<script src="libs/graf-modal/graph-modal.min.js"></script>
 <!-- основной -->
-<script src="js/main.js?v=e558085402ef7a62271ed895a765c8ec"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

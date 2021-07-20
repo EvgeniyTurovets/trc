@@ -345,24 +345,24 @@
     }
 }
 
-@media(max-width: 559px){
-    .raspisanie.blue{
-        .raspisanie__title{
-            background-color:  #6C83C1;
-        }
-        .raspisanie__plashka{
-            background-color:  #6C83C1;
-        }
+
+.raspisanie.blue{
+    .raspisanie__title{
+        background-color:  #6C83C1;
     }
-    .afisha-kino__top__right{
-        .btn.btn-fiolet{
-            background-color: #6C83C1;
-        }
-        .btn.btn-fiolet-border{
-            color: #6C83C1;
-            border: 1px solid #6C83C1;
-        }
+    .raspisanie__plashka{
+        background-color:  #6C83C1;
     }
-   
 }
+.afisha-kino__top__right{
+    .btn.btn-fiolet{
+        background-color: #6C83C1;
+    }
+    .btn.btn-fiolet-border{
+        color: #6C83C1;
+        border: 1px solid #6C83C1;
+    }
+}
+   
+
 

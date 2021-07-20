@@ -132,13 +132,22 @@
                             </ul>
                         </nav>
                         
-                        <div class="header__searh">
+                        <form class="header__searh">
+                            <input class="header__search__form" placeholder="Поиск">
+                            
                             <button class="header__searh__btn" type="button">
                                 <svg width="32" height="32" viewBox="0 0 32 32" fill="#132C39" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M8.39258 15.6764C8.39258 12.4277 11.0262 9.79407 14.2749 9.79407C17.5237 9.79407 20.1573 12.4277 20.1573 15.6764C20.1573 18.9252 17.5237 21.5588 14.2749 21.5588C11.0262 21.5588 8.39258 18.9252 8.39258 15.6764ZM14.2749 7.79407C9.92163 7.79407 6.39258 11.3231 6.39258 15.6764C6.39258 20.0297 9.92163 23.5588 14.2749 23.5588C15.9552 23.5588 17.5127 23.033 18.7919 22.137L22.5678 25.913C22.9583 26.3035 23.5915 26.3035 23.982 25.913C24.3726 25.5224 24.3726 24.8893 23.982 24.4987L20.2735 20.7902C21.4482 19.4137 22.1573 17.6279 22.1573 15.6764C22.1573 11.3231 18.6283 7.79407 14.2749 7.79407Z" fill="current"/>
                                 </svg>
                             </button>
-                        </div>
+
+                            <button type="button" class="header__search__close">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.364 5.63609L5.63605 18.364" stroke="#132C39" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.6367 5.63585L18.3646 18.3638" stroke="#132C39" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>    
+                            </button>
+                        </form>
                         <button class="menu-btn" id="menuBtn">
                             <div class="menu-btn__burger">
                                 <svg class="no-active" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -171,8 +180,7 @@
                         <path d="M3.89998 11.5687H20.6435V14.4464H0.423584V0H20.5276V2.87768H3.89998V5.42704H20.18V8.20816H3.89998V11.5687Z" fill="white"/>
                         <path d="M39.1514 11.6266H41.16V18H37.7995V14.4464H26.2308V18H22.8703V11.6266H24.7243C25.7286 10.2618 26.2308 8.46567 26.2308 6.2382V0H39.1514V11.6266ZM35.675 11.6266V2.81974H29.6686V6.2382C29.6686 8.38841 29.3209 10.1845 28.6256 11.6266H35.675Z" fill="white"/>
                         <path d="M56.8876 14.4464L55.6323 11.588H47.4434L46.2074 14.4464H42.5572L48.9885 0H54.1451L60.5765 14.4464H56.8876ZM51.5379 1.93133L48.6022 8.80687H54.4735L51.5379 1.93133Z" fill="white"/>
-                        </svg>
-                        
+                    </svg>    
                 </div>
             </div>
         </div>
@@ -181,7 +189,7 @@
             <div class="catalog-top">
                 <div class="wrap">
                     <div class="catalog-top__wrap catalog-top__wrap--orang">
-                        <a href="" class="active">
+                        <a href="" class="catalog-top__tabs active" data-index="1">
                             <span>
                                 <svg class="not-stroke" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M10 3H4C3.73478 3 3.48043 3.10536 3.29289 3.29289C3.10536 3.48043 3 3.73478 3 4V10C3 10.2652 3.10536 10.5196 3.29289 10.7071C3.48043 10.8946 3.73478 11 4 11H10C10.2652 11 10.5196 10.8946 10.7071 10.7071C10.8946 10.5196 11 10.2652 11 10V4C11 3.73478 10.8946 3.48043 10.7071 3.29289C10.5196 3.10536 10.2652 3 10 3ZM9 9H5V5H9V9ZM20 3H14C13.7348 3 13.4804 3.10536 13.2929 3.29289C13.1054 3.48043 13 3.73478 13 4V10C13 10.2652 13.1054 10.5196 13.2929 10.7071C13.4804 10.8946 13.7348 11 14 11H20C20.2652 11 20.5196 10.8946 20.7071 10.7071C20.8946 10.5196 21 10.2652 21 10V4C21 3.73478 20.8946 3.48043 20.7071 3.29289C20.5196 3.10536 20.2652 3 20 3ZM19 9H15V5H19V9ZM10 13H4C3.73478 13 3.48043 13.1054 3.29289 13.2929C3.10536 13.4804 3 13.7348 3 14V20C3 20.2652 3.10536 20.5196 3.29289 20.7071C3.48043 20.8946 3.73478 21 4 21H10C10.2652 21 10.5196 20.8946 10.7071 20.7071C10.8946 20.5196 11 20.2652 11 20V14C11 13.7348 10.8946 13.4804 10.7071 13.2929C10.5196 13.1054 10.2652 13 10 13ZM9 19H5V15H9V19ZM17 13C14.794 13 13 14.794 13 17C13 19.206 14.794 21 17 21C19.206 21 21 19.206 21 17C21 14.794 19.206 13 17 13ZM17 19C15.897 19 15 18.103 15 17C15 15.897 15.897 15 17 15C18.103 15 19 15.897 19 17C19 18.103 18.103 19 17 19Z" fill="current"/>
@@ -189,7 +197,7 @@
                             </span>
                             По категориям
                         </a>
-                        <a href="">
+                        <a href="" class="catalog-top__tabs" data-index="2">
                             <span>
                                 <svg class="not-stroke" width="32" height="16" viewBox="0 0 32 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g>
@@ -200,7 +208,7 @@
                             </span>
                             По алфавиту
                         </a>
-                        <a href="">
+                        <a href="" class="catalog-top__tabs" data-index="3">
                             <span>
                                 <svg class="not-stroke" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M5 10.8824C5 7.63363 7.63363 5 10.8824 5C14.1311 5 16.7647 7.63363 16.7647 10.8824C16.7647 14.1311 14.1311 16.7647 10.8824 16.7647C7.63363 16.7647 5 14.1311 5 10.8824ZM10.8824 3C6.52906 3 3 6.52906 3 10.8824C3 15.2357 6.52906 18.7647 10.8824 18.7647C12.5627 18.7647 14.1202 18.239 15.3993 17.343L19.1752 21.1189C19.5658 21.5094 20.1989 21.5094 20.5895 21.1189C20.98 20.7284 20.98 20.0952 20.5895 19.7047L16.881 15.9962C18.0556 14.6196 18.7647 12.8338 18.7647 10.8824C18.7647 6.52906 15.2357 3 10.8824 3Z" fill="current"/>
@@ -211,7 +219,7 @@
                         </a>
                     </div>
                     <div class="catalog-top__list">
-                        <ul>
+                        <ul class="t-category">
                             <li class="active">
                                 <a href="">Все</a>
                             </li>
@@ -228,6 +236,113 @@
                                 <a href="">Скоро открытие</a>
                             </li>
                         </ul>
+                        <div class="t-alfavit">
+                            <ul>
+                                <li class="active">
+                                    <a href="">А</a>
+                                </li>
+                                <li>
+                                    <a href="">Б</a>
+                                </li>
+                                <li>
+                                    <a href="">В</a>
+                                </li>
+                                <li>
+                                    <a href="">Г</a>
+                                </li>
+                                <li>
+                                    <a href="">Д</a>
+                                </li>
+                                <li>
+                                    <a href="">Е</a>
+                                </li>
+                                <li>
+                                    <a href="">Ё</a>
+                                </li>
+                                <li>
+                                    <a href="">Ж</a>
+                                </li>
+                                <li>
+                                    <a href="">З</a>
+                                </li>
+                                <li>
+                                    <a href="">И</a>
+                                </li>
+                                <li>
+                                    <a href="">Й</a>
+                                </li>
+                                <li>
+                                    <a href="">К</a>
+                                </li>
+                                <li>
+                                    <a href="">Л</a>
+                                </li>
+                                <li>
+                                    <a href="">М</a>
+                                </li>
+                                <li>
+                                    <a href="">Н</a>
+                                </li>
+                                <li>
+                                    <a href="">О</a>
+                                </li>
+                                <li>
+                                    <a href="">П</a>
+                                </li>
+                                <li>
+                                    <a href="">Р</a>
+                                </li>
+                                <li>
+                                    <a href="">С</a>
+                                </li>
+                                <li>
+                                    <a href="">Т</a>
+                                </li>
+                                <li>
+                                    <a href="">У</a>
+                                </li>
+                                <li>
+                                    <a href="">Ц</a>
+                                </li>
+                                <li>
+                                    <a href="">Ч</a>
+                                </li>
+                                <li>
+                                    <a href="">Ш</a>
+                                </li>
+                                <li>
+                                    <a href="">Щ</a>
+                                </li>
+                                <li>
+                                    <a href="">Ь</a>
+                                </li>
+                                <li>
+                                    <a href="">Ы</a>
+                                </li>
+                                <li>
+                                    <a href="">Э</a>
+                                </li>
+                                <li>
+                                    <a href="">Ю</a>
+                                </li>
+                                <li>
+                                    <a href="">Я</a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="t-search">
+                            <form class="search-form search-form--orang">
+                                <input placeholder="Поиск" value="Грузовик">
+                                <button type="button">
+                                    <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.39258 8.67656C2.39258 5.42781 5.0262 2.79419 8.27494 2.79419C11.5237 2.79419 14.1573 5.42781 14.1573 8.67656C14.1573 11.9253 11.5237 14.5589 8.27494 14.5589C5.0262 14.5589 2.39258 11.9253 2.39258 8.67656ZM8.27494 0.794189C3.92163 0.794189 0.392578 4.32325 0.392578 8.67656C0.392578 13.0299 3.92163 16.5589 8.27494 16.5589C9.95524 16.5589 11.5127 16.0332 12.7919 15.1372L16.5678 18.9131C16.9583 19.3036 17.5915 19.3036 17.982 18.9131C18.3726 18.5226 18.3726 17.8894 17.982 17.4989L14.2735 13.7904C15.4482 12.4138 16.1573 10.628 16.1573 8.67656C16.1573 4.32325 12.6283 0.794189 8.27494 0.794189Z" fill="#132C39"></path>
+                                    </svg>    
+                                </button>
+                            </form>
+                        </div>
+
+
                         <div class="catalog-top__bot">
                             <a href="" class="color-link orang-link">Показать все
                                 <svg width="23" height="9" viewBox="0 0 23 9" fill="none" xmlns="http://www.w3.org/2000/svg">

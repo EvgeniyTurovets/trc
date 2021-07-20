@@ -178,3 +178,18 @@
     }
 }
 
+@media(max-width: 559px){
+    .contact__item__img{
+        border-radius: 20px;
+    }
+
+    .swiper-section-contact {
+        .swiper-wrapper{
+            display: grid;
+            transition: 1s all;
+            grid-template-rows: repeat(3, auto);
+            grid-auto-flow: column;
+            margin-bottom: 60px;
+        }
+    }
+}

@@ -2,7 +2,7 @@
     background: #FAFAFA;
     padding-top: 50px;
     padding-bottom: 50px;
-    margin-bottom: 61px;
+    margin-bottom: 45px;
 }
 
 .catalog-top__wrap{
@@ -15,7 +15,7 @@
     display: flex;
     align-items: center;
     margin-right: 70px;
-    padding-bottom: 22px;
+    padding-bottom: 19px;
     font-size: 24px;
     line-height: 40px;
     color: rgba(#132C39, 0.3);
@@ -73,6 +73,9 @@ svg.not-fill{
 svg.not-stroke{
     stroke: transparent!important;
 }
+.catalog-top__wrap a{
+    border-bottom: 2px solid transparent;
+}
 .catalog-top__wrap.catalog-top__wrap--orang a.active{
     border-bottom: 2px solid #F9991B;
     color: #F9991B;
@@ -126,6 +129,11 @@ svg.not-stroke{
     justify-content: center;
     margin-top: 14px;
 }
+@media(min-width: 1024px){
+    .catalog-top__bot{
+        padding-right: 82px;
+    }
+}
 
 .catalog-top__list{
     margin-top: 40px;
@@ -169,7 +177,42 @@ svg.not-stroke{
         }
     }  
 }
-
+.catalog-top__list .t-alfavit{
+    margin-bottom: 27px;
+}
+.catalog-top__list .t-alfavit ul li{
+    margin-right: 13px;
+}
+.t-search{
+    margin-bottom: 23px;
+}
+.catalog-top__list{
+    .t-alfavit{
+        display: none;
+    }
+    .t-search{
+        display: none;
+    }
+}
+.tabs-alfavit{
+    .t-category{
+        display: none;
+    }
+    .t-alfavit{
+        display: block;
+    }
+}
+.tabs-search{
+    .t-category{
+        display: none;
+    }
+    .t-alfavit{
+        display: none;
+    }
+    .t-search{
+        display: block;
+    }
+}
 @media(max-width: 991px){
     .section-name{
         margin-bottom: 25px;
@@ -227,7 +270,7 @@ svg.not-stroke{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 29px;
 }
 
 .magazin__wrap__checkboxes{

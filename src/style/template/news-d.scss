@@ -401,3 +401,106 @@ line-height: 24px;
         border-radius: 0;
     }
 }
+
+@media(max-width: 559px){
+    .detail-akcii{
+        .swiper-section {
+            height: calc(3 * 93vw + 120px);
+            padding-bottom: 120px;
+        }
+    }
+}
+
+.another-close{
+    width: 48px;
+    height: 48px;
+    right: -32px;
+    top: 0;
+    background-color: #fff;
+    border-radius: 100%;
+    padding: 17px;
+    transform: translateX(100%);
+    background-size: 12px;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.3s all;
+}
+.another-close:hover{
+    background-size: 15px;
+}
+
+.vsefoto-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -23px;
+    padding: 48px 50px;
+    height: calc(100vh - 100px);
+    overflow: auto;
+}
+.vsefoto-wrap::-webkit-scrollbar {
+    width: 0;
+  }
+.vsefoto__item{
+    width: calc(100% / 3 - 46px);
+    padding-bottom: 20%;
+    margin: 0 23px;
+    margin-bottom: 40px;
+    background-size: cover;
+    border-radius: 7px;
+}
+.modal__container.modal-vsefoto{
+    width: 970px;
+    max-width: 100%;
+    padding: 0px;
+}
+
+@media(max-width: 1200px){
+    .modal__container.modal-vsefoto{
+        width: 700px;
+    }
+    .vsefoto__item{
+        width: calc(100% / 2 - 46px);
+        padding-bottom: 30%;
+    }
+}
+
+@media(max-width: 991px){
+    .modal__container.modal-vsefoto{
+        width: 550px;
+    }
+    .vsefoto__item{
+        width: calc(100% / 2 - 30px);
+        margin: 0 15px;
+        margin-bottom: 30px;
+    }
+    .vsefoto-wrap{
+        margin: 0 -15px;
+        padding: 25px 20px;
+    }
+}
+
+@media(max-width: 767px){
+    .another-close{
+        transform: translateY(-100%) translateX(-50%);
+        left: 50%;
+        top: -10px;
+    }
+    .vsefoto-wrap{
+        height: auto;
+        padding: 0;
+    }
+    .modal__container.modal-vsefoto{
+        padding: 25px 20px;
+        width: 90%;
+    }
+    .modal__container{
+        margin-top: 70px;
+    }
+}
+
+@media(max-width: 559px){
+    .vsefoto__item{
+        width: calc(100% / 1 - 30px);
+        padding-bottom: 63%;
+    }
+}

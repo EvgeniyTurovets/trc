@@ -24,20 +24,29 @@
 }
 .slider-section__type.data-fiolet{
     background: transparent;
-    color: #9263A7;
-    -webkit-text-fill-color: #9263A7;
+    color: #6c83c1;
+    -webkit-text-fill-color: #6c83c1;
     -webkit-background-clip:initial
 }
 .slider-section__buy.data-fiolet{
     button{
-        background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0)),linear-gradient(101deg,#8d5ca6,#9263A7)
+        background-image: none;
+        box-shadow: none;
+        background-color: transparent;
     }
     button div span{
-        -webkit-text-fill-color: #9263A7;
+        transition: 0.3s all;
+    }
+    button:hover{
+        background-color: #6c83c1;
+        
+        div span{
+           color: #fff;
+        }
     }
 }
 .slider-section-item2 .slider-section__data.data-fiolet{
-    background: #9263A7;
+    background: #6c83c1;
 }
 @media(max-width: 1199px){
     .afisha{
