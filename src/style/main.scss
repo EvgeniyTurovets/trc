@@ -2109,6 +2109,9 @@ header.main{
         margin-bottom: 15px;
     }
 }
+.swiper__button:hover,.swiper__button:focus{
+    outline: none;
+}
 // magazin
 @import './template/magazin.scss';
 // contact
