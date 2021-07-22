@@ -4921,9 +4921,7 @@ svg.not-stroke {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 -23px;
-  padding: 48px 50px;
-  height: calc(100vh - 100px);
-  overflow: auto; }
+  padding: 48px 50px; }
 
 .vsefoto-wrap::-webkit-scrollbar {
   width: 0; }
