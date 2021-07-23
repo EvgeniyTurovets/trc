@@ -385,11 +385,12 @@ img {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); }
 
 .first-section {
-  min-height: 100vh;
+  height: 100vh;
   background-size: cover;
   background-position: center;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  max-height: 850px; }
 
 .svg-anim {
   position: absolute;
@@ -473,6 +474,10 @@ img {
 .first-sec-slider {
   padding-left: 15px;
   margin-left: -15px; }
+
+@media (min-width: 1600px) {
+  .first-sec-slider {
+    margin-top: 7vw; } }
 
 .first-sec-item {
   padding-bottom: 50px; }
@@ -825,7 +830,7 @@ body.no-sroll {
   right: 0;
   bottom: 0;
   width: 105vw;
-  max-width: 1600px;
+  max-width: 2000px;
   -webkit-transform: translateY(64%) translateX(50%);
           transform: translateY(64%) translateX(50%);
   z-index: 1;

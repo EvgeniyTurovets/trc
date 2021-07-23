@@ -250,11 +250,12 @@ img{
 }
 
 .first-section{
-    min-height: 100vh;
+    height: 100vh;
     background-size: cover;
     background-position: center;
     position: relative;
     overflow: hidden;
+    max-height: 850px;
 }
 
 .svg-anim{
@@ -356,6 +357,11 @@ img{
     padding-left: 15px;
     margin-left: -15px;
     
+}
+@media(min-width: 1600px){
+    .first-sec-slider{
+        margin-top: 7vw;
+    }
 }
 
 .first-sec-item{
@@ -760,7 +766,7 @@ body.no-sroll{
     right: 0;
     bottom: 0;
     width: 105vw;
-    max-width: 1600px;
+    max-width: 2000px;
     transform: translateY(64%) translateX(50%);
     z-index: 1;
     
