@@ -841,7 +841,7 @@ body.no-sroll {
     max-width: 100%;
     width: 100%; }
 
-@media (min-width: 1400px) {
+@media (min-width: 1025px) {
   .first-section {
     display: -ms-flexbox;
     display: flex;
@@ -872,6 +872,10 @@ body.no-sroll {
 @media (min-width: 2000px) {
   .first-section-anim {
     max-width: 2800px; } }
+
+@media (max-width: 1024px) {
+  .first-section {
+    min-height: auto; } }
 
 @media (max-width: 991px) {
   .first-section-anim {
