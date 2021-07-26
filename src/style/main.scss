@@ -760,8 +760,8 @@ body.no-sroll{
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 100vw;
-    max-width: 2000px;
+    width: 130vw;
+    max-width: 1700px;
     transform: translateY(64%) translateX(50%);
     z-index: 1;
     
@@ -774,7 +774,7 @@ body.no-sroll{
         width: 100%;
     }
 }
-@media(min-width: 1600px){
+@media(min-width: 1400px){
     .first-section{
         display: flex;
         flex-direction: column;

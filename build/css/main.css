@@ -825,8 +825,8 @@ body.no-sroll {
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 100vw;
-  max-width: 2000px;
+  width: 130vw;
+  max-width: 1700px;
   -webkit-transform: translateY(64%) translateX(50%);
           transform: translateY(64%) translateX(50%);
   z-index: 1;
@@ -841,7 +841,7 @@ body.no-sroll {
     max-width: 100%;
     width: 100%; }
 
-@media (min-width: 1600px) {
+@media (min-width: 1400px) {
   .first-section {
     display: -ms-flexbox;
     display: flex;
