@@ -869,6 +869,10 @@ body.no-sroll {
   .first-section-anim {
     max-width: 2200px; } }
 
+@media (min-width: 2000px) {
+  .first-section-anim {
+    max-width: 2800px; } }
+
 @media (max-width: 991px) {
   .first-section-anim {
     width: 150vw; } }
