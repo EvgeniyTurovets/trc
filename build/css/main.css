@@ -830,8 +830,8 @@ body.no-sroll {
   -webkit-transform: translateY(64%) translateX(50%);
           transform: translateY(64%) translateX(50%);
   z-index: 1;
-  -webkit-animation-duration: 15000ms;
-          animation-duration: 15000ms;
+  -webkit-animation-duration: 20000ms;
+          animation-duration: 20000ms;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
@@ -2394,7 +2394,7 @@ svg.not-stroke {
     display: flex;
     -ms-flex-align: center;
         align-items: center;
-    padding: 16px 21px;
+    padding: 15px 22px;
     background-color: transparent;
     border: 1px solid #B7587C;
     border-radius: 10px;
