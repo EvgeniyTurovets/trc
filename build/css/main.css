@@ -935,6 +935,11 @@ body.no-sroll {
     left: -109vw;
     bottom: 20vw; } }
 
+@media (max-width: 425px) {
+  .first-section-anim {
+    width: 900px;
+    left: -400px; } }
+
 @media (min-height: 1100px) and (min-width: 1400px) {
   .first-section {
     min-height: auto;
