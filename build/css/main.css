@@ -858,7 +858,12 @@ body.no-sroll {
     margin-bottom: 100px; }
   .first-section-anim {
     width: 130vw;
-    max-width: 2800px; } }
+    max-width: 2200px; } }
+
+@media (min-width: 1400px) and (max-height: 799px) {
+  .first-section-anim {
+    width: 130vw;
+    max-width: 1700px; } }
 
 .first-section-img {
   position: absolute;
