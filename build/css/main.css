@@ -2693,7 +2693,7 @@ svg.not-stroke {
 .magazin__carts {
   display: -ms-flexbox;
   display: flex;
-  margin: 0 -12px;
+  margin: 0 -9px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-bottom: 35px; }
