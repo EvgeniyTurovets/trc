@@ -2183,7 +2183,11 @@ header.main .header__search__close svg path {
     width: 100%; }
 
 .o-nas .detail-page-slider__item {
-  padding-bottom: 55%; }
+  padding-bottom: 45%; }
+
+@media (max-width: 767px) {
+  .o-nas .detail-page-slider__item {
+    padding-bottom: 55%; } }
 
 .catalog-top {
   background: #FAFAFA;
