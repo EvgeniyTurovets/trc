@@ -315,7 +315,34 @@
         slidesPerView: 1,
         lazy: true,
     });
+    swiperDetailPage.on('transitionEnd', function (swiper, initialized) {
+       
+        let thisSwiper = swiper.$el[0] 
+       
+        let thisVideo = thisSwiper.querySelectorAll('video')
+        thisVideo.forEach((el)=>{
+            el.pause()
+        })
+        console.log(thisVideo)
+        if(thisSwiper.querySelector('.swiper-slide-active video')){
+            thisSwiper.querySelector('.swiper-slide-active video').play()
+        }
+        // .swiper-slide-active
+        
+        
+    });
 
+    if(document.querySelectorAll('video')){
+        let video = document.querySelectorAll('video')
+        video.forEach(el =>el.addEventListener('click', ()=>{
+            if(el.paused){
+                el.play(); 
+            }else{
+                el.pause();
+            }
+        }))
+    }
+    
 
     // табы на главной всегда нужно после слайдеров запускать а то ломаются
     let tabsNavs = document.querySelectorAll('.tabs-nav')

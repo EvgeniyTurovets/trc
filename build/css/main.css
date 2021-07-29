@@ -2148,6 +2148,17 @@ header.main .header__search__close svg path {
   .swiper-section2 .swiper-slide {
     margin-top: 0 !important; } }
 
+.video {
+  width: 100%;
+  height: 100%;
+  position: absolute; }
+  .video video {
+    position: absolute;
+    width: 100%; }
+
+.o-nas .detail-page-slider__item {
+  padding-bottom: 55%; }
+
 .catalog-top {
   background: #FAFAFA;
   padding-top: 50px;
