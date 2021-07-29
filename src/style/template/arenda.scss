@@ -97,7 +97,12 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: -1px;
-    border-top: 1px solid rgba(#000000, 0.1);
+    margin: 0 -12px;
+    padding-bottom: 20px;
+    
+}
+.arenda__wrap:before{
+    display: none;
 }
 @media(max-width: 767px){
     .arenda__wrap{
@@ -105,19 +110,30 @@
     }
 }
 .arenda__item{
-    width: calc(100% / 3);
-    padding-top: 38px;
+    width: calc(100% / 3 - 24px);
+    margin: 0 12px;
+    padding-top: 30px;
     padding-right: 9px;
     padding-left: 9px;
-    padding-bottom: 40px;
-    border-bottom: 1px solid rgba(#000000, 0.1);
+    padding-bottom: 30px;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 20px;
+    margin-bottom: 20px;
 }
-@media(min-width: 1024px){
-    .arenda__item:nth-child(3n + 2){
-        border-left:  1px solid rgba(#000000, 0.1);
-        border-right: 1px solid rgba(#000000, 0.1);
+@media (max-width: 991px){
+    .arenda__item{ 
+        width: calc(100% / 2 - 24px);
+        padding: 30px 20px;
     }
 }
+@media (max-width: 767px){
+    .arenda__item{ 
+        width: calc(100% / 1 - 24px);
+        padding: 20px 15px;
+    }
+}
+
+
 
 
 .arenda__item__img{
@@ -125,7 +141,7 @@
     background-size: cover;
     background-position: center;
     border-radius: 7px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     display: block;
     transition: 0.3s all;
 }
@@ -133,16 +149,16 @@
     box-shadow: 0 0 10px rgba(#000000, 0.5);
 }
 .arenda__item__wraper{
-    padding-right: 31px;
-    padding-left: 31px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 .arenda__item__name{
     display: block;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 20px;
     border-bottom: 1px solid #132C39;
     color: #132C39;
-    margin-bottom: 28px;
+    margin-bottom: 20px;
     display: inline-block;
 }
 .arenda__item__name:hover{
@@ -163,7 +179,7 @@
 
 .arenda__btn{
     background-color: transparent;
-    padding: 11px 35px;
+    padding: 11px 25px;
     border: 1px solid #306591;
     border-radius: 10px;
     font-weight: bold;
@@ -190,32 +206,22 @@
         padding-left: 10px;
     }
     .arenda__btn{
-        padding: 8px 20px;
+        padding: 8px 10px;
+        font-size: 12px;
     }
     .arenda__price{
-        font-size: 25px;
+        font-size: 24px;
     }
     .arenda__item__name{
         font-size: 22px;
     }
 }
 
-@media(min-width: 700px) and (max-width: 1023px){
-    .arenda__item:nth-child(2n + 1){
-        border-right: 1px solid rgba(#000000, 0.1);
-    }
-}
-@media(max-width: 1023px){
-    .arenda__item{
-        width: 50%;
-    }
-}
-@media(max-width: 699px){
-    .arenda__item{
-        width: 100%;
-    }
-}
+
 @media(max-width: 374px){
+    .arenda__price{
+        font-size: 20px;
+    }
     .arenda__btn{
         padding: 7px 15px;
         font-size: 12px;
@@ -312,7 +318,7 @@
 }
 .razv__name{
     font-weight: bold;
-    font-size: 24px;
+    font-size: 20px;
     color: #132C39;
     border-bottom: 1px solid #132C39;
     transition: 0.3s all;
@@ -325,7 +331,7 @@
     font-size: 14px;
     line-height: 14px;
     color: #9CA1A2;
-    margin-top: 10px;
+    margin-top: 7px;
 }
 .razv__text{
     font-size: 18px;
@@ -353,12 +359,12 @@
         flex: 1;
         a{
             font-weight: bold;
-            font-size: 24px;
+            font-size: 20px;
             border-bottom: 1px solid #132C39;
             color: #132C39;
             display: block;
             display: inline-block;
-            margin-bottom: 9px;
+            margin-bottom: 10px;
         }
         a:hover{
             text-decoration: none;
@@ -400,18 +406,13 @@
     .razv__top__content{
         width: 100%;
     }
-    .arenda__item{
-        padding-right: 0;
-        padding-left: 0;
-    }
-    .arenda__item:first-child{
-        padding-top: 10px;
-    }
+   
+
 }
 @media(max-width: 559px){
 
     .arenda__item__img{
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     .arenda__item__wraper .magazin__item__name-block a{
@@ -425,9 +426,7 @@
         padding-bottom: 20px;
         padding-top: 20px;
     }
-    .arenda__item:first-child{
-        padding-top: 0;
-    }
+    
     
 }
 @media(max-width: 450px){

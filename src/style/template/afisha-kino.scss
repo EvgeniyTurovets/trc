@@ -33,6 +33,7 @@
     button,a{
         margin-left: 10px;
         padding: 16px 26px;
+        min-width: 150px;
     }
 }
 
@@ -96,7 +97,7 @@
 
 .afisha-kino__name{
     color: #132C39;
-    font-size: 36px;
+    font-size: 34px;
     line-height: 1.1;
     font-family: '2MASS'; 
     margin-bottom: 10px;
@@ -105,7 +106,7 @@
 }
 .afisha-kino__ganr{
     color: #9CA1A2;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 14px;
     text-transform: uppercase;
 }
@@ -113,15 +114,15 @@
 .afisha-kino__body{
     .afisha-kino__title{
         font-weight: 500;
-        font-size: 24px;
-        line-height: 29px;
+        font-size: 20px;
+        line-height: 24px;
         color: #132C39;
-        margin-top: 42px;
+        margin-top: 30px;
         margin-bottom: 8px;
     }
     p{
-        font-size: 18px;
-        line-height: 27px;
+        font-size: 16px;
+        line-height: 20px;
         color: #132C39;
         margin-top: 33px;
     }
@@ -142,8 +143,8 @@
     line-height: 40px;
     font-family: '2MASS';
     background: #F16665;
-    border-radius: 25px;
-    padding: 32px 38px;
+    border-radius: 20px;
+    padding: 20px 25px;
 }
 
 .raspisanie__body{
@@ -165,8 +166,8 @@
 
 .raspisanie__row__left{
     color: #132C39;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 16px;
+    line-height: 20px;
     flex: 0 0 215px;
     padding-right: 15px;
     margin-bottom: 15px;

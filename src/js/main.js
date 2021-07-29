@@ -138,6 +138,7 @@
         mySwiper.on('transitionEnd', function (swiper, initialized) {
             resizeSlide(swiper)
         });
+
     }
 
     // .swiper-section2
@@ -273,6 +274,7 @@
             resizeSlide(swiper)
         });
     }
+
 
 	// сладер новостей
 	const swiperNews = new Swiper('.news-slider', {

@@ -6,11 +6,11 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Тц</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css?v=51d129b07e26a35ab2b726e2dc546731" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" crossorigin="anonymous">
     <!-- платгины -->
-    <link rel='stylesheet' type='text/css' media='screen' href='./libs/swiper/swiper.css?v=51d129b07e26a35ab2b726e2dc546731'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./libs/swiper/swiper.css'>
     <!-- основные стили -->
-    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.min.css?v=51d129b07e26a35ab2b726e2dc546731'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.min.css'>
 </head>
 
 <body>
@@ -190,9 +190,45 @@
 
         <section class="o-nas">
             <div class="wrap">
-                <div class="o-nas__img">
-                    <img src="img/onas/onas.jpg">
-                    <img class="mob" src="img/onas/onas-mob.jpg">
+                <div class="detail-page-slider swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="detail-page-slider__item swiper-lazy" data-background="./img/onas/onas.jpg"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="detail-page-slider__item swiper-lazy" data-background="./img/onas/onas.jpg"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="detail-page-slider__item swiper-lazy" data-background="./img/onas/onas.jpg"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="detail-page-slider__item swiper-lazy" data-background="./img/onas/onas.jpg"></div>
+                        </div>
+                    </div>
+
+                    <div class="swiper__bot">
+                        <!-- If we need pagination -->
+                        <div class="swiper-count swiper-pagination">
+                            <div class="now swiper-pagination-current">1</div>
+                            <span></span>
+                            <div class="max swiper-pagination-total">4</div>
+                        </div>
+                        
+                    
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper__btns">
+                            <div class="swiper__button swiper-button-prev2">
+                                <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M23 10.9281H1M1 10.9281L11.0774 1M1 10.9281L11.0774 21" stroke="#fff"/>
+                                </svg>
+                            </div>
+                            <div class="swiper__button swiper-button-next2">
+                                <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.79451e-07 11.0719L23 11.0719M23 11.0719L12.4645 21M23 11.0719L12.4645 0.999998" stroke="#fff"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="o-nas__bot">
                     <div class="o-nas__bot__text">
@@ -309,9 +345,9 @@
         </footer>
     </div>
 <!-- плагины -->
-<script src="libs/swiper/swiper.js?v=51d129b07e26a35ab2b726e2dc546731"></script>
-<script src="libs/tabs/tabby.min.js?v=51d129b07e26a35ab2b726e2dc546731"></script>
+<script src="libs/swiper/swiper.js"></script>
+<script src="libs/tabs/tabby.min.js"></script>
 <!-- основной -->
-<script src="js/main.js?v=51d129b07e26a35ab2b726e2dc546731"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

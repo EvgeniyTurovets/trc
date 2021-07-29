@@ -774,7 +774,7 @@ body.no-sroll{
         width: 100%;
     }
 }
-@media(min-width: 1400px){
+@media(min-width: 1025px){
     .first-section{
         display: flex;
         flex-direction: column;
@@ -807,6 +807,11 @@ body.no-sroll{
 @media(min-width: 2000px){
     .first-section-anim{
         max-width: 2800px;
+    }
+}
+@media(max-width: 1024px){
+    .first-section {
+        min-height: auto;
     }
 }
 @media(max-width: 991px){
@@ -861,6 +866,12 @@ body.no-sroll{
         transform: translate(0);
         left: -109vw;
         bottom: 20vw;
+    }
+}
+@media(max-width: 425px){
+    .first-section-anim{
+        width: 900px;
+        left: -400px;
     }
 }
 @media(min-height: 1100px) and (min-width: 1400px){
@@ -974,7 +985,7 @@ body.no-sroll{
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    min-height: 35px;
+    // min-height: 35px;
 }
 .slider-section__bot{
     font-size: 14px;
@@ -1484,8 +1495,8 @@ body.no-sroll{
     margin: 0 auto;
     background: linear-gradient(90deg, #8D5CA6 0%, #4BA9DA 100%);
     border-radius: 20px;    
-    padding-top: 81px;
-    padding-bottom: 81px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     color: #FFFFFF;
     position: relative;
     overflow: hidden;
@@ -1503,7 +1514,7 @@ body.no-sroll{
 .footer:after{
     content: "";
     width: 249px;
-    height: 307px;
+    height: 140px;
     background-image: url('../img/index/footer.png');
     background-size: contain;
     background-position: center bottom;
@@ -1743,6 +1754,10 @@ body.no-sroll{
     .footer{
         padding-top: 20px;
         padding-bottom: 20px;
+        width: 335px;
+        max-width: 90%;
+        margin: 0 auto;
+        margin-bottom: 20px;
     }
 }
 
@@ -2162,6 +2177,15 @@ header.main{
 }
 .swiper__button:hover,.swiper__button:focus{
     outline: none;
+}
+@media(min-width: 1024px){
+    .swiper-section .swiper-slide{
+        margin-top: 0!important;
+    }
+
+    .swiper-section2 .swiper-slide{
+        margin-top: 0!important;
+    }
 }
 // magazin
 @import './template/magazin.scss';
