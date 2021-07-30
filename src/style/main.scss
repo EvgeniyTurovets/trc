@@ -32,7 +32,7 @@ img{
     margin-bottom: 50px;
     transition: 0.3s all;
     position: relative;
-    z-index: 5;
+    z-index: 6;
     padding-bottom: 15px;
     position: fixed;
         
@@ -40,15 +40,24 @@ img{
         right: 0;
         top: 0;
 }
+
 @media(min-width: 992px){
     .header.sroll{
-        
+        z-index: 5;
         border-bottom:1px solid rgba(19,44,57,.2)
     }
     header.sroll{
         .header__top{
             padding-top: 15px;
+            margin-bottom: -62px;
+            opacity: 0;
+            z-index: -1;
+            position: relative;
         }
+    }
+    .mob-nav.sroll{
+        top: 75px;
+        z-index: 20;
     }
     .app{
         padding-top: 200px;

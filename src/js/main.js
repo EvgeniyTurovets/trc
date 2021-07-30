@@ -45,10 +45,12 @@
         }
 
         if(window.scrollY > 0){
+            mobNav.classList.add('sroll')
             header.classList.add('sroll')
             header.classList.remove('main')
         }else{
             header.classList.remove('sroll')
+            mobNav.classList.remove('sroll')
             if(thisMain){
                 header.classList.add('main')
             }
@@ -432,7 +434,7 @@
                 afisha__tabsWraps.forEach((el3)=>{
                     el3.classList.remove('active')
                 })
-                
+
                 afisha__tabsWraps[index].classList.add('active')
 
                 el.classList.add('active')
