@@ -193,8 +193,8 @@
         <section class="magazin">
             <div class="catalog-top">
                 <div class="wrap">
-                    <div class="catalog-top__wrap catalog-top__wrap--blue2">
-                        <a href="" class="active">
+                    <div class="afisha__tabs-nav catalog-top__wrap catalog-top__wrap--blue2">
+                        <a href="" class="active" data-index="0">
                             <span>
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g opacity="0.3">
@@ -205,7 +205,7 @@
                             </span>
                            Кино
                         </a>
-                        <a href="">
+                        <a href="" data-index="1">
                             <span>
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g opacity="0.3">
@@ -216,7 +216,7 @@
                             </span>
                             Мастер-класс
                         </a>
-                        <a href="">
+                        <a href="" data-index="2">
                             <span>
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g opacity="0.3">
@@ -259,301 +259,897 @@
 
             <div class="magazin__wrap">
                 <div class="wrap">
-                  
-                    <div class="afisha">
-                        <div class="slider-section-item2">
-                            <div class="slider-section__img swiper-lazy swiper-lazy-loaded" style="background-image: url(&quot;./img/index/4.jpg&quot;);">
-                                <div class="slider-section__data data-fiolet">
-                                    <span>
-                                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M11.9782 2.78876H2.72261C1.99237 2.78876 1.40039 3.38074 1.40039 4.11098V13.3665C1.40039 14.0968 1.99237 14.6888 2.72261 14.6888H11.9782C12.7084 14.6888 13.3004 14.0968 13.3004 13.3665V4.11098C13.3004 3.38074 12.7084 2.78876 11.9782 2.78876Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            <path d="M9.99414 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            <path d="M4.70703 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            <path d="M1.40039 6.7554H13.3004" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        </svg>    
-                                    </span>
-                                    23 апр - 23 июл
+                    <div class="afisha__tabs">
+                        <div class="afisha__tab-wrap active">
+                            <div class="afisha">
+                                <div class="slider-section-item2">
+                                    <div class="slider-section__img swiper-lazy swiper-lazy-loaded" style="background-image: url(&quot;./img/index/4.jpg&quot;);">
+                                        <div class="slider-section__data data-fiolet">
+                                            <span>
+                                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.9782 2.78876H2.72261C1.99237 2.78876 1.40039 3.38074 1.40039 4.11098V13.3665C1.40039 14.0968 1.99237 14.6888 2.72261 14.6888H11.9782C12.7084 14.6888 13.3004 14.0968 13.3004 13.3665V4.11098C13.3004 3.38074 12.7084 2.78876 11.9782 2.78876Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M9.99414 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M4.70703 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M1.40039 6.7554H13.3004" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>    
+                                            </span>
+                                            23 апр - 23 июл
+                                        </div>
+                                    </div>
+                                    <div class="slider-section__wrap">
+                                        <div class="slider-section__type data-fiolet">Фильм</div>
+                                        <div class="slider-section__name">
+                                            Призрак
+                                        </div>
+                                        <div class="slider-section__bot">
+                                            <div class="slider-section__price">
+                                                <div class="slider-section__price1">Цена:</div>
+                                                <div class="slider-section__price2">от 150 руб.</div>
+                                            </div>
+                                            <div class="slider-section__buy data-fiolet">
+                                                <button type="button">
+                                                    <div>
+                                                        <span>Купить</span>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-section-item2">
+                                    <div class="slider-section__img swiper-lazy swiper-lazy-loaded" style="background-image: url(&quot;./img/index/5.jpg&quot;);">
+                                        <div class="slider-section__data data-fiolet">
+                                            <span>
+                                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.9782 2.78876H2.72261C1.99237 2.78876 1.40039 3.38074 1.40039 4.11098V13.3665C1.40039 14.0968 1.99237 14.6888 2.72261 14.6888H11.9782C12.7084 14.6888 13.3004 14.0968 13.3004 13.3665V4.11098C13.3004 3.38074 12.7084 2.78876 11.9782 2.78876Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M9.99414 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M4.70703 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M1.40039 6.7554H13.3004" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>    
+                                            </span>
+                                            23 апр - 23 июл
+                                        </div>
+                                    </div>
+                                    <div class="slider-section__wrap">
+                                        <div class="slider-section__type data-fiolet">Фильм</div>
+                                        <div class="slider-section__name">
+                                            Джентельмены удачи
+                                        </div>
+                                        <div class="slider-section__bot">
+                                            <div class="slider-section__price">
+                                                <div class="slider-section__price1">Цена:</div>
+                                                <div class="slider-section__price2">от 150 руб.</div>
+                                            </div>
+                                            <div class="slider-section__buy data-fiolet">
+                                                <button type="button">
+                                                    <div>
+                                                        <span>Купить</span>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-section-item2">
+                                    <div class="slider-section__img swiper-lazy swiper-lazy-loaded" style="background-image: url(&quot;./img/index/6.jpg&quot;);">
+                                        <div class="slider-section__data data-fiolet">
+                                            <span>
+                                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.9782 2.78876H2.72261C1.99237 2.78876 1.40039 3.38074 1.40039 4.11098V13.3665C1.40039 14.0968 1.99237 14.6888 2.72261 14.6888H11.9782C12.7084 14.6888 13.3004 14.0968 13.3004 13.3665V4.11098C13.3004 3.38074 12.7084 2.78876 11.9782 2.78876Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M9.99414 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M4.70703 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M1.40039 6.7554H13.3004" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>    
+                                            </span>
+                                            23 апр - 23 июл
+                                        </div>
+                                    </div>
+                                    <div class="slider-section__wrap">
+                                        <div class="slider-section__type data-fiolet">Фильм</div>
+                                        <div class="slider-section__name">
+                                            Призрак
+                                        </div>
+                                        <div class="slider-section__bot">
+                                            <div class="slider-section__price">
+                                                <div class="slider-section__price1">Цена:</div>
+                                                <div class="slider-section__price2">от 150 руб.</div>
+                                            </div>
+                                            <div class="slider-section__buy data-fiolet">
+                                                <button type="button">
+                                                    <div>
+                                                        <span>Купить</span>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-section-item2">
+                                    <div class="slider-section__img swiper-lazy swiper-lazy-loaded" style="background-image: url('./img/afisha/3.jpg');">
+                                        <div class="slider-section__data data-fiolet">
+                                            <span>
+                                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.9782 2.78876H2.72261C1.99237 2.78876 1.40039 3.38074 1.40039 4.11098V13.3665C1.40039 14.0968 1.99237 14.6888 2.72261 14.6888H11.9782C12.7084 14.6888 13.3004 14.0968 13.3004 13.3665V4.11098C13.3004 3.38074 12.7084 2.78876 11.9782 2.78876Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M9.99414 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M4.70703 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M1.40039 6.7554H13.3004" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>    
+                                            </span>
+                                            23 апр - 23 июл
+                                        </div>
+                                    </div>
+                                    <div class="slider-section__wrap">
+                                        <div class="slider-section__type data-fiolet">Фильм</div>
+                                        <div class="slider-section__name">
+                                            Призрак
+                                        </div>
+                                        <div class="slider-section__bot">
+                                            <div class="slider-section__price">
+                                                <div class="slider-section__price1">Цена:</div>
+                                                <div class="slider-section__price2">от 150 руб.</div>
+                                            </div>
+                                            <div class="slider-section__buy data-fiolet">
+                                                <button type="button">
+                                                    <div>
+                                                        <span>Купить</span>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-section-item2">
+                                    <div class="slider-section__img swiper-lazy swiper-lazy-loaded" style="background-image: url(./img/afisha/2.jpg);">
+                                        <div class="slider-section__data data-fiolet">
+                                            <span>
+                                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.9782 2.78876H2.72261C1.99237 2.78876 1.40039 3.38074 1.40039 4.11098V13.3665C1.40039 14.0968 1.99237 14.6888 2.72261 14.6888H11.9782C12.7084 14.6888 13.3004 14.0968 13.3004 13.3665V4.11098C13.3004 3.38074 12.7084 2.78876 11.9782 2.78876Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M9.99414 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M4.70703 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M1.40039 6.7554H13.3004" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>    
+                                            </span>
+                                            23 апр - 23 июл
+                                        </div>
+                                    </div>
+                                    <div class="slider-section__wrap">
+                                        <div class="slider-section__type data-fiolet">Фильм</div>
+                                        <div class="slider-section__name">
+                                            Призрак
+                                        </div>
+                                        <div class="slider-section__bot">
+                                            <div class="slider-section__price">
+                                                <div class="slider-section__price1">Цена:</div>
+                                                <div class="slider-section__price2">от 150 руб.</div>
+                                            </div>
+                                            <div class="slider-section__buy data-fiolet">
+                                                <button type="button">
+                                                    <div>
+                                                        <span>Купить</span>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-section-item2">
+                                    <div class="slider-section__img swiper-lazy swiper-lazy-loaded" style="background-image: url(./img/afisha/1.jpg);">
+                                        <div class="slider-section__data data-fiolet">
+                                            <span>
+                                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.9782 2.78876H2.72261C1.99237 2.78876 1.40039 3.38074 1.40039 4.11098V13.3665C1.40039 14.0968 1.99237 14.6888 2.72261 14.6888H11.9782C12.7084 14.6888 13.3004 14.0968 13.3004 13.3665V4.11098C13.3004 3.38074 12.7084 2.78876 11.9782 2.78876Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M9.99414 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M4.70703 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M1.40039 6.7554H13.3004" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>    
+                                            </span>
+                                            23 апр - 23 июл
+                                        </div>
+                                    </div>
+                                    <div class="slider-section__wrap">
+                                        <div class="slider-section__type data-fiolet">Фильм</div>
+                                        <div class="slider-section__name">
+                                            Призрак
+                                        </div>
+                                        <div class="slider-section__bot">
+                                            <div class="slider-section__price">
+                                                <div class="slider-section__price1">Цена:</div>
+                                                <div class="slider-section__price2">от 150 руб.</div>
+                                            </div>
+                                            <div class="slider-section__buy data-fiolet">
+                                                <button type="button">
+                                                    <div>
+                                                        <span>Купить</span>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-section-item2">
+                                    <div class="slider-section__img swiper-lazy swiper-lazy-loaded" style="background-image: url(./img/afisha/1.jpg);">
+                                        <div class="slider-section__data data-fiolet">
+                                            <span>
+                                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.9782 2.78876H2.72261C1.99237 2.78876 1.40039 3.38074 1.40039 4.11098V13.3665C1.40039 14.0968 1.99237 14.6888 2.72261 14.6888H11.9782C12.7084 14.6888 13.3004 14.0968 13.3004 13.3665V4.11098C13.3004 3.38074 12.7084 2.78876 11.9782 2.78876Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M9.99414 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M4.70703 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M1.40039 6.7554H13.3004" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>    
+                                            </span>
+                                            23 апр - 23 июл
+                                        </div>
+                                    </div>
+                                    <div class="slider-section__wrap">
+                                        <div class="slider-section__type data-fiolet">Фильм</div>
+                                        <div class="slider-section__name">
+                                            Призрак
+                                        </div>
+                                        <div class="slider-section__bot">
+                                            <div class="slider-section__price">
+                                                <div class="slider-section__price1">Цена:</div>
+                                                <div class="slider-section__price2">от 150 руб.</div>
+                                            </div>
+                                            <div class="slider-section__buy data-fiolet">
+                                                <button type="button">
+                                                    <div>
+                                                        <span>Купить</span>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-section-item2">
+                                    <div class="slider-section__img swiper-lazy swiper-lazy-loaded" style="background-image: url(./img/afisha/1.jpg);">
+                                        <div class="slider-section__data data-fiolet">
+                                            <span>
+                                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.9782 2.78876H2.72261C1.99237 2.78876 1.40039 3.38074 1.40039 4.11098V13.3665C1.40039 14.0968 1.99237 14.6888 2.72261 14.6888H11.9782C12.7084 14.6888 13.3004 14.0968 13.3004 13.3665V4.11098C13.3004 3.38074 12.7084 2.78876 11.9782 2.78876Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M9.99414 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M4.70703 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M1.40039 6.7554H13.3004" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>    
+                                            </span>
+                                            23 апр - 23 июл
+                                        </div>
+                                    </div>
+                                    <div class="slider-section__wrap">
+                                        <div class="slider-section__type data-fiolet">Фильм</div>
+                                        <div class="slider-section__name">
+                                            Призрак
+                                        </div>
+                                        <div class="slider-section__bot">
+                                            <div class="slider-section__price">
+                                                <div class="slider-section__price1">Цена:</div>
+                                                <div class="slider-section__price2">от 150 руб.</div>
+                                            </div>
+                                            <div class="slider-section__buy data-fiolet">
+                                                <button type="button">
+                                                    <div>
+                                                        <span>Купить</span>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="slider-section__wrap">
-                                <div class="slider-section__type data-fiolet">Фильм</div>
-                                <div class="slider-section__name">
-                                    Призрак
+                            <div class="pagination">
+                                <div class="swiper-count swiper-pagination">
+                                    <div class="now swiper-pagination-current">1</div>
+                                    <span></span>
+                                    <div class="max swiper-pagination-total">4</div>
                                 </div>
-                                <div class="slider-section__bot">
-                                    <div class="slider-section__price">
-                                        <div class="slider-section__price1">Цена:</div>
-                                        <div class="slider-section__price2">от 150 руб.</div>
-                                    </div>
-                                    <div class="slider-section__buy data-fiolet">
-                                        <button type="button">
-                                            <div>
-                                                <span>Купить</span>
-                                            </div>
-                                        </button>
-                                    </div>
+        
+                                <div class="swiper__btns">
+                                    <a href="" class="swiper__button swiper-button-prev2 black">
+                                        <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M23 10.9281H1M1 10.9281L11.0774 1M1 10.9281L11.0774 21" stroke="#132C39"/>
+                                        </svg>
+                                    </a>
+                                    <a href="" class="swiper__button swiper-button-next2 black">
+                                        <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.79451e-07 11.0719L23 11.0719M23 11.0719L12.4645 21M23 11.0719L12.4645 0.999998" stroke="#132C39"/>
+                                        </svg>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="slider-section-item2">
-                            <div class="slider-section__img swiper-lazy swiper-lazy-loaded" style="background-image: url(&quot;./img/index/5.jpg&quot;);">
-                                <div class="slider-section__data data-fiolet">
-                                    <span>
-                                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M11.9782 2.78876H2.72261C1.99237 2.78876 1.40039 3.38074 1.40039 4.11098V13.3665C1.40039 14.0968 1.99237 14.6888 2.72261 14.6888H11.9782C12.7084 14.6888 13.3004 14.0968 13.3004 13.3665V4.11098C13.3004 3.38074 12.7084 2.78876 11.9782 2.78876Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            <path d="M9.99414 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            <path d="M4.70703 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            <path d="M1.40039 6.7554H13.3004" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        </svg>    
-                                    </span>
-                                    23 апр - 23 июл
+                        <div class="afisha__tab-wrap">
+                            <div class="afisha">
+                                <div class="slider-section-item2">
+                                    <div class="slider-section__img swiper-lazy swiper-lazy-loaded" style="background-image: url(&quot;./img/index/4.jpg&quot;);">
+                                        <div class="slider-section__data data-fiolet">
+                                            <span>
+                                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.9782 2.78876H2.72261C1.99237 2.78876 1.40039 3.38074 1.40039 4.11098V13.3665C1.40039 14.0968 1.99237 14.6888 2.72261 14.6888H11.9782C12.7084 14.6888 13.3004 14.0968 13.3004 13.3665V4.11098C13.3004 3.38074 12.7084 2.78876 11.9782 2.78876Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M9.99414 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M4.70703 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M1.40039 6.7554H13.3004" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>    
+                                            </span>
+                                            23 апр - 23 июл
+                                        </div>
+                                    </div>
+                                    <div class="slider-section__wrap">
+                                        <div class="slider-section__type data-fiolet">Мастер-класс</div>
+                                        <div class="slider-section__name">
+                                            Призрак
+                                        </div>
+                                        <div class="slider-section__bot">
+                                            <div class="slider-section__price">
+                                                <div class="slider-section__price1">Цена:</div>
+                                                <div class="slider-section__price2">от 150 руб.</div>
+                                            </div>
+                                            <div class="slider-section__buy data-fiolet">
+                                                <button type="button">
+                                                    <div>
+                                                        <span>Купить</span>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-section-item2">
+                                    <div class="slider-section__img swiper-lazy swiper-lazy-loaded" style="background-image: url(&quot;./img/index/5.jpg&quot;);">
+                                        <div class="slider-section__data data-fiolet">
+                                            <span>
+                                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.9782 2.78876H2.72261C1.99237 2.78876 1.40039 3.38074 1.40039 4.11098V13.3665C1.40039 14.0968 1.99237 14.6888 2.72261 14.6888H11.9782C12.7084 14.6888 13.3004 14.0968 13.3004 13.3665V4.11098C13.3004 3.38074 12.7084 2.78876 11.9782 2.78876Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M9.99414 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M4.70703 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M1.40039 6.7554H13.3004" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>    
+                                            </span>
+                                            23 апр - 23 июл
+                                        </div>
+                                    </div>
+                                    <div class="slider-section__wrap">
+                                        <div class="slider-section__type data-fiolet">Мастер-класс</div>
+                                        <div class="slider-section__name">
+                                            Джентельмены удачи
+                                        </div>
+                                        <div class="slider-section__bot">
+                                            <div class="slider-section__price">
+                                                <div class="slider-section__price1">Цена:</div>
+                                                <div class="slider-section__price2">от 150 руб.</div>
+                                            </div>
+                                            <div class="slider-section__buy data-fiolet">
+                                                <button type="button">
+                                                    <div>
+                                                        <span>Купить</span>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-section-item2">
+                                    <div class="slider-section__img swiper-lazy swiper-lazy-loaded" style="background-image: url(&quot;./img/index/6.jpg&quot;);">
+                                        <div class="slider-section__data data-fiolet">
+                                            <span>
+                                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.9782 2.78876H2.72261C1.99237 2.78876 1.40039 3.38074 1.40039 4.11098V13.3665C1.40039 14.0968 1.99237 14.6888 2.72261 14.6888H11.9782C12.7084 14.6888 13.3004 14.0968 13.3004 13.3665V4.11098C13.3004 3.38074 12.7084 2.78876 11.9782 2.78876Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M9.99414 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M4.70703 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M1.40039 6.7554H13.3004" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>    
+                                            </span>
+                                            23 апр - 23 июл
+                                        </div>
+                                    </div>
+                                    <div class="slider-section__wrap">
+                                        <div class="slider-section__type data-fiolet">Мастер-класс</div>
+                                        <div class="slider-section__name">
+                                            Призрак
+                                        </div>
+                                        <div class="slider-section__bot">
+                                            <div class="slider-section__price">
+                                                <div class="slider-section__price1">Цена:</div>
+                                                <div class="slider-section__price2">от 150 руб.</div>
+                                            </div>
+                                            <div class="slider-section__buy data-fiolet">
+                                                <button type="button">
+                                                    <div>
+                                                        <span>Купить</span>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-section-item2">
+                                    <div class="slider-section__img swiper-lazy swiper-lazy-loaded" style="background-image: url('./img/afisha/3.jpg');">
+                                        <div class="slider-section__data data-fiolet">
+                                            <span>
+                                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.9782 2.78876H2.72261C1.99237 2.78876 1.40039 3.38074 1.40039 4.11098V13.3665C1.40039 14.0968 1.99237 14.6888 2.72261 14.6888H11.9782C12.7084 14.6888 13.3004 14.0968 13.3004 13.3665V4.11098C13.3004 3.38074 12.7084 2.78876 11.9782 2.78876Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M9.99414 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M4.70703 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M1.40039 6.7554H13.3004" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>    
+                                            </span>
+                                            23 апр - 23 июл
+                                        </div>
+                                    </div>
+                                    <div class="slider-section__wrap">
+                                        <div class="slider-section__type data-fiolet">Мастер-класс</div>
+                                        <div class="slider-section__name">
+                                            Призрак
+                                        </div>
+                                        <div class="slider-section__bot">
+                                            <div class="slider-section__price">
+                                                <div class="slider-section__price1">Цена:</div>
+                                                <div class="slider-section__price2">от 150 руб.</div>
+                                            </div>
+                                            <div class="slider-section__buy data-fiolet">
+                                                <button type="button">
+                                                    <div>
+                                                        <span>Купить</span>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-section-item2">
+                                    <div class="slider-section__img swiper-lazy swiper-lazy-loaded" style="background-image: url(./img/afisha/2.jpg);">
+                                        <div class="slider-section__data data-fiolet">
+                                            <span>
+                                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.9782 2.78876H2.72261C1.99237 2.78876 1.40039 3.38074 1.40039 4.11098V13.3665C1.40039 14.0968 1.99237 14.6888 2.72261 14.6888H11.9782C12.7084 14.6888 13.3004 14.0968 13.3004 13.3665V4.11098C13.3004 3.38074 12.7084 2.78876 11.9782 2.78876Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M9.99414 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M4.70703 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M1.40039 6.7554H13.3004" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>    
+                                            </span>
+                                            23 апр - 23 июл
+                                        </div>
+                                    </div>
+                                    <div class="slider-section__wrap">
+                                        <div class="slider-section__type data-fiolet">Мастер-класс</div>
+                                        <div class="slider-section__name">
+                                            Призрак
+                                        </div>
+                                        <div class="slider-section__bot">
+                                            <div class="slider-section__price">
+                                                <div class="slider-section__price1">Цена:</div>
+                                                <div class="slider-section__price2">от 150 руб.</div>
+                                            </div>
+                                            <div class="slider-section__buy data-fiolet">
+                                                <button type="button">
+                                                    <div>
+                                                        <span>Купить</span>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-section-item2">
+                                    <div class="slider-section__img swiper-lazy swiper-lazy-loaded" style="background-image: url(./img/afisha/1.jpg);">
+                                        <div class="slider-section__data data-fiolet">
+                                            <span>
+                                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.9782 2.78876H2.72261C1.99237 2.78876 1.40039 3.38074 1.40039 4.11098V13.3665C1.40039 14.0968 1.99237 14.6888 2.72261 14.6888H11.9782C12.7084 14.6888 13.3004 14.0968 13.3004 13.3665V4.11098C13.3004 3.38074 12.7084 2.78876 11.9782 2.78876Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M9.99414 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M4.70703 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M1.40039 6.7554H13.3004" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>    
+                                            </span>
+                                            23 апр - 23 июл
+                                        </div>
+                                    </div>
+                                    <div class="slider-section__wrap">
+                                        <div class="slider-section__type data-fiolet">Мастер-класс</div>
+                                        <div class="slider-section__name">
+                                            Призрак
+                                        </div>
+                                        <div class="slider-section__bot">
+                                            <div class="slider-section__price">
+                                                <div class="slider-section__price1">Цена:</div>
+                                                <div class="slider-section__price2">от 150 руб.</div>
+                                            </div>
+                                            <div class="slider-section__buy data-fiolet">
+                                                <button type="button">
+                                                    <div>
+                                                        <span>Купить</span>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-section-item2">
+                                    <div class="slider-section__img swiper-lazy swiper-lazy-loaded" style="background-image: url(./img/afisha/1.jpg);">
+                                        <div class="slider-section__data data-fiolet">
+                                            <span>
+                                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.9782 2.78876H2.72261C1.99237 2.78876 1.40039 3.38074 1.40039 4.11098V13.3665C1.40039 14.0968 1.99237 14.6888 2.72261 14.6888H11.9782C12.7084 14.6888 13.3004 14.0968 13.3004 13.3665V4.11098C13.3004 3.38074 12.7084 2.78876 11.9782 2.78876Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M9.99414 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M4.70703 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M1.40039 6.7554H13.3004" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>    
+                                            </span>
+                                            23 апр - 23 июл
+                                        </div>
+                                    </div>
+                                    <div class="slider-section__wrap">
+                                        <div class="slider-section__type data-fiolet">Мастер-класс</div>
+                                        <div class="slider-section__name">
+                                            Призрак
+                                        </div>
+                                        <div class="slider-section__bot">
+                                            <div class="slider-section__price">
+                                                <div class="slider-section__price1">Цена:</div>
+                                                <div class="slider-section__price2">от 150 руб.</div>
+                                            </div>
+                                            <div class="slider-section__buy data-fiolet">
+                                                <button type="button">
+                                                    <div>
+                                                        <span>Купить</span>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-section-item2">
+                                    <div class="slider-section__img swiper-lazy swiper-lazy-loaded" style="background-image: url(./img/afisha/1.jpg);">
+                                        <div class="slider-section__data data-fiolet">
+                                            <span>
+                                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.9782 2.78876H2.72261C1.99237 2.78876 1.40039 3.38074 1.40039 4.11098V13.3665C1.40039 14.0968 1.99237 14.6888 2.72261 14.6888H11.9782C12.7084 14.6888 13.3004 14.0968 13.3004 13.3665V4.11098C13.3004 3.38074 12.7084 2.78876 11.9782 2.78876Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M9.99414 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M4.70703 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M1.40039 6.7554H13.3004" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>    
+                                            </span>
+                                            23 апр - 23 июл
+                                        </div>
+                                    </div>
+                                    <div class="slider-section__wrap">
+                                        <div class="slider-section__type data-fiolet">Мастер-класс</div>
+                                        <div class="slider-section__name">
+                                            Призрак
+                                        </div>
+                                        <div class="slider-section__bot">
+                                            <div class="slider-section__price">
+                                                <div class="slider-section__price1">Цена:</div>
+                                                <div class="slider-section__price2">от 150 руб.</div>
+                                            </div>
+                                            <div class="slider-section__buy data-fiolet">
+                                                <button type="button">
+                                                    <div>
+                                                        <span>Купить</span>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="slider-section__wrap">
-                                <div class="slider-section__type data-fiolet">Фильм</div>
-                                <div class="slider-section__name">
-                                    Джентельмены удачи
+                            <div class="pagination">
+                                <div class="swiper-count swiper-pagination">
+                                    <div class="now swiper-pagination-current">1</div>
+                                    <span></span>
+                                    <div class="max swiper-pagination-total">4</div>
                                 </div>
-                                <div class="slider-section__bot">
-                                    <div class="slider-section__price">
-                                        <div class="slider-section__price1">Цена:</div>
-                                        <div class="slider-section__price2">от 150 руб.</div>
-                                    </div>
-                                    <div class="slider-section__buy data-fiolet">
-                                        <button type="button">
-                                            <div>
-                                                <span>Купить</span>
-                                            </div>
-                                        </button>
-                                    </div>
+        
+                                <div class="swiper__btns">
+                                    <a href="" class="swiper__button swiper-button-prev2 black">
+                                        <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M23 10.9281H1M1 10.9281L11.0774 1M1 10.9281L11.0774 21" stroke="#132C39"/>
+                                        </svg>
+                                    </a>
+                                    <a href="" class="swiper__button swiper-button-next2 black">
+                                        <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.79451e-07 11.0719L23 11.0719M23 11.0719L12.4645 21M23 11.0719L12.4645 0.999998" stroke="#132C39"/>
+                                        </svg>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="slider-section-item2">
-                            <div class="slider-section__img swiper-lazy swiper-lazy-loaded" style="background-image: url(&quot;./img/index/6.jpg&quot;);">
-                                <div class="slider-section__data data-fiolet">
-                                    <span>
-                                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M11.9782 2.78876H2.72261C1.99237 2.78876 1.40039 3.38074 1.40039 4.11098V13.3665C1.40039 14.0968 1.99237 14.6888 2.72261 14.6888H11.9782C12.7084 14.6888 13.3004 14.0968 13.3004 13.3665V4.11098C13.3004 3.38074 12.7084 2.78876 11.9782 2.78876Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            <path d="M9.99414 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            <path d="M4.70703 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            <path d="M1.40039 6.7554H13.3004" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        </svg>    
-                                    </span>
-                                    23 апр - 23 июл
-                                </div>
-                            </div>
-                            <div class="slider-section__wrap">
-                                <div class="slider-section__type data-fiolet">Фильм</div>
-                                <div class="slider-section__name">
-                                    Призрак
-                                </div>
-                                <div class="slider-section__bot">
-                                    <div class="slider-section__price">
-                                        <div class="slider-section__price1">Цена:</div>
-                                        <div class="slider-section__price2">от 150 руб.</div>
+                        <div class="afisha__tab-wrap">
+                            <div class="afisha">
+                                <div class="slider-section-item2">
+                                    <div class="slider-section__img swiper-lazy swiper-lazy-loaded" style="background-image: url(&quot;./img/index/4.jpg&quot;);">
+                                        <div class="slider-section__data data-fiolet">
+                                            <span>
+                                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.9782 2.78876H2.72261C1.99237 2.78876 1.40039 3.38074 1.40039 4.11098V13.3665C1.40039 14.0968 1.99237 14.6888 2.72261 14.6888H11.9782C12.7084 14.6888 13.3004 14.0968 13.3004 13.3665V4.11098C13.3004 3.38074 12.7084 2.78876 11.9782 2.78876Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M9.99414 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M4.70703 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M1.40039 6.7554H13.3004" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>    
+                                            </span>
+                                            23 апр - 23 июл
+                                        </div>
                                     </div>
-                                    <div class="slider-section__buy data-fiolet">
-                                        <button type="button">
-                                            <div>
-                                                <span>Купить</span>
+                                    <div class="slider-section__wrap">
+                                        <div class="slider-section__type data-fiolet">Мероприятие</div>
+                                        <div class="slider-section__name">
+                                            Призрак
+                                        </div>
+                                        <div class="slider-section__bot">
+                                            <div class="slider-section__price">
+                                                <div class="slider-section__price1">Цена:</div>
+                                                <div class="slider-section__price2">от 150 руб.</div>
                                             </div>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider-section-item2">
-                            <div class="slider-section__img swiper-lazy swiper-lazy-loaded" style="background-image: url('./img/afisha/3.jpg');">
-                                <div class="slider-section__data data-fiolet">
-                                    <span>
-                                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M11.9782 2.78876H2.72261C1.99237 2.78876 1.40039 3.38074 1.40039 4.11098V13.3665C1.40039 14.0968 1.99237 14.6888 2.72261 14.6888H11.9782C12.7084 14.6888 13.3004 14.0968 13.3004 13.3665V4.11098C13.3004 3.38074 12.7084 2.78876 11.9782 2.78876Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            <path d="M9.99414 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            <path d="M4.70703 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            <path d="M1.40039 6.7554H13.3004" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        </svg>    
-                                    </span>
-                                    23 апр - 23 июл
-                                </div>
-                            </div>
-                            <div class="slider-section__wrap">
-                                <div class="slider-section__type data-fiolet">Фильм</div>
-                                <div class="slider-section__name">
-                                    Призрак
-                                </div>
-                                <div class="slider-section__bot">
-                                    <div class="slider-section__price">
-                                        <div class="slider-section__price1">Цена:</div>
-                                        <div class="slider-section__price2">от 150 руб.</div>
-                                    </div>
-                                    <div class="slider-section__buy data-fiolet">
-                                        <button type="button">
-                                            <div>
-                                                <span>Купить</span>
+                                            <div class="slider-section__buy data-fiolet">
+                                                <button type="button">
+                                                    <div>
+                                                        <span>Купить</span>
+                                                    </div>
+                                                </button>
                                             </div>
-                                        </button>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="slider-section-item2">
-                            <div class="slider-section__img swiper-lazy swiper-lazy-loaded" style="background-image: url(./img/afisha/2.jpg);">
-                                <div class="slider-section__data data-fiolet">
-                                    <span>
-                                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M11.9782 2.78876H2.72261C1.99237 2.78876 1.40039 3.38074 1.40039 4.11098V13.3665C1.40039 14.0968 1.99237 14.6888 2.72261 14.6888H11.9782C12.7084 14.6888 13.3004 14.0968 13.3004 13.3665V4.11098C13.3004 3.38074 12.7084 2.78876 11.9782 2.78876Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            <path d="M9.99414 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            <path d="M4.70703 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            <path d="M1.40039 6.7554H13.3004" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        </svg>    
-                                    </span>
-                                    23 апр - 23 июл
-                                </div>
-                            </div>
-                            <div class="slider-section__wrap">
-                                <div class="slider-section__type data-fiolet">Фильм</div>
-                                <div class="slider-section__name">
-                                    Призрак
-                                </div>
-                                <div class="slider-section__bot">
-                                    <div class="slider-section__price">
-                                        <div class="slider-section__price1">Цена:</div>
-                                        <div class="slider-section__price2">от 150 руб.</div>
+                                <div class="slider-section-item2">
+                                    <div class="slider-section__img swiper-lazy swiper-lazy-loaded" style="background-image: url(&quot;./img/index/5.jpg&quot;);">
+                                        <div class="slider-section__data data-fiolet">
+                                            <span>
+                                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.9782 2.78876H2.72261C1.99237 2.78876 1.40039 3.38074 1.40039 4.11098V13.3665C1.40039 14.0968 1.99237 14.6888 2.72261 14.6888H11.9782C12.7084 14.6888 13.3004 14.0968 13.3004 13.3665V4.11098C13.3004 3.38074 12.7084 2.78876 11.9782 2.78876Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M9.99414 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M4.70703 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M1.40039 6.7554H13.3004" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>    
+                                            </span>
+                                            23 апр - 23 июл
+                                        </div>
                                     </div>
-                                    <div class="slider-section__buy data-fiolet">
-                                        <button type="button">
-                                            <div>
-                                                <span>Купить</span>
+                                    <div class="slider-section__wrap">
+                                        <div class="slider-section__type data-fiolet">Мероприятие</div>
+                                        <div class="slider-section__name">
+                                            Джентельмены удачи
+                                        </div>
+                                        <div class="slider-section__bot">
+                                            <div class="slider-section__price">
+                                                <div class="slider-section__price1">Цена:</div>
+                                                <div class="slider-section__price2">от 150 руб.</div>
                                             </div>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider-section-item2">
-                            <div class="slider-section__img swiper-lazy swiper-lazy-loaded" style="background-image: url(./img/afisha/1.jpg);">
-                                <div class="slider-section__data data-fiolet">
-                                    <span>
-                                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M11.9782 2.78876H2.72261C1.99237 2.78876 1.40039 3.38074 1.40039 4.11098V13.3665C1.40039 14.0968 1.99237 14.6888 2.72261 14.6888H11.9782C12.7084 14.6888 13.3004 14.0968 13.3004 13.3665V4.11098C13.3004 3.38074 12.7084 2.78876 11.9782 2.78876Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            <path d="M9.99414 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            <path d="M4.70703 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            <path d="M1.40039 6.7554H13.3004" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        </svg>    
-                                    </span>
-                                    23 апр - 23 июл
-                                </div>
-                            </div>
-                            <div class="slider-section__wrap">
-                                <div class="slider-section__type data-fiolet">Фильм</div>
-                                <div class="slider-section__name">
-                                    Призрак
-                                </div>
-                                <div class="slider-section__bot">
-                                    <div class="slider-section__price">
-                                        <div class="slider-section__price1">Цена:</div>
-                                        <div class="slider-section__price2">от 150 руб.</div>
-                                    </div>
-                                    <div class="slider-section__buy data-fiolet">
-                                        <button type="button">
-                                            <div>
-                                                <span>Купить</span>
+                                            <div class="slider-section__buy data-fiolet">
+                                                <button type="button">
+                                                    <div>
+                                                        <span>Купить</span>
+                                                    </div>
+                                                </button>
                                             </div>
-                                        </button>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="slider-section-item2">
-                            <div class="slider-section__img swiper-lazy swiper-lazy-loaded" style="background-image: url(./img/afisha/1.jpg);">
-                                <div class="slider-section__data data-fiolet">
-                                    <span>
-                                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M11.9782 2.78876H2.72261C1.99237 2.78876 1.40039 3.38074 1.40039 4.11098V13.3665C1.40039 14.0968 1.99237 14.6888 2.72261 14.6888H11.9782C12.7084 14.6888 13.3004 14.0968 13.3004 13.3665V4.11098C13.3004 3.38074 12.7084 2.78876 11.9782 2.78876Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            <path d="M9.99414 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            <path d="M4.70703 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            <path d="M1.40039 6.7554H13.3004" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        </svg>    
-                                    </span>
-                                    23 апр - 23 июл
-                                </div>
-                            </div>
-                            <div class="slider-section__wrap">
-                                <div class="slider-section__type data-fiolet">Фильм</div>
-                                <div class="slider-section__name">
-                                    Призрак
-                                </div>
-                                <div class="slider-section__bot">
-                                    <div class="slider-section__price">
-                                        <div class="slider-section__price1">Цена:</div>
-                                        <div class="slider-section__price2">от 150 руб.</div>
+                                <div class="slider-section-item2">
+                                    <div class="slider-section__img swiper-lazy swiper-lazy-loaded" style="background-image: url(&quot;./img/index/6.jpg&quot;);">
+                                        <div class="slider-section__data data-fiolet">
+                                            <span>
+                                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.9782 2.78876H2.72261C1.99237 2.78876 1.40039 3.38074 1.40039 4.11098V13.3665C1.40039 14.0968 1.99237 14.6888 2.72261 14.6888H11.9782C12.7084 14.6888 13.3004 14.0968 13.3004 13.3665V4.11098C13.3004 3.38074 12.7084 2.78876 11.9782 2.78876Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M9.99414 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M4.70703 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M1.40039 6.7554H13.3004" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>    
+                                            </span>
+                                            23 апр - 23 июл
+                                        </div>
                                     </div>
-                                    <div class="slider-section__buy data-fiolet">
-                                        <button type="button">
-                                            <div>
-                                                <span>Купить</span>
+                                    <div class="slider-section__wrap">
+                                        <div class="slider-section__type data-fiolet">Мероприятие</div>
+                                        <div class="slider-section__name">
+                                            Призрак
+                                        </div>
+                                        <div class="slider-section__bot">
+                                            <div class="slider-section__price">
+                                                <div class="slider-section__price1">Цена:</div>
+                                                <div class="slider-section__price2">от 150 руб.</div>
                                             </div>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider-section-item2">
-                            <div class="slider-section__img swiper-lazy swiper-lazy-loaded" style="background-image: url(./img/afisha/1.jpg);">
-                                <div class="slider-section__data data-fiolet">
-                                    <span>
-                                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M11.9782 2.78876H2.72261C1.99237 2.78876 1.40039 3.38074 1.40039 4.11098V13.3665C1.40039 14.0968 1.99237 14.6888 2.72261 14.6888H11.9782C12.7084 14.6888 13.3004 14.0968 13.3004 13.3665V4.11098C13.3004 3.38074 12.7084 2.78876 11.9782 2.78876Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            <path d="M9.99414 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            <path d="M4.70703 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            <path d="M1.40039 6.7554H13.3004" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        </svg>    
-                                    </span>
-                                    23 апр - 23 июл
-                                </div>
-                            </div>
-                            <div class="slider-section__wrap">
-                                <div class="slider-section__type data-fiolet">Фильм</div>
-                                <div class="slider-section__name">
-                                    Призрак
-                                </div>
-                                <div class="slider-section__bot">
-                                    <div class="slider-section__price">
-                                        <div class="slider-section__price1">Цена:</div>
-                                        <div class="slider-section__price2">от 150 руб.</div>
-                                    </div>
-                                    <div class="slider-section__buy data-fiolet">
-                                        <button type="button">
-                                            <div>
-                                                <span>Купить</span>
+                                            <div class="slider-section__buy data-fiolet">
+                                                <button type="button">
+                                                    <div>
+                                                        <span>Купить</span>
+                                                    </div>
+                                                </button>
                                             </div>
-                                        </button>
+                                        </div>
                                     </div>
+                                </div>
+                                <div class="slider-section-item2">
+                                    <div class="slider-section__img swiper-lazy swiper-lazy-loaded" style="background-image: url('./img/afisha/3.jpg');">
+                                        <div class="slider-section__data data-fiolet">
+                                            <span>
+                                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.9782 2.78876H2.72261C1.99237 2.78876 1.40039 3.38074 1.40039 4.11098V13.3665C1.40039 14.0968 1.99237 14.6888 2.72261 14.6888H11.9782C12.7084 14.6888 13.3004 14.0968 13.3004 13.3665V4.11098C13.3004 3.38074 12.7084 2.78876 11.9782 2.78876Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M9.99414 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M4.70703 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M1.40039 6.7554H13.3004" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>    
+                                            </span>
+                                            23 апр - 23 июл
+                                        </div>
+                                    </div>
+                                    <div class="slider-section__wrap">
+                                        <div class="slider-section__type data-fiolet">Мероприятие</div>
+                                        <div class="slider-section__name">
+                                            Призрак
+                                        </div>
+                                        <div class="slider-section__bot">
+                                            <div class="slider-section__price">
+                                                <div class="slider-section__price1">Цена:</div>
+                                                <div class="slider-section__price2">от 150 руб.</div>
+                                            </div>
+                                            <div class="slider-section__buy data-fiolet">
+                                                <button type="button">
+                                                    <div>
+                                                        <span>Купить</span>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-section-item2">
+                                    <div class="slider-section__img swiper-lazy swiper-lazy-loaded" style="background-image: url(./img/afisha/2.jpg);">
+                                        <div class="slider-section__data data-fiolet">
+                                            <span>
+                                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.9782 2.78876H2.72261C1.99237 2.78876 1.40039 3.38074 1.40039 4.11098V13.3665C1.40039 14.0968 1.99237 14.6888 2.72261 14.6888H11.9782C12.7084 14.6888 13.3004 14.0968 13.3004 13.3665V4.11098C13.3004 3.38074 12.7084 2.78876 11.9782 2.78876Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M9.99414 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M4.70703 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M1.40039 6.7554H13.3004" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>    
+                                            </span>
+                                            23 апр - 23 июл
+                                        </div>
+                                    </div>
+                                    <div class="slider-section__wrap">
+                                        <div class="slider-section__type data-fiolet">Мероприятие</div>
+                                        <div class="slider-section__name">
+                                            Призрак
+                                        </div>
+                                        <div class="slider-section__bot">
+                                            <div class="slider-section__price">
+                                                <div class="slider-section__price1">Цена:</div>
+                                                <div class="slider-section__price2">от 150 руб.</div>
+                                            </div>
+                                            <div class="slider-section__buy data-fiolet">
+                                                <button type="button">
+                                                    <div>
+                                                        <span>Купить</span>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-section-item2">
+                                    <div class="slider-section__img swiper-lazy swiper-lazy-loaded" style="background-image: url(./img/afisha/1.jpg);">
+                                        <div class="slider-section__data data-fiolet">
+                                            <span>
+                                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.9782 2.78876H2.72261C1.99237 2.78876 1.40039 3.38074 1.40039 4.11098V13.3665C1.40039 14.0968 1.99237 14.6888 2.72261 14.6888H11.9782C12.7084 14.6888 13.3004 14.0968 13.3004 13.3665V4.11098C13.3004 3.38074 12.7084 2.78876 11.9782 2.78876Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M9.99414 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M4.70703 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M1.40039 6.7554H13.3004" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>    
+                                            </span>
+                                            23 апр - 23 июл
+                                        </div>
+                                    </div>
+                                    <div class="slider-section__wrap">
+                                        <div class="slider-section__type data-fiolet">Мероприятие</div>
+                                        <div class="slider-section__name">
+                                            Призрак
+                                        </div>
+                                        <div class="slider-section__bot">
+                                            <div class="slider-section__price">
+                                                <div class="slider-section__price1">Цена:</div>
+                                                <div class="slider-section__price2">от 150 руб.</div>
+                                            </div>
+                                            <div class="slider-section__buy data-fiolet">
+                                                <button type="button">
+                                                    <div>
+                                                        <span>Купить</span>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-section-item2">
+                                    <div class="slider-section__img swiper-lazy swiper-lazy-loaded" style="background-image: url(./img/afisha/1.jpg);">
+                                        <div class="slider-section__data data-fiolet">
+                                            <span>
+                                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.9782 2.78876H2.72261C1.99237 2.78876 1.40039 3.38074 1.40039 4.11098V13.3665C1.40039 14.0968 1.99237 14.6888 2.72261 14.6888H11.9782C12.7084 14.6888 13.3004 14.0968 13.3004 13.3665V4.11098C13.3004 3.38074 12.7084 2.78876 11.9782 2.78876Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M9.99414 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M4.70703 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M1.40039 6.7554H13.3004" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>    
+                                            </span>
+                                            23 апр - 23 июл
+                                        </div>
+                                    </div>
+                                    <div class="slider-section__wrap">
+                                        <div class="slider-section__type data-fiolet">Мероприятие</div>
+                                        <div class="slider-section__name">
+                                            Призрак
+                                        </div>
+                                        <div class="slider-section__bot">
+                                            <div class="slider-section__price">
+                                                <div class="slider-section__price1">Цена:</div>
+                                                <div class="slider-section__price2">от 150 руб.</div>
+                                            </div>
+                                            <div class="slider-section__buy data-fiolet">
+                                                <button type="button">
+                                                    <div>
+                                                        <span>Купить</span>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-section-item2">
+                                    <div class="slider-section__img swiper-lazy swiper-lazy-loaded" style="background-image: url(./img/afisha/1.jpg);">
+                                        <div class="slider-section__data data-fiolet">
+                                            <span>
+                                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.9782 2.78876H2.72261C1.99237 2.78876 1.40039 3.38074 1.40039 4.11098V13.3665C1.40039 14.0968 1.99237 14.6888 2.72261 14.6888H11.9782C12.7084 14.6888 13.3004 14.0968 13.3004 13.3665V4.11098C13.3004 3.38074 12.7084 2.78876 11.9782 2.78876Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M9.99414 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M4.70703 1.46667V4.11112" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M1.40039 6.7554H13.3004" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>    
+                                            </span>
+                                            23 апр - 23 июл
+                                        </div>
+                                    </div>
+                                    <div class="slider-section__wrap">
+                                        <div class="slider-section__type data-fiolet">Мероприятие</div>
+                                        <div class="slider-section__name">
+                                            Призрак
+                                        </div>
+                                        <div class="slider-section__bot">
+                                            <div class="slider-section__price">
+                                                <div class="slider-section__price1">Цена:</div>
+                                                <div class="slider-section__price2">от 150 руб.</div>
+                                            </div>
+                                            <div class="slider-section__buy data-fiolet">
+                                                <button type="button">
+                                                    <div>
+                                                        <span>Купить</span>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pagination">
+                                <div class="swiper-count swiper-pagination">
+                                    <div class="now swiper-pagination-current">1</div>
+                                    <span></span>
+                                    <div class="max swiper-pagination-total">4</div>
+                                </div>
+        
+                                <div class="swiper__btns">
+                                    <a href="" class="swiper__button swiper-button-prev2 black">
+                                        <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M23 10.9281H1M1 10.9281L11.0774 1M1 10.9281L11.0774 21" stroke="#132C39"/>
+                                        </svg>
+                                    </a>
+                                    <a href="" class="swiper__button swiper-button-next2 black">
+                                        <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.79451e-07 11.0719L23 11.0719M23 11.0719L12.4645 21M23 11.0719L12.4645 0.999998" stroke="#132C39"/>
+                                        </svg>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="pagination">
-                        <div class="swiper-count swiper-pagination">
-                            <div class="now swiper-pagination-current">1</div>
-                            <span></span>
-                            <div class="max swiper-pagination-total">4</div>
-                        </div>
-
-                        <div class="swiper__btns">
-                            <a href="" class="swiper__button swiper-button-prev2 black">
-                                <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M23 10.9281H1M1 10.9281L11.0774 1M1 10.9281L11.0774 21" stroke="#132C39"/>
-                                </svg>
-                            </a>
-                            <a href="" class="swiper__button swiper-button-next2 black">
-                                <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M2.79451e-07 11.0719L23 11.0719M23 11.0719L12.4645 21M23 11.0719L12.4645 0.999998" stroke="#132C39"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </section>

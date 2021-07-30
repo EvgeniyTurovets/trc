@@ -567,7 +567,7 @@ svg.not-stroke{
 }
 .magazin__carts{
     display: flex;
-    margin: 0 -12px;
+    margin: 0 -9px;
     flex-wrap: wrap;
     padding-bottom: 35px;
     .magazin__item{
@@ -575,7 +575,7 @@ svg.not-stroke{
         margin: 0 12px;
         border: 1px solid rgba(#000000, 0.2);
         border-radius: 20px;
-        padding: 30px 38px;
+        padding: 30px 24px;
         padding-top: 55px;
         margin-bottom: 20px;
         transition: 0.3s all;
@@ -604,7 +604,7 @@ svg.not-stroke{
             text-decoration-line: underline;
             color: #132C39;
             display: block;
-            margin-bottom: 7px;
+            margin-bottom: 10px;
         }
         span{
             display: block;
@@ -634,7 +634,7 @@ svg.not-stroke{
     .magazin__carts {
         margin: 0 -10px;
         .magazin__item{
-            width: calc(100% / 2 - 20px);
+            width: calc(100% / 1 - 20px);
             padding:10px;
             margin-left: 10px;
             margin-right: 10px;
@@ -663,7 +663,7 @@ svg.not-stroke{
     .magazin__carts {
         margin: 0 -5px;
         .magazin__item{
-            width: calc(100% / 2 - 10px);
+            width: calc(100% / 1 - 10px);
             margin-right: 5px;
             margin-left: 5px;
             margin-bottom: 10px;

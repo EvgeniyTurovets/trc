@@ -164,7 +164,7 @@ img {
   transition: 0.3s all;
   position: relative;
   z-index: 5;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   position: fixed;
   left: 0;
   right: 0;
@@ -173,6 +173,8 @@ img {
 @media (min-width: 992px) {
   .header.sroll {
     border-bottom: 1px solid rgba(19, 44, 57, 0.2); }
+  header.sroll .header__top {
+    padding-top: 15px; }
   .app {
     padding-top: 200px; } }
 
@@ -202,6 +204,7 @@ img {
       align-items: center;
   padding-bottom: 16px;
   padding-top: 38px;
+  transition: 0.3s all;
   border-bottom: 1px solid rgba(19, 44, 57, 0.2); }
 
 .header__mid {
@@ -624,11 +627,11 @@ img {
   display: none;
   position: fixed;
   background-color: #fff;
-  top: 147px;
+  top: 138px;
   left: 0;
   width: 100%;
   bottom: 0;
-  z-index: 4;
+  z-index: 6;
   padding-top: 100px;
   overflow: auto;
   transition: 0.3s all;
@@ -3509,6 +3512,14 @@ svg.not-stroke {
 @media (max-width: 1024px) {
   .magazin__wrap__checkboxes .catalog-top__list {
     margin-bottom: 20px; } }
+
+.afisha__tab-wrap {
+  display: none; }
+
+.afisha__tab-wrap.active {
+  display: block;
+  -webkit-animation: fadein 1s;
+          animation: fadein 1s; }
 
 .magazin__top__type.red-type button {
   border: 1px solid #f15e56;

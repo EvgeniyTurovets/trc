@@ -95,3 +95,11 @@
         margin-bottom: 20px;
     }
 }
+
+.afisha__tab-wrap{
+    display: none;   
+}
+.afisha__tab-wrap.active{
+    display: block;
+    animation: fadein 1s;
+}

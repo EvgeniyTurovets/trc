@@ -414,6 +414,32 @@
         el.classList.remove('active')
     }))
 
+    //Афиша лист
+    if(document.querySelector('.afisha__tabs-nav')){
+        let afisha__tabsNav = document.querySelectorAll('.afisha__tabs-nav a')
+        let afisha__tabsWraps = document.querySelectorAll('.afisha__tab-wrap')
+
+        afisha__tabsNav.forEach(el => el.addEventListener('click', (e)=>{
+            e.preventDefault()
+
+            if(!el.classList.contains('active')){
+                let index = el.getAttribute('data-index')
+
+                afisha__tabsNav.forEach((el2)=>{
+                    el2.classList.remove('active')
+                })
+
+                afisha__tabsWraps.forEach((el3)=>{
+                    el3.classList.remove('active')
+                })
+                
+                afisha__tabsWraps[index].classList.add('active')
+
+                el.classList.add('active')
+            }
+            
+        }))
+    }
 
     // афиша кино
     if(document.querySelector('.afisha-kino__right')){

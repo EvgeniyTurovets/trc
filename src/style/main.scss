@@ -33,7 +33,7 @@ img{
     transition: 0.3s all;
     position: relative;
     z-index: 5;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     position: fixed;
         
         left: 0;
@@ -44,6 +44,11 @@ img{
     .header.sroll{
         
         border-bottom:1px solid rgba(19,44,57,.2)
+    }
+    header.sroll{
+        .header__top{
+            padding-top: 15px;
+        }
     }
     .app{
         padding-top: 200px;
@@ -70,6 +75,7 @@ img{
     align-items: center;
     padding-bottom: 16px;
     padding-top: 38px;
+    transition: 0.3s all;
     border-bottom: 1px solid rgba($color: #132C39, $alpha: 0.2);
 }
 .header__mid{
@@ -538,11 +544,11 @@ img{
     display: none;
     position: fixed;
     background-color: #fff;
-    top: 147px;
+    top: 138px;
     left: 0;
     width: 100%;
     bottom: 0;
-    z-index: 4;
+    z-index: 6;
     padding-top: 100px;
     overflow: auto;
     transition: 0.3s all;
@@ -1871,7 +1877,7 @@ body.no-sroll{
     padding-top: 35px;
     padding-bottom: 35px;
     position: relative;
-    margin-top: 50px;
+    margin-top: 10px;
     
     .wrap{
         padding-right: 340px;
@@ -2229,7 +2235,13 @@ header.main{
     }
 }
 .o-nas .detail-page-slider__item{
-    padding-bottom: 55%;
+    padding-bottom:45%;
+}
+
+@media(max-width: 767px){
+    .o-nas .detail-page-slider__item{
+        padding-bottom:55%;
+    }
 }
 // magazin
 @import './template/magazin.scss';
