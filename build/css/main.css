@@ -163,7 +163,7 @@ img {
   margin-bottom: 50px;
   transition: 0.3s all;
   position: relative;
-  z-index: 5;
+  z-index: 6;
   padding-bottom: 15px;
   position: fixed;
   left: 0;
@@ -172,6 +172,7 @@ img {
 
 @media (min-width: 992px) {
   .header.sroll {
+    z-index: 5;
     border-bottom: 1px solid rgba(19, 44, 57, 0.2); }
   header.sroll .header__top {
     padding-top: 15px; }
