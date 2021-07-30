@@ -4436,12 +4436,12 @@ svg.not-stroke {
 
 .raspisanie__title {
   color: #FFFFFF;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 40px;
   font-family: '2MASS';
   background: #F16665;
   border-radius: 20px;
-  padding: 20px 25px; }
+  padding: 10px 25px; }
 
 .raspisanie__body {
   padding-top: 45px;
