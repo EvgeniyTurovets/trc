@@ -385,9 +385,11 @@
 
 	// Акордион вакансий
     if(document.querySelector('.acordion')){
-		let acordionToggle = document.querySelectorAll('.acordion__toggle')
+
 		let acordionItems = document.querySelectorAll('.acordion__item')
-		acordionToggle.forEach(el => el.addEventListener('click', function(){
+        let acordion__title = document.querySelectorAll('.acordion__title')
+
+        acordion__title.forEach(el => el.addEventListener('click', function(){
 
 			let thisParent = el.closest('.acordion__item')
 
@@ -400,6 +402,8 @@
 				thisParent.classList.add('active')
 			}
 		}))
+
+        
     }
 
 	// модалки

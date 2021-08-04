@@ -10,7 +10,8 @@
     margin-bottom: 50px;
     .acordion__body{
         transition: 0.5s all;
-        padding-top: 30px;
+        padding: 25px 40px;
+        padding-top: 0;
         display: none;
         
         p{
@@ -35,14 +36,15 @@
         font-size: 16px;
         line-height: 23px;
         font-family: '2MASS';
-        position: relative;
-        padding-right: 40px; 
+        position: relative; 
         transition: 0.3s all;
+        cursor: pointer;
+        padding: 25px 40px;
     }
     .acordion__title{
         span{
             position: absolute;
-            right: 0;
+            right: 32px;
             top: 0;
             width: 32px;
             height: 32px;
@@ -74,7 +76,7 @@
     .acordion__item{
         border: 1px solid rgba($color: #000000, $alpha: 0.1);
         border-radius: 20px;
-        padding: 25px 40px;
+        
         margin-bottom: 13px;
     }
     .acordion__item.active{
@@ -89,6 +91,7 @@
         }
         .acordion__body{
             display: block;
+           
         }
     }
 }
@@ -98,7 +101,12 @@
         .acordion__title{
             font-size: 14px;
             line-height: 20px;
-            padding-right: 45px;
+           
+            padding: 20px 20px;
+            padding-right: 50px;
+            span{
+                right: 15px;
+            }
         }   
         .acordion__body ul{
             font-size: 16px;
@@ -108,15 +116,16 @@
             background: #F26F75;
         }
         .acordion__item{
-            padding: 20px;
+            
         }
         .acordion__body{
-            padding-top: 20px;
+            padding: 20px;
+            padding-top: 0;
         }
         .acordion__item.active{
             .acordion__title{
-                font-size: 24px;
-line-height: 32px;
+                font-size: 22px;
+                line-height: 30px;
             }
         }
     }
@@ -125,8 +134,8 @@ line-height: 32px;
     .acordion{
         .acordion__item.active{
             .acordion__title{
-                font-size: 24px;
-line-height: 32px;
+                font-size: 20px;
+line-height:28px;
             }
         }
     }

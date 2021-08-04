@@ -88,14 +88,13 @@
 
 .carta__legend{
     display: flex;
-    align-items: flex-start;
     flex-wrap: wrap;
     margin-bottom: 22px;
 }
 .carta__item{
     cursor: pointer;
     border: 1px solid #F9991B;
-    border-radius: 60px;
+    border-radius: 20px;
     margin-bottom: 22px;
     margin-right: 22px;
     padding: 19px 44px;
@@ -107,9 +106,13 @@
     font-size: 14px;
     line-height: 17px;
     text-transform: uppercase;
+    transition: 0.3s all;
     svg{
         margin-right: 15px;
     }
+}
+.carta__item:hover{
+    box-shadow: 0 0 10px #F9991B;
 }
 .carta__item:last-child{
     margin-right: 0;
@@ -129,7 +132,6 @@
 
     .carta__search{
         max-width: 400px;
-        margin-bottom: 40px;
         margin-left: auto;
         margin-right: auto;
     }

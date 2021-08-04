@@ -91,6 +91,30 @@ svg.not-stroke{
         opacity: 1;
     }
 }
+
+.catalog-top__wrap.catalog-top__wrap--orang{
+    font-family: '2MASS', sans-serif;
+    font-weight: bold;
+
+    svg{
+        fill: #132C39;
+        stroke: #132C39;
+    }
+}
+
+.catalog-top__wrap.catalog-top__wrap--orang a:hover{
+    svg{
+        fill: #132C39;
+        stroke: #132C39;
+    }
+}
+
+.catalog-top__wrap.catalog-top__wrap--orang a.active:hover{
+    svg{
+        fill: #F9991B;
+        stroke: #F9991B;
+    }
+}
 .fiolet-link{
     font-weight: bold;
     font-size: 14px;
@@ -147,7 +171,7 @@ svg.not-stroke{
             line-height: 16px;
             display: flex;
             align-items: center;
-            color: rgba(#132C39, 0.2);
+            color: rgba(#132C39, 0.5);
             margin-right: 30px;
             margin-bottom: 20px;
             transition: 0.3s all;
@@ -166,7 +190,7 @@ svg.not-stroke{
             color: #132C39;
         }
         li:hover{
-            color: rgba(#132C39, 0.5);
+            color: rgba(#132C39, 1);
         }
         li.active:before{
             background-color:#132C39;
@@ -179,9 +203,52 @@ svg.not-stroke{
         }
     }  
 }
+.catalog-top__list.catalog-top__list--fiolet{
+    ul{
+        li.active{
+            color: #b7587c
+        }
+        li:hover{   
+            color: #b7587c;
+        }
+        li.active:before{
+            background-color: #b7587c;
+        }
+    }
+}
+
+.catalog-top__list.catalog-top__list--orang{
+    ul{
+        li.active{
+            color: #f9991b
+        }
+        li:hover{   
+            color: #f9991b;
+        }
+        li.active:before{
+            background-color: #f9991b;
+        }
+    }
+}
+
+.catalog-top__list.catalog-top__list--blue{
+    ul{
+        li.active{
+            color: #306591;
+        }
+        li:hover{   
+            color: #306591;
+        }
+        li.active:before{
+            background-color: #306591;
+        }
+    }
+}
+
 .catalog-top__list .t-category{
     margin-bottom: 20px;
 }
+
 .catalog-top__list .t-alfavit{
     margin-bottom: 20px;
 }
