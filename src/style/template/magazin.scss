@@ -588,7 +588,7 @@ svg.not-stroke{
 }
 
 @media(min-width: 768px){
-    .magazin__wrap:before{
+    .magazin__wrap .before{
         content: "";
         position: absolute;
         width: 41px;
@@ -599,10 +599,10 @@ svg.not-stroke{
         bottom: 30px;
         left: 30%;
         transform: rotate(10deg);
-        z-index: -1;
+        z-index: 5;
     }
     
-    .magazin__wrap:after{
+    .magazin__wrap .after{
         content: "";
         position: absolute;
         width: 71px;
@@ -613,7 +613,7 @@ svg.not-stroke{
         bottom: 20px;
         right: 30%;
         transform: rotateY(-180deg) rotate(20deg);
-        z-index: -1;
+        z-index: 5;
     }
 }
 

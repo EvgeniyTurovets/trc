@@ -18,7 +18,7 @@
 //     transform: rotate(30deg);
 //     z-index: -1;
 // }
-.contact__wrap:after{
+.contact__wrap .after{
     content: "";
     position: absolute;
     width: 61px;
@@ -32,7 +32,7 @@
     z-index: 2;
 }
 @media(max-width: 767px){
-    .contact__wrap:after{
+    .contact__wrap .after{
         display: none;
     }
     .contact__wrap:before{

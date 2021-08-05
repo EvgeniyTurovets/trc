@@ -1,4 +1,53 @@
 (function() {
+    if(document.querySelectorAll('.push-effect')){
+
+        function randomInteger(min, max) {
+            // случайное число от min до (max+1)
+            let rand = min + Math.random() * (max + 1 - min);
+            return Math.floor(rand);
+        }
+    
+        function pushEffect(){
+            let pushEffectEl = document.querySelectorAll('.push-effect')
+            window.addEventListener('scroll', ()=>{
+                pushEffectEl.forEach((el)=>{
+                    if(!el.classList.contains('active')){
+                        let offsetY = el.getBoundingClientRect().y - window.innerHeight
+                        if(offsetY < 0){
+                            let top = window.getComputedStyle(el,null).getPropertyValue("top");
+                            el.style.top = top
+                            el.style.bottom = 'auto'
+                            let randomDuration = randomInteger(5000, 8000)
+                            el.animate([
+                                // keyframes
+                                { top: top },
+                                { top: '-1000px' }
+                            ], {
+                                // timing options
+                                duration: randomDuration,
+                            })
+        
+                            el.classList.add('active')
+                            setTimeout(()=>{
+                                el.classList.add('fadeout')
+                            },5000)
+    
+                            setTimeout(()=>{
+                                el.remove()
+                            },8000)
+                        }
+                    }
+                    
+                })
+            })
+        }
+        window.addEventListener('load', ()=>{
+            pushEffect()
+        })
+        pushEffect()
+    }
+    
+
     // сладер на главной
     const swiper = new Swiper('.first-sec-slider', {
         navigation: {
