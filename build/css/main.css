@@ -5684,3 +5684,7 @@ svg.not-stroke {
 
 .push-effect.active {
   opacity: 1; }
+
+@media (max-width: 991px) {
+  .push-effect {
+    display: none; } }
