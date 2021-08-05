@@ -2029,6 +2029,7 @@ body.no-sroll{
         height: auto;
         width: auto;
         opacity: 1;
+        text-align: center;
     }
     
     .breadcrumb li{
@@ -2290,6 +2291,15 @@ header.main{
 @media(max-width: 767px){
     .o-nas .detail-page-slider__item{
         padding-bottom:55%;
+    }
+}
+
+.title-des{
+    display: none;
+}
+@media(min-width: 768px){
+    .title-des{
+        display: block;
     }
 }
 // magazin
