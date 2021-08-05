@@ -781,7 +781,7 @@ body.no-sroll{
     top: 24px;
     left: 51%;
     transform: rotate(-10deg);
-    z-index: 5;
+    z-index: -1;
 }
 .main-akcii .after{
     content: "";
@@ -794,18 +794,11 @@ body.no-sroll{
     bottom: -55px;
     right: 27%;
     transform: rotate(30deg);
-    z-index: 5;
+    z-index: 1;
 }
 
 
-@keyframes pusheffect {
-    0%{
-       display: block;
-    }
-    100%{
-       display: none; 
-    }
-}
+
 .first-section{
     overflow: hidden;
     .wrap{
@@ -1233,7 +1226,7 @@ body.no-sroll{
     top: 39px;
     left: 33%;
     transform: rotateY(180deg) rotateZ(25deg);
-    z-index: 5;
+    z-index: -1;
 }
 .main-afisha .before2{
     content: "";
@@ -1244,9 +1237,9 @@ body.no-sroll{
     background-repeat: no-repeat;
     background-size: contain;
     top: 19px;
-    left: 55%;
+    left: 50%;
     transform: rotateY(180deg) rotateZ(25deg);
-    z-index: 5;
+    z-index: -1;
 }
 .main-afisha .after{
     content: "";
@@ -1260,7 +1253,7 @@ body.no-sroll{
     bottom: 15px;
     left: 26%;
     transform: rotateZ(4deg);
-    z-index: 5;
+    z-index: -1;
 }
 .slider-section-item-logo{
     width: 51px;
@@ -1481,7 +1474,7 @@ body.no-sroll{
 .main-brand .after{
     content: "";
     position: absolute;
-    z-index: 5;
+    z-index: 1;
     width: 61px;
     height: 89px;
     background-image: url(../img/decor/decor1.svg);
@@ -2335,8 +2328,8 @@ header.main{
 
 .push-effect{
     transition: 3s all;
+    opacity: 0;
 }
-.push-effect.fadeout{
-   opacity: 0;
+.push-effect.active{
+   opacity: 1;
 }
-

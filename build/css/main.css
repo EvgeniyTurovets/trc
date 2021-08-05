@@ -837,7 +837,7 @@ body.no-sroll {
   left: 51%;
   -webkit-transform: rotate(-10deg);
           transform: rotate(-10deg);
-  z-index: 5; }
+  z-index: -1; }
 
 .main-akcii .after {
   content: "";
@@ -851,19 +851,7 @@ body.no-sroll {
   right: 27%;
   -webkit-transform: rotate(30deg);
           transform: rotate(30deg);
-  z-index: 5; }
-
-@-webkit-keyframes pusheffect {
-  0% {
-    display: block; }
-  100% {
-    display: none; } }
-
-@keyframes pusheffect {
-  0% {
-    display: block; }
-  100% {
-    display: none; } }
+  z-index: 1; }
 
 .first-section {
   overflow: hidden; }
@@ -1277,7 +1265,7 @@ body.no-sroll {
   left: 33%;
   -webkit-transform: rotateY(180deg) rotateZ(25deg);
           transform: rotateY(180deg) rotateZ(25deg);
-  z-index: 5; }
+  z-index: -1; }
 
 .main-afisha .before2 {
   content: "";
@@ -1288,10 +1276,10 @@ body.no-sroll {
   background-repeat: no-repeat;
   background-size: contain;
   top: 19px;
-  left: 55%;
+  left: 50%;
   -webkit-transform: rotateY(180deg) rotateZ(25deg);
           transform: rotateY(180deg) rotateZ(25deg);
-  z-index: 5; }
+  z-index: -1; }
 
 .main-afisha .after {
   content: "";
@@ -1306,7 +1294,7 @@ body.no-sroll {
   left: 26%;
   -webkit-transform: rotateZ(4deg);
           transform: rotateZ(4deg);
-  z-index: 5; }
+  z-index: -1; }
 
 .slider-section-item-logo {
   width: 51px;
@@ -1496,7 +1484,7 @@ body.no-sroll {
 .main-brand .after {
   content: "";
   position: absolute;
-  z-index: 5;
+  z-index: 1;
   width: 61px;
   height: 89px;
   background-image: url(../img/decor/decor1.svg);
@@ -5324,29 +5312,26 @@ svg.not-stroke {
     height: 100%;
     background: #FAFAFA;
     padding-left: 53px;
+    font-family: 'Gilroy';
     font-size: 14px;
-    line-height: 17px;
-    color: #000000; }
+    line-height: 16px;
+    color: #132c39; }
   .carta__search input::-webkit-input-placeholder {
     font-size: 14px;
-    line-height: 17px;
-    color: #000000;
-    text-transform: uppercase; }
+    line-height: 16px;
+    color: #132c39; }
   .carta__search input:-ms-input-placeholder {
     font-size: 14px;
-    line-height: 17px;
-    color: #000000;
-    text-transform: uppercase; }
+    line-height: 16px;
+    color: #132c39; }
   .carta__search input::-ms-input-placeholder {
     font-size: 14px;
-    line-height: 17px;
-    color: #000000;
-    text-transform: uppercase; }
+    line-height: 16px;
+    color: #132c39; }
   .carta__search input::placeholder {
     font-size: 14px;
-    line-height: 17px;
-    color: #000000;
-    text-transform: uppercase; }
+    line-height: 16px;
+    color: #132c39; }
 
 .carta__floor {
   display: -ms-flexbox;
@@ -5694,7 +5679,8 @@ svg.not-stroke {
   fill: #b7587c; }
 
 .push-effect {
-  transition: 3s all; }
-
-.push-effect.fadeout {
+  transition: 3s all;
   opacity: 0; }
+
+.push-effect.active {
+  opacity: 1; }
