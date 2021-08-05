@@ -1,37 +1,38 @@
 (function() {
     if(document.querySelectorAll('.push-effect')){
-        let pushEffectEl = document.querySelectorAll('.push-effect')
+        if(window.innerWidth > 992){
+            let pushEffectEl = document.querySelectorAll('.push-effect')
           
-        function pushEffect(){
-             
-            pushEffectEl.forEach((el)=>{
-                let offsetY = el.getBoundingClientRect().y - window.innerHeight
-                if(!el.classList.contains('active')){
-                    if(offsetY < 0){
-                        let top = el.offsetTop + 'px'
-                        let top2 = el.offsetTop + 300 +'px';
-                        
-                        el.style.bottom = 'auto'
-                        el.classList.add('active')
-
-                        el.animate({ top: [top2, top] }, { duration: 2000, iterations: 1, easing: "ease-out" })
-                        .onfinish = (e) => {
-                             el.style.top = top;
-                        };
-                    }
-                }
+            function pushEffect(){
                 
+                pushEffectEl.forEach((el)=>{
+                    let offsetY = el.getBoundingClientRect().y - window.innerHeight
+                    if(!el.classList.contains('active')){
+                        if(offsetY < 0){
+                            let top = el.offsetTop + 'px'
+                            let top2 = el.offsetTop + 300 +'px';
+                            
+                            el.style.bottom = 'auto'
+                            el.classList.add('active')
+
+                            el.animate({ top: [top2, top] }, { duration: 2000, iterations: 1, easing: "ease-out" })
+                            .onfinish = (e) => {
+                                el.style.top = top;
+                            };
+                        }
+                    }
+                    
+                })
+                
+            }
+        
+
+            window.addEventListener('scroll', ()=>{
+                pushEffect()
             })
-            
-        }
-       
 
-        window.addEventListener('scroll', ()=>{
             pushEffect()
-        })
-
-        pushEffect()
-       
+        }
     }
     
 
