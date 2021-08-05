@@ -1256,27 +1256,27 @@ body.no-sroll {
 .main-afisha .before {
   content: "";
   position: absolute;
-  width: 88px;
-  height: 100px;
+  width: 55px;
+  height: 60px;
   background-image: url(../img/decor/decor1.svg);
   background-repeat: no-repeat;
   background-size: contain;
   top: 39px;
-  left: 33%;
-  -webkit-transform: rotateY(180deg) rotateZ(25deg);
-          transform: rotateY(180deg) rotateZ(25deg);
+  left: 34%;
+  -webkit-transform: rotateZ(5deg);
+          transform: rotateZ(5deg);
   z-index: -1; }
 
 .main-afisha .before2 {
   content: "";
   position: absolute;
   width: 88px;
-  height: 100px;
+  height: 102px;
   background-image: url(../img/decor/decor1.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  top: 19px;
-  left: 50%;
+  top: 22px;
+  left: 53%;
   -webkit-transform: rotateY(180deg) rotateZ(25deg);
           transform: rotateY(180deg) rotateZ(25deg);
   z-index: -1; }
@@ -1477,7 +1477,7 @@ body.no-sroll {
   background-repeat: no-repeat;
   top: -20px;
   right: 23%;
-  z-index: 5;
+  z-index: 1;
   -webkit-transform: rotate(30deg);
           transform: rotate(30deg); }
 

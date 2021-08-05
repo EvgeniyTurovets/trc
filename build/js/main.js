@@ -30,8 +30,10 @@
             window.addEventListener('scroll', ()=>{
                 pushEffect()
             })
+            window.addEventListener('load', ()=>{
+                pushEffect()
+            })
 
-            pushEffect()
         }
     }
     

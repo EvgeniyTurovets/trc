@@ -1218,26 +1218,26 @@ body.no-sroll{
 .main-afisha .before {
     content: "";
     position: absolute;
-    width: 88px;
-    height: 100px;
+    width: 55px;
+    height: 60px;
     background-image: url(../img/decor/decor1.svg);
     background-repeat: no-repeat;
     background-size: contain;
     top: 39px;
-    left: 33%;
-    transform: rotateY(180deg) rotateZ(25deg);
+    left: 34%;
+    transform: rotateZ(5deg);
     z-index: -1;
 }
 .main-afisha .before2{
     content: "";
     position: absolute;
     width: 88px;
-    height: 100px;
+    height: 102px;
     background-image: url(../img/decor/decor1.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    top: 19px;
-    left: 50%;
+    top: 22px;
+    left: 53%;
     transform: rotateY(180deg) rotateZ(25deg);
     z-index: -1;
 }
@@ -1468,7 +1468,7 @@ body.no-sroll{
     background-repeat: no-repeat;
     top: -20px;
     right: 23%;
-    z-index: 5;
+    z-index: 1;
     transform: rotate(30deg);
 }
 .main-brand .after{
@@ -2332,4 +2332,11 @@ header.main{
 }
 .push-effect.active{
    opacity: 1;
+}
+
+
+@media(max-width: 991px){
+    .push-effect{
+        display: none;
+    }
 }
